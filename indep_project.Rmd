@@ -4,10 +4,6 @@ author: "Aaron Blue and James Kosmopoulos"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE) your
-```
-
 ## load required packages
 
 ```{r packages}
@@ -16,274 +12,202 @@ library(lme4) ## linear mixed models
 library(car) ## Anova function
 ```
 
-## load required datasets
+## load data
 
 ```{r load_data}
 metadata <- read.csv("./metadata.csv")
 ```
 
-## Model 1: soil slurry model (Weese et al., 2015)
+## summarize data
+This might help us plot our data
 
-Print off colnames to get the variables 
-colnames(soil08.t)
+```{r}
+metadata.long <- gather(metadata, key = "trait", value = "value", nodnum, meannodweight, chloro, shootmass)
 
-Response variables:
-  - shootmass
-  - Chlorophyll
-  - nodulenum
-  
-Print off levels of a factor:
-levels(soil08.t$factor)
-  
-Explanatory variables (fixed):
-  - plantsprear (3 levels: "T. hybridum" "T. pratense" "T. repens")
-  - nitrogen (2 levels: "Control"  "Nitrogen")
-  - field (6 levels: "1" "2" "3" "4" "5" "6")
-  - plantpoprear (9 levels), nested within plant species
-  - harvestweek (shootbiomass, and chlorophyll)
-  - Harvester (nodulenum)
-  
-Explanatory variables (random):
-  - plot (12 levels), nested within field and nitrogen
+plants.sum <- metadata.long %>% group_by(trait, plantspori, year, fert) %>% summarize(count = n(),
+            mean = mean(value, na.rm = TRUE), 
+            SE = sd(value, na.rm = TRUE)/sqrt(count))
+
+strains.sum <- metadata.long %>% group_by(trait, strain, year, fert) %>% summarize(count = n(),
+            mean = mean(value, na.rm = TRUE), 
+            SE = sd(value, na.rm = TRUE)/sqrt(count))
+```
 
 
-```{r m1}
+## reaction norms
+We've run into an issue here. It looks like we can't make the same comparisons for every reaction norm we wanted to make in our powerpoint. I don't think we can compare nodule traits by year for each rhizobium strain because 2008 and 2018 do not share any of the same strains. I also don't think we can compare plant traits by year for each plant species for the same reason, only one plant species was used in 2018 whereas three were used in 2008.
+
+```{r}
+## number of nodules
+## by year
+    # can't do! none of the strains in 2008 are the same as the strains in 2018
+(plot.nodnum.year <- ggplot(data = strains.sum %>% filter(trait=="nodnum"), aes(x=year, y=mean, group=strain, color=strain)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Year") +
+   ylab("Nodule number") +
+   theme_bw() +
+   theme(legend.position = "none")
+  )
+
+## by environment
+(plot.nodnum.env <- ggplot(data = strains.sum %>% filter(trait=="nodnum"), aes(x=fert, y=mean, group=strain, color=strain)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Nodule number") +
+   theme_bw() +
+   theme(legend.position = "none")
+  )
+
+## nodule mass
+## by year
+  # can't do! none of the strains in 2008 are the same as the strains in 2018
+(plot.nodmass.year <- ggplot(data = strains.sum %>% filter(trait=="meannodweight"), aes(x=year, y=mean, group=strain, color=strain)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Year") +
+   ylab("Nodule mass") +
+   theme_bw() +
+   theme(legend.position = "none")
+  )
+
+## by environment
+(plot.nodmass.env <- ggplot(data = strains.sum %>% filter(trait=="meannodweight"), aes(x=fert, y=mean, group=strain, color=strain)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Nodule mass") +
+   theme_bw() +
+   theme(legend.position = "none")
+  )
+
+
+## chloro
+## by year
+  # can't do! two of three plant species are only in 2008
+(plot.chloro.year <- ggplot(data = plants.sum %>% filter(trait=="chloro"), aes(x=year, y=mean, group=plantspori, color=plantspori)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Year") +
+   ylab("Chlorophyll content") +
+   theme_bw()
+  )
+
+
+```
+
+## Models
+I made these based off of the models in lab 2, but I don't think these are the models we need. I'm keeping them for now to help with formatting our other models that we do need, which we can probably use the next chunk below this one to make.
+
+```{r}
 ## model for shootmass
-lmm_shoot <- lmer(log(shootmass) ~ plantsprear + nitrogen + field + (plantsprear/plantpoprear) +
-                    harvestweek + 
-                    (1|nitrogen:field:plot), ## random effect
-                  data = soil08.t)
-Anova(lmm_shoot, type = 2) ## all explanatory vars affect shootmass
+lmm_shoot <- lmer(log(shootmass) ~ plantspori + fert + year +
+                    (1|harvester:field:plot:plant_age), ## random effect
+                  data = metadata)
+Anova(lmm_shoot, type = 2) # significant for fertilization environment only
 
 ## model for chlorophyll
-lmm_chlor <- lmer(Chlorophyll ~ plantsprear + nitrogen + field + (plantsprear/plantpoprear) +
-                    harvestweek + (1|nitrogen:field:plot),
-                  data = soil08.t)
-Anova(lmm_chlor, type = 2) ## only nitrogen affects chlor
+lmm_chloro <- lmer(chloro ~ plantspori + fert + year +
+                    (1|harvester:field:plot:plant_age),
+                  data = metadata)
+Anova(lmm_chloro, type = 2) # significant for fertilization environment only
 
 ## model for nodule number
-lmm_nod <- lmer(log(nodulenum+1) ~ plantsprear + nitrogen + field + (plantsprear/plantpoprear) +
-                    Harvester + (1|nitrogen:field:plot),
-                  data = soil08.t)
-Anova(lmm_nod, type = 2) ## all explanatory vars affect shootmass
+lmm_nodnum <- lmer(nodnum ~ plantspori + fert + year +
+                    (1|harvester:field:plot:plant_age),
+                  data = metadata)
+Anova(lmm_nodnum, type = 2) # significant for fertilization environment and year
+
+## model for nodule mass
+lmm_nodmass <- lmer(meannodweight ~ plantspori + fert + year +
+                    (1|harvester:field:plot:plant_age),
+                  data = metadata)
+Anova(lmm_nodmass, type = 2) # significant for fertilization environment and year
+
 ```
 
-## plot results (m1)
+Random effects model(s)
 
-Here's an excellent resource for figuring out what types of figures you can make in R, and how to execute them:
-http://www.cookbook-r.com/Graphs/
+```{r herit}
+#GH
+# full model, heritability in the greenhouse
+lm_GH <-lmer(sqrt(nod) ~ (1|line) + (1|position) + block, data = raw_data %>% filter(env == "GH"))
+lm_GH_dline <- lmer(sqrt(nod) ~ (1|position) + block, data = raw_data %>% filter(env == "GH"))
 
-I refer to it all the time!
+# model comparison
+comp <- anova(lm_GH, lm_GH_dline)
+var_GH <- VarCorr(lm_GH)
 
-```{r plot_m1}
-# first need to summarize response vars
+# test results
+chi_GH <- comp$Chisq
+Df_GH <- comp$Df
+sig_GH <- (comp$`Pr(>Chisq)`)/2
 
-## create long df, one col for trait value
-soil08.l <- soil08.t %>% gather(key = "trait", value = "value", nodulenum:shootmass, Chlorophyll)
+# heritability
+Var_GH <- as.data.frame(var_GH)
+Var_GH <- Var_GH %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
 
-## get mean and se for each trait, according to plantsprear and nitrogen
-soil08.l_sum <- soil08.l %>%
-  group_by(trait, plantsprear, nitrogen) %>%
-  summarize(count = n(),
-            mean = mean(value, na.rm = TRUE), 
-            SE = sd(value, na.rm = TRUE)/sqrt(count))
+VG_GH <- Var_GH[2,7]
 
-## renaming vars to fit
-scale_x <- scale_x_discrete(breaks=c("T. hybridum", "T. pratense", "T. repens"),
-                      labels=c("T. hyb", "T. prat", "T. rep"))
-labels <- c(Chlorophyll = "Cholorophyll", nodulenum = "Nodule number", shootmass = "Plant biomass (g)")
+# combine stats and heritability
+comb_GH <- cbind(chi_GH[2], Df_GH[2], sig_GH[2], VG_GH)
+colnames(comb_GH) <- c("Chisq", "Df", "p-value", "herit")
 
-p1 <- ggplot(data = soil08.l_sum, aes(x=plantsprear, y = mean, fill = nitrogen)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  geom_linerange(aes(ymin = mean - SE, ymax= mean + SE),position = position_dodge(width = 0.9)) +
-  facet_wrap(~trait, scales = "free", labeller=labeller(trait = labels)) +
-  xlab("Plant species") + 
-  ylab("Trait value") +
-  theme_bw() +
-  scale_x +
-  theme(axis.title.y = element_text(size=18), 
-        axis.text.y = element_text(size=16), 
-        axis.title.x = element_text(size=18), 
-        axis.text.x = element_text(size=16, face = "italic"), 
-        strip.text = element_text(size = 12, face = "bold"),
-        legend.position="right",
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank())
 
-print(p1)
+#Plot 1
+# full model, heritability in plot1
+lm_plot_1 <-lmer(sqrt(nod) ~ (1|line) + (1|diss) + block, data = raw_data %>% filter(env == "plot_1"))
+lm_plot_1_dline <- lmer(sqrt(nod) ~ (1|diss) + block, data = raw_data %>% filter(env == "plot_1"))
 
-ggsave(file = "./Independent_project_files/soil08.png", width = 9, height = 3.5, units = "in")
+# model comparison
+comp <- anova(lm_plot_1, lm_plot_1_dline)
+var_plot_1 <- VarCorr(lm_plot_1)
+
+# test results
+chi_plot_1 <- comp$Chisq
+Df_plot_1 <- comp$Df
+sig_plot_1 <- (comp$`Pr(>Chisq)`)/2
+
+# heritability
+Var_plot_1 <- as.data.frame(var_plot_1)
+Var_plot_1 <- Var_plot_1 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_plot_1 <- Var_plot_1[2,7]
+
+# combine stats and heritability
+comb_plot_1 <- cbind(chi_plot_1[2], Df_plot_1[2], sig_plot_1[2], VG_plot_1)
+colnames(comb_plot_1) <- c("Chisq", "Df", "p-value", "herit")
+
+
+#Plot 2
+# full model, heritability in plot1
+lm_plot_2 <-lmer(sqrt(nod) ~ (1|line) + (1|diss) + block, data = raw_data %>% filter(env == "plot_2"))
+lm_plot_2_dline <- lmer(sqrt(nod) ~ (1|diss) + block, data = raw_data %>% filter(env == "plot_2"))
+
+# model comparison
+comp <- anova(lm_plot_2, lm_plot_2_dline)
+var_plot_2 <- VarCorr(lm_plot_2)
+
+# test results
+chi_plot_2 <- comp$Chisq
+Df_plot_2 <- comp$Df
+sig_plot_2 <- (comp$`Pr(>Chisq)`)/2
+
+# heritability
+Var_plot_2 <- as.data.frame(var_plot_2)
+Var_plot_2 <- Var_plot_2 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_plot_2 <- Var_plot_2[2,7]
+
+# combine stats and heritability
+comb_plot_2 <- cbind(chi_plot_2[2], Df_plot_2[2], sig_plot_2[2], VG_plot_2)
+colnames(comb_plot_2) <- c("Chisq", "Df", "p-value", "herit")
 ```
 
-## Model 2: single-strain model (Weese et al., 2015)
-
-Print off colnames to get the variables 
-colnames(strains08.t)
-
-Response variables:
-  - shootmass
-  - leafnum
-  - stolonnum
-  - Chlor
-  - nodulenum
-  - meannodulemass
-  - totalnodulemass
-  
-Print off levels of a factor:
-levels(strains08.t$factor)
-  
-Explanatory variables (fixed):
-  - plantsprear (3 levels: "T. hybridum" "T. pratense" "T. repens")
-  - nitrogen (2 levels: "Control"  "Nitrogen")
-  - plantspori (3 levels: "T. hybridum" "T. pratense" "T. repens")
-  - field (6 levels: "1" "2" "3" "4" "5" "6")
-  - plantpoprear (6 levels), nested within plant species
-  - Harvestday (nodule and plant traits, except chlor)
-  - Harvester (nodule traits, except chlor)
-  
-Explanatory variables (random):
-  - plot (12 levels), nested within nitrogen
-  - strain (63 levels), nested within plant species of origin and plot
-
-```{r m3}
-## model for chlorophyll
-lmm2_Chlor <- lmer(Chlor ~ plantsprear + nitrogen + plantspori +
-                    plantsprear:nitrogen + plantsprear:plantspori + nitrogen:plantspori + ## two-way
-                    plantsprear:nitrogen:plantspori + ## three-way interaction
-                    field + (plantsprear/plantpoprear) +
-                    # (1|nitrogen:plot) + ## doesn't exlain any variation, took out
-                    (1|plot:plantspori:strain), ## random effect
-                  data = strains08.t)
-Anova(lmm2_Chlor, type = 3)  ## several main and interactive effects
-
-## need to add 1 to nodulenum to get the log
-strains08.t$nodulenum.t <- strains08.t$nodulenum + 1
-
-## run same model for other traits
-m2_func <- function(trait, df){
-  
-  print(paste0(trait))
-  
-  # Chlor
-  if (trait == "Chlor"){
-    lmm2 <- lmer(Chlor ~ plantsprear + nitrogen + plantspori +
-                    plantsprear:nitrogen + plantsprear:plantspori + nitrogen:plantspori + ## two-way
-                    plantsprear:nitrogen:plantspori + ## three-way interaction
-                    field + (plantsprear/plantpoprear) +
-                    # Harvestday + ## not included
-                    # (1|nitrogen:plot) + ## doesn't exlain any variation, took out
-                    (1|plot:plantspori:strain), ## random factors
-                  data = strains08.t)
-  }
-  
-  # Other plant traits
-  else if (trait %in% c("shootmass","leafnum","stolonnum")){
-    lmm2 <- lmer(log(get(trait)) ~ plantsprear + nitrogen + plantspori +
-                    plantsprear:nitrogen + plantsprear:plantspori + nitrogen:plantspori + ## two-way
-                    plantsprear:nitrogen:plantspori + ## three-way interaction
-                    field + (plantsprear/plantpoprear) +
-                    Harvestday + 
-                    # (1|nitrogen:plot) + ## doesn't exlain any variation, took out
-                    (1|plot:plantspori:strain), ## random factors
-                  data = df)
-  }
-  
-  # Other nodule traits
-  else if (trait %in% c("nodulenum.t","meannodulemass", "totalnodulemass")){
-    lmm2 <- lmer(log(get(trait)) ~ plantsprear + nitrogen + plantspori +
-                    plantsprear:nitrogen + plantsprear:plantspori + nitrogen:plantspori + ## two-way
-                    plantsprear:nitrogen:plantspori + ## three-way interaction
-                    field + (plantsprear/plantpoprear) +
-                    Harvestday + Harvester +
-                    # (1|nitrogen:plot) + ## doesn't exlain any variation, took out
-                    (1|plot:plantspori:strain), ## random factors
-                  data = df)
-    
-  }
-  
-  # write out
-  aov2 <- Anova(lmm2, type = 3)
-  return(aov2)
-}
-
-trait.list <- c("Chlor","shootmass","leafnum","stolonnum","nodulenum.t","meannodulemass", "totalnodulemass")
-
-## run model for all  traits
-m2_out <- lapply(trait.list, m2_func, df = strains08.t) 
-```
-
-## plot results (m2)
-
-```{r plot_m2}
-## create long df, one col for trait value
-strains08.l <- strains08.t %>% gather(key = "trait", value = "value", shootmass:Chlor)
-
-## get mean and se for each trait, according to strain and nitrogen
-strains08.l_sum <- strains08.l %>%
-  filter(trait %in% c("Chlor","leafnum","shootmass","stolonnum")) %>% ## filter to traits of interest
-  droplevels(.) %>% ## drop unneccesary traits
-  group_by(trait, strain, nitrogen) %>%
-  summarize(count = n(),
-            mean = mean(value, na.rm = TRUE), 
-            SE = sd(value, na.rm = TRUE)/sqrt(count))
-
-## renaming vars to fit
-labels <- c(Chlor = "Cholorophyll", shootmass = "Plant biomass (g)", 
-            leafnum = "Leaf number", stolonnum = "Stolon number")
-
-p2 <- ggplot(data = strains08.l_sum, aes(x = reorder(strain, mean), y = mean, fill = nitrogen)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  geom_linerange(aes(ymin = mean - SE, ymax= mean + SE),position = position_dodge(width = 0.9)) +
-  facet_wrap(~trait, scales = "free", ncol = 1, labeller=labeller(trait = labels)) +
-  xlab("Rhizobia strains") + 
-  ylab("Trait value") +
-  theme_bw() +
-  theme(axis.title.y = element_text(size=18), 
-        axis.text.y = element_text(size=16), 
-        axis.title.x = element_text(size=18), 
-        axis.text.x = element_text(size=8, angle = 90), 
-        strip.text = element_text(size = 12, face = "bold"),
-        legend.position="right",
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank())
-print(p2)
-
-ggsave(file = "./Independent_project_files/strains08.png", width = 8, height = 6, units = "in")
-
-# plot 3: effects of plant genotype
-
-## get mean and se for each trait, according to plant genotype and nitrogen
-strains08.l_sum_plant <- strains08.l %>%
-  filter(trait %in% c("Chlor","shootmass","nodulenum","meannodulemass")) %>% ## filter to traits of interest
-  droplevels(.) %>% ## drop unneccesary traits
-  group_by(trait, plantsprear, nitrogen) %>%
-  summarize(count = n(),
-            mean = mean(value, na.rm = TRUE), 
-            SE = sd(value, na.rm = TRUE)/sqrt(count))
-
-## renaming vars to fit
-scale_x <- scale_x_discrete(breaks=c("T. hybridum", "T. pratense", "T. repens"),
-                      labels=c("T. hyb", "T. prat", "T. rep"))
-labels <- c(Chlor = "Cholorophyll", shootmass = "Plant biomass (g)", 
-            nodulenum = "Nodule number", meannodulemass = "Mean nodule \n mass (mg)")
-
-p3 <- ggplot(data = strains08.l_sum_plant, aes(x = plantsprear, y = mean, fill = nitrogen)) +
-  geom_bar(stat = "identity", position = "dodge") +
-  geom_linerange(aes(ymin = mean - SE, ymax= mean + SE),position = position_dodge(width = 0.9)) +
-  facet_wrap(~trait, scales = "free", ncol = 2, labeller=labeller(trait = labels)) +
-  xlab("Plant genotype") + 
-  ylab("Trait value") +
-  scale_x +
-  theme_bw() +
-  theme(axis.title.y = element_text(size=18), 
-        axis.text.y = element_text(size=16), 
-        axis.title.x = element_text(size=18), 
-        axis.text.x = element_text(size=16, face = "italic"), 
-        strip.text = element_text(size = 12, face = "bold"),
-        legend.position="right",
-        panel.grid.major = element_blank(), 
-        panel.grid.minor = element_blank())
-print(p3)
-
-ggsave(file = "./Independent_project_files/strains08_plantgeno.png", width = 8, height = 5.5, units = "in")
-```
