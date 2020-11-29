@@ -27,11 +27,19 @@ This might help us plot our data
 ```{r}
 metadata.long <- gather(metadata, key = "trait", value = "value", nodnum, meannodweight, chloro, shootmass)
 
-plants.sum <- metadata.long %>% group_by(trait, plantspori, year, fert) %>% summarize(count = n(),
+plants.year.sum <- metadata.long %>% group_by(trait, plantsp, dataset_year) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.sum <- metadata.long %>% group_by(trait, strain, year, fert) %>% summarize(count = n(),
+strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year) %>% summarize(count = n(),
+            mean = mean(value, na.rm = TRUE), 
+            SE = sd(value, na.rm = TRUE)/sqrt(count))
+
+plants.fert.sum <- metadata.long %>% group_by(trait, plantsp, fert) %>% summarize(count = n(),
+            mean = mean(value, na.rm = TRUE), 
+            SE = sd(value, na.rm = TRUE)/sqrt(count))
+
+strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 ```
@@ -40,14 +48,12 @@ strains.sum <- metadata.long %>% group_by(trait, strain, year, fert) %>% summari
 
 ## reaction norms
 
-We've run into an issue here. It looks like we can't make the same comparisons for every reaction norm we wanted to make in our powerpoint. I don't think we can compare nodule traits by year for each rhizobium strain because 2008 and 2018 do not share any of the same strains. I also don't think we can compare plant traits by year for each plant species for the same reason, only one plant species was used in 2018 whereas three were used in 2008.
 
 # Nodnum
 
 ```{r}
 ## by year
-    # can't do! none of the strains in 2008 are the same as the strains in 2018
-(plot.nodnum.year <- ggplot(data = strains.sum %>% filter(trait=="nodnum"), aes(x=year, y=mean, group=strain, color=strain)) +
+(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -57,7 +63,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
   )
 
 ## by environment
-(plot.nodnum.env <- ggplot(data = strains.sum %>% filter(trait=="nodnum"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodnum.env <- ggplot(data = strains.fert.sum %>% filter(trait=="nodnum"), aes(x=fert, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -73,8 +79,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
 
 ```{r}
 ## by year
-  # can't do! none of the strains in 2008 are the same as the strains in 2018
-(plot.nodmass.year <- ggplot(data = strains.sum %>% filter(trait=="meannodweight"), aes(x=year, y=mean, group=strain, color=strain)) +
+(plot.nodmass.year <- ggplot(data = strains.year.sum %>% filter(trait=="meannodweight"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -84,7 +89,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
   )
 
 ## by environment
-(plot.nodmass.env <- ggplot(data = strains.sum %>% filter(trait=="meannodweight"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodmass.env <- ggplot(data = strains.fert.sum %>% filter(trait=="meannodweight"), aes(x=fert, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -99,8 +104,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
 
 ```{r}
 ## by year
-  # can't do! two of three plant species are only in 2008
-(plot.chloro.year <- ggplot(data = plants.sum %>% filter(trait=="chloro"), aes(x=year, y=mean, group=plantspori, color=plantspori)) +
+(plot.chloro.year <- ggplot(data = plants.year.sum %>% filter(trait=="chloro"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -109,7 +113,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
   )
 
 ## by N environment
-(plot.chloro.env <- ggplot(data = strains.sum %>% filter(trait=="chloro"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.chloro.env <- ggplot(data = plants.fert.sum %>% filter(trait=="chloro"), aes(x=fert, y=mean, group=plantsp, color=plantsp)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -123,8 +127,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
 
 ```{r}
 ## by year
-  # can't do! two of three plant species are only in 2008
-(plot.shootmass.year <- ggplot(data = plants.sum %>% filter(trait=="shootmass"), aes(x=year, y=mean, group=plantspori, color=plantspori)) +
+(plot.shootmass.year <- ggplot(data = plants.year.sum %>% filter(trait=="shootmass"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -133,7 +136,7 @@ We've run into an issue here. It looks like we can't make the same comparisons f
   )
 
 ## by N environment
-(plot.shootmass.env <- ggplot(data = strains.sum %>% filter(trait=="shootmass"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.shootmass.env <- ggplot(data = plants.fert.sum %>% filter(trait=="shootmass"), aes(x=fert, y=mean, group=plantsp, color=plantsp)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -146,7 +149,6 @@ We've run into an issue here. It looks like we can't make the same comparisons f
 
 
 ## Random effects models
-I made these based off of the models in lab 3. We might have to change them or our original hypotheses because we still can't compare plant genotypes or rhizobium genotypes across different years for the same reason as above. But we can compare genotypes across envirionments.
 
 ## Plant shoot biomass models
 
@@ -162,10 +164,10 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot) + (1|plant_age), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2008"))
 
 # model without plot as a random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plant_age), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2008"))
 
 # model comparison
 comp_shoot_2008 <- anova(lmm_shoot_2008, lmm_shoot_2008_dplot)
@@ -191,10 +193,10 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # 2018
 # full model with all random effects
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot) + (1|plant_age), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2018"))
 
 # model without plot as a random effect
-lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plant_age), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2018"))
 
 # model comparison
 comp_shoot_2018 <- anova(lmm_shoot_2018, lmm_shoot_2018_dplot)
@@ -224,10 +226,10 @@ colnames(comb_shoot_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```{r}
 # 0N
 # full model with all random effects
-lmm_shoot_0N <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot) + (1|plant_age), data = metadata %>% filter(fert=="0 N"))
+lmm_shoot_0N <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
 
 # model without plot as a random effect
-lmm_shoot_0N_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plant_age), data = metadata %>% filter(fert=="0 N"))
+lmm_shoot_0N_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
 
 # model comparison
 comp_shoot_0N <- anova(lmm_shoot_0N, lmm_shoot_0N_dplot)
@@ -253,10 +255,10 @@ colnames(comb_shoot_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # N-fertilized
 # full model with all random effects
-lmm_shoot_fertilized <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot) + (1|plant_age), data = metadata %>% filter(fert=="Fertilized"))
+lmm_shoot_fertilized <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
 
 # model without plot as a random effect
-lmm_shoot_fertilized_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plant_age), data = metadata %>% filter(fert=="Fertilized"))
+lmm_shoot_fertilized_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
 
 # model comparison
 comp_shoot_fertilized <- anova(lmm_shoot_fertilized, lmm_shoot_fertilized_dplot)
