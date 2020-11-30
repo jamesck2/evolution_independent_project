@@ -164,10 +164,10 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
 # model without plot as a random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
 
 # model comparison
 comp_shoot_2008 <- anova(lmm_shoot_2008, lmm_shoot_2008_dplot)
@@ -193,10 +193,10 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # 2018
 # full model with all random effects
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
-lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_shoot_2018 <- anova(lmm_shoot_2018, lmm_shoot_2018_dplot)
