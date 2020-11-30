@@ -164,10 +164,10 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
 # model without plot as a random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2008"))
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
 
 # model comparison
 comp_shoot_2008 <- anova(lmm_shoot_2008, lmm_shoot_2008_dplot)
@@ -193,10 +193,10 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # 2018
 # full model with all random effects
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
-lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(year=="2018"))
+lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_shoot_2018 <- anova(lmm_shoot_2018, lmm_shoot_2018_dplot)
@@ -292,18 +292,126 @@ shapiro.test(metadata$chloro) # p<0.05, transform data
 
 ```
 
-
 # Chloro heritability by year
 
 ```{r}
+# 2008
+# full model with all random effects
+lmm_chloro_2008 <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
+# model without plot as a random effect
+lmm_chloro_2008_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+
+# model comparison
+comp_chloro_2008 <- anova(lmm_chloro_2008, lmm_chloro_2008_dplot)
+var_chloro_2008 <- VarCorr(lmm_chloro_2008)
+
+# test results
+chi_chloro_2008 <- comp_chloro_2008$Chisq
+Df_chloro_2008 <- comp_chloro_2008$Df
+sig_chloro_2008 <- (comp_chloro_2008$`Pr(>Chisq)`)/2
+
+# heritability
+Var_chloro_2008 <- as.data.frame(var_chloro_2008)
+Var_chloro_2008 <- Var_chloro_2008 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_chloro_2008 <- Var_chloro_2008[2,7]
+
+# combine stats and heritability
+comb_chloro_2008 <- cbind(chi_chloro_2008[2], Df_chloro_2008[2], sig_chloro_2008[2], VG_chloro_2008)
+colnames(comb_chloro_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+#2018
+# full model with all random effects
+lmm_chloro_2018 <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+
+# model without plot as a random effect
+lmm_chloro_2018_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+
+# model comparison
+comp_chloro_2018 <- anova(lmm_chloro_2018, lmm_chloro_2018_dplot)
+var_chloro_2018 <- VarCorr(lmm_chloro_2018)
+
+# test results
+chi_chloro_2018 <- comp_chloro_2018$Chisq
+Df_chloro_2018 <- comp_chloro_2018$Df
+sig_chloro_2018 <- (comp_chloro_2018$`Pr(>Chisq)`)/2
+
+# heritability
+Var_chloro_2018 <- as.data.frame(var_chloro_2018)
+Var_chloro_2018 <- Var_chloro_2018 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_chloro_2018 <- Var_chloro_2018[2,7]
+
+# combine stats and heritability
+comb_chloro_2018 <- cbind(chi_chloro_2018[2], Df_chloro_2018[2], sig_chloro_2018[2], VG_chloro_2018)
+colnames(comb_chloro_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 
 # Chloro heritability by N environment
 
 ```{r}
+# 0N
+# full model with all random effects
+lmm_chloro_0N <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
 
+# model without plot as a random effect
+lmm_chloro_0N_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+
+# model comparison
+comp_chloro_0N <- anova(lmm_chloro_0N, lmm_chloro_0N_dplot)
+var_chloro_0N <- VarCorr(lmm_chloro_0N)
+
+# test results
+chi_chloro_0N <- comp_chloro_0N$Chisq
+Df_chloro_0N <- comp_chloro_0N$Df
+sig_chloro_0N <- (comp_chloro_0N$`Pr(>Chisq)`)/2
+
+# heritability
+Var_chloro_0N <- as.data.frame(var_chloro_0N)
+Var_chloro_0N <- Var_chloro_0N %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_chloro_0N <- Var_chloro_0N[2,7]
+
+# combine stats and heritability
+comb_chloro_0N <- cbind(chi_chloro_0N[2], Df_chloro_0N[2], sig_chloro_0N[2], VG_chloro_0N)
+colnames(comb_chloro_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+
+# N-fertilized
+# full model with all random effects
+lmm_chloro_fertilized <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+
+# model without plot as a random effect
+lmm_chloro_fertilized_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+
+# model comparison
+comp_chloro_fertilized <- anova(lmm_chloro_fertilized, lmm_chloro_fertilized_dplot)
+var_chloro_fertilized <- VarCorr(lmm_chloro_fertilized)
+
+# test results
+chi_chloro_fertilized <- comp_chloro_fertilized$Chisq
+Df_chloro_fertilized <- comp_chloro_fertilized$Df
+sig_chloro_fertilized <- (comp_chloro_fertilized$`Pr(>Chisq)`)/2
+
+# heritability
+Var_chloro_fertilized <- as.data.frame(var_chloro_fertilized)
+Var_chloro_fertilized <- Var_chloro_fertilized %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_chloro_fertilized <- Var_chloro_fertilized[2,7]
+
+# combine stats and heritability
+comb_chloro_fertilized <- cbind(chi_chloro_fertilized[2], Df_chloro_fertilized[2], sig_chloro_fertilized[2], VG_chloro_fertilized)
+colnames(comb_chloro_fertilized) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 
@@ -319,13 +427,122 @@ shapiro.test(metadata$nodnum) # p<0.05, transform data
 # Nodnum heritability by year
 
 ```{r}
+# 2008
+# full model with all random effects
+lmm_nod_2008 <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
+# model without plot as a random effect
+lmm_nod_2008_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+
+# model comparison
+comp_nod_2008 <- anova(lmm_nod_2008, lmm_nod_2008_dplot)
+var_nod_2008 <- VarCorr(lmm_nod_2008)
+
+# test results
+chi_nod_2008 <- comp_nod_2008$Chisq
+Df_nod_2008 <- comp_nod_2008$Df
+sig_nod_2008 <- (comp_nod_2008$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nod_2008 <- as.data.frame(var_nod_2008)
+Var_nod_2008 <- Var_nod_2008 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nod_2008 <- Var_nod_2008[2,7]
+
+# combine stats and heritability
+comb_nod_2008 <- cbind(chi_nod_2008[2], Df_nod_2008[2], sig_nod_2008[2], VG_nod_2008)
+colnames(comb_nod_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+#2018
+# full model with all random effects
+lmm_nod_2008 <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+
+# model without plot as a random effect
+lmm_nod_2018_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+
+# model comparison
+comp_nod_2018 <- anova(lmm_nod_2018, lmm_nod_2018_dplot)
+var_nod_2018 <- VarCorr(lmm_nod_2018)
+
+# test results
+chi_nod_2018 <- comp_nod_2018$Chisq
+Df_nod_2018 <- comp_nod_2018$Df
+sig_nod_2018 <- (comp_nod_2018$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nod_2018 <- as.data.frame(var_nod_2018)
+Var_nod_2018 <- Var_nod_2018 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nod_2018 <- Var_nod_2018[2,7]
+
+# combine stats and heritability
+comb_nod_2018 <- cbind(chi_nod_2018[2], Df_nod_2018[2], sig_nod_2018[2], VG_nod_2018)
+colnames(comb_nod_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 # Nodnum heritability by N environment
 
 ```{r}
+# 0N
+# full model with all random effects
+lmm_nod_0N <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
 
+# model without plot as a random effect
+lmm_nod_0N_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+
+# model comparison
+comp_nod_0N <- anova(lmm_nod_0N, lmm_nod_0N_dplot)
+var_nod_0N <- VarCorr(lmm_nod_0N)
+
+# test results
+chi_nod_0N <- comp_nod_0N$Chisq
+Df_nod_0N <- comp_nod_0N$Df
+sig_nod_0N <- (comp_nod_0N$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nod_0N <- as.data.frame(var_nod_0N)
+Var_nod_0N <- Var_nod_0N %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nod_0N <- Var_nod_0N[2,7]
+
+# combine stats and heritability
+comb_nod_0N <- cbind(chi_nod_0N[2], Df_nod_0N[2], sig_nod_0N[2], VG_nod_0N)
+colnames(comb_nod_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+
+# N-fertilized
+# full model with all random effects
+lmm_nod_fertilized <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+
+# model without plot as a random effect
+lmm_nod_fertilized_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+
+# model comparison
+comp_nod_fertilized <- anova(lmm_nod_fertilized, lmm_nod_fertilized_dplot)
+var_nod_fertilized <- VarCorr(lmm_nod_fertilized)
+
+# test results
+chi_nod_fertilized <- comp_nod_fertilized$Chisq
+Df_nod_fertilized <- comp_nod_fertilized$Df
+sig_nod_fertilized <- (comp_nod_fertilized$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nod_fertilized <- as.data.frame(var_nod_fertilized)
+Var_nod_fertilized <- Var_nod_fertilized %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nod_fertilized <- Var_nod_fertilized[2,7]
+
+# combine stats and heritability
+comb_nod_fertilized <- cbind(chi_nod_fertilized[2], Df_nod_fertilized[2], sig_nod_fertilized[2], VG_nod_fertilized)
+colnames(comb_nod_fertilized) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 
@@ -341,14 +558,123 @@ shapiro.test(metadata$meannodweight) # p<0.05, transform data
 # Nodmass heritabiltiy by year
 
 ```{r}
+# 2008
+# full model with all random effects
+lmm_nodn_2008 <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
+# model without plot as a random effect
+lmm_nodn_2008_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+
+# model comparison
+comp_nodn_2008 <- anova(lmm_nodn_2008, lmm_nodn_2008_dplot)
+var_nodn_2008 <- VarCorr(lmm_nodn_2008)
+
+# test results
+chi_nodn_2008 <- comp_nodn_2008$Chisq
+Df_nodn_2008 <- comp_nodn_2008$Df
+sig_nodn_2008 <- (comp_nodn_2008$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nodn_2008 <- as.data.frame(var_nodn_2008)
+Var_nodn_2008 <- Var_nodn_2008 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nodn_2008 <- Var_nodn_2008[2,7]
+
+# combine stats and heritability
+comb_nodn_2008 <- cbind(chi_nodn_2008[2], Df_nodn_2008[2], sig_nodn_2008[2], VG_nodn_2008)
+colnames(comb_nodn_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+#2018
+# full model with all random effects
+lmm_nodn_2018 <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+
+# model without plot as a random effect
+lmm_nodn_2018_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+
+# model comparison
+comp_nodn_2018 <- anova(lmm_nodn_2018, lmm_nodn_2018_dplot)
+var_nodn_2018 <- VarCorr(lmm_nodn_2018)
+
+# test results
+chi_nodn_2018 <- comp_nodn_2018$Chisq
+Df_nodn_2018 <- comp_nodn_2018$Df
+sig_nodn_2018 <- (comp_nodn_2018$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nodn_2018 <- as.data.frame(var_nodn_2018)
+Var_nodn_2018 <- Var_nodn_2018 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nodn_2018 <- Var_nodn_2018[2,7]
+
+# combine stats and heritability
+comb_nodn_2018 <- cbind(chi_nodn_2018[2], Df_nodn_2018[2], sig_nodn_2018[2], VG_nodn_2018)
+colnames(comb_nodn_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 
 # Nodmass heritability by N environment
 
 ```{r}
+# 0N
+# full model with all random effects
+lmm_nodn_0N <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
 
+# model without plot as a random effect
+lmm_nodn_0N_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+
+# model comparison
+comp_nodn_0N <- anova(lmm_nodn_0N, lmm_nodn_0N_dplot)
+var_nodn_0N <- VarCorr(lmm_nodn_0N)
+
+# test results
+chi_nodn_0N <- comp_nodn_0N$Chisq
+Df_nodn_0N <- comp_nodn_0N$Df
+sig_nodn_0N <- (comp_nodn_0N$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nodn_0N <- as.data.frame(var_nodn_0N)
+Var_nodn_0N <- Var_nodn_0N %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nodn_0N <- Var_nodn_0N[2,7]
+
+# combine stats and heritability
+comb_nodn_0N <- cbind(chi_nodn_0N[2], Df_nodn_0N[2], sig_nodn_0N[2], VG_nodn_0N)
+colnames(comb_nodn_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
+
+
+# N-fertilized
+# full model with all random effects
+lmm_nodn_fertilized <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+
+# model without plot as a random effect
+lmm_nodn_fertilized_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+
+# model comparison
+comp_nodn_fertilized <- anova(lmm_nodn_fertilized, lmm_nodn_fertilized_dplot)
+var_nodn_fertilized <- VarCorr(lmm_nodn_fertilized)
+
+# test results
+chi_nodn_fertilized <- comp_nodn_fertilized$Chisq
+Df_nodn_fertilized <- comp_nodn_fertilized$Df
+sig_nodn_fertilized <- (comp_nodn_fertilized$`Pr(>Chisq)`)/2
+
+# heritability
+Var_nodn_fertilized <- as.data.frame(var_nodn_fertilized)
+Var_nodn_fertilized <- Var_nodn_fertilized %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_nodn_fertilized <- Var_nodn_fertilized[2,7]
+
+# combine stats and heritability
+comb_nodn_fertilized <- cbind(chi_nodn_fertilized[2], Df_nodn_fertilized[2], sig_nodn_fertilized[2], VG_nodn_fertilized)
+colnames(comb_nodn_fertilized) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
 
