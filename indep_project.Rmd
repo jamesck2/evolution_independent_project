@@ -27,11 +27,11 @@ This might help us plot our data
 ```{r}
 metadata.long <- gather(metadata, key = "trait", value = "value", nodulenum, meannodulemass, chloro, shootmass)
 
-plants.year.sum <- metadata.long %>% group_by(trait, plantspori, dataset_year) %>% summarize(count = n(),
+plants.year.sum <- metadata.long %>% group_by(trait, plantspori, dataset_year, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year) %>% summarize(count = n(),
+strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
@@ -71,7 +71,7 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
   )
 
 ## by environment
-(plot.nodulenum.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="nodulenum"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodulenum.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="nodulenum"), aes(x=nitrogen, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -97,7 +97,7 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
   )
 
 ## by environment
-(plot.nodmass.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="meannodulemass"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodmass.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="meannodulemass"), aes(x=nitrogen, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -121,7 +121,7 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
   )
 
 ## by N environment
-(plot.chloro.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="chloro"), aes(x=fert, y=mean, group=plantspori, color=plantspori)) +
+(plot.chloro.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="chloro"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -144,7 +144,7 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
   )
 
 ## by N environment
-(plot.shootmass.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="shootmass"), aes(x=fert, y=mean, group=plantspori, color=plantspori)) +
+(plot.shootmass.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="shootmass"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
