@@ -25,21 +25,21 @@ metadata <- read.csv("./metadata.csv")
 This might help us plot our data
 
 ```{r}
-metadata.long <- gather(metadata, key = "trait", value = "value", nodnum, meannodweight, chloro, shootmass)
+metadata.long <- gather(metadata, key = "trait", value = "value", nodulenum, meannodulemass, chloro, shootmass)
 
-plants.year.sum <- metadata.long %>% group_by(trait, plantsp, fert, dataset_year) %>% summarize(count = n(),
+plants.year.sum <- metadata.long %>% group_by(trait, plantspori, dataset_year) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.year.sum <- metadata.long %>% group_by(trait, strain, fert, dataset_year) %>% summarize(count = n(),
+strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-plants.fert.sum <- metadata.long %>% group_by(trait, plantsp, fert) %>% summarize(count = n(),
+plants.nitrogen.sum <- metadata.long %>% group_by(trait, plantspori, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summarize(count = n(),
+strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 ```
@@ -49,11 +49,11 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 ## reaction norms
 
 
-# Nodnum
+# nodulenum
 
 ```{r}
 ## by year
-(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum" & fert=="Fertilized"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
+(plot.nodulenum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodulenum" & nitrogen=="Nitrogen"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -61,7 +61,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
    theme_bw() +
    theme(legend.position = "none")
   )
-(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum" & fert=="0 N"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
+(plot.nodulenum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodulenum" & nitrogen=="Control"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -71,7 +71,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
   )
 
 ## by environment
-(plot.nodnum.env <- ggplot(data = strains.fert.sum %>% filter(trait=="nodnum"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodulenum.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="nodulenum"), aes(x=fert, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -87,7 +87,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 
 ```{r}
 ## by year
-(plot.nodmass.year <- ggplot(data = strains.year.sum %>% filter(trait=="meannodweight"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
+(plot.nodmass.year <- ggplot(data = strains.year.sum %>% filter(trait=="meannodulemass"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -97,7 +97,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
   )
 
 ## by environment
-(plot.nodmass.env <- ggplot(data = strains.fert.sum %>% filter(trait=="meannodweight"), aes(x=fert, y=mean, group=strain, color=strain)) +
+(plot.nodmass.env <- ggplot(data = strains.nitrogen.sum %>% filter(trait=="meannodulemass"), aes(x=fert, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -112,7 +112,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 
 ```{r}
 ## by year
-(plot.chloro.year <- ggplot(data = plants.year.sum %>% filter(trait=="chloro"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
+(plot.chloro.year <- ggplot(data = plants.year.sum %>% filter(trait=="chloro"), aes(x=dataset_year, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -121,7 +121,7 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
   )
 
 ## by N environment
-(plot.chloro.env <- ggplot(data = plants.fert.sum %>% filter(trait=="chloro"), aes(x=fert, y=mean, group=plantsp, color=plantsp)) +
+(plot.chloro.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="chloro"), aes(x=fert, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -135,16 +135,16 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 
 ```{r}
 ## by year
-(plot.shootmass.year <- ggplot(data = plants.year.sum %>% filter(trait=="nodnum" & fert=="0 N"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
+(plot.shootmass.year <- ggplot(data = plants.year.sum %>% filter(trait=="nodulenum" & nitrogen=="Control"), aes(x=dataset_year, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
-   ylab("Nodnum") +
+   ylab("nodulenum") +
    theme_bw()
   )
 
 ## by N environment
-(plot.shootmass.env <- ggplot(data = plants.fert.sum %>% filter(trait=="shootmass"), aes(x=fert, y=mean, group=plantsp, color=plantsp)) +
+(plot.shootmass.env <- ggplot(data = plants.nitrogen.sum %>% filter(trait=="shootmass"), aes(x=fert, y=mean, group=plantspori, color=plantspori)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Environment") +
@@ -172,12 +172,12 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) + (1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata)
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantspori + dataset_year + (plantspori:dataset_year) + (1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata)
 summary(lmm_shoot_2008)
 Anova(lmm_shoot_2008, type = 3)
 
 # model without plot as a random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) + (1|harvester) + (1|field) + (1|strain), data = metadata)
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantspori + dataset_year + (plantspori:dataset_year) + (1|harvester) + (1|field) + (1|strain), data = metadata)
 
 # model comparison
 comp_shoot_2008 <- anova(lmm_shoot_2008, lmm_shoot_2008_dplot)
@@ -203,10 +203,10 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # 2018
 # full model with all random effects
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) +(1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantspori + dataset_year + (plantspori:dataset_year) +(1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
-lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_shoot_2018 <- anova(lmm_shoot_2018, lmm_shoot_2018_dplot)
@@ -236,10 +236,10 @@ colnames(comb_shoot_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```{r}
 # 0N
 # full model with all random effects
-lmm_shoot_0N <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
+lmm_shoot_0N <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Control"))
 
 # model without plot as a random effect
-lmm_shoot_0N_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+lmm_shoot_0N_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Control"))
 
 # model comparison
 comp_shoot_0N <- anova(lmm_shoot_0N, lmm_shoot_0N_dplot)
@@ -265,10 +265,10 @@ colnames(comb_shoot_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # N-fertilized
 # full model with all random effects
-lmm_shoot_fertilized <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+lmm_shoot_fertilized <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model without plot as a random effect
-lmm_shoot_fertilized_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+lmm_shoot_fertilized_dplot <- lmer(sqrt(shootmass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model comparison
 comp_shoot_fertilized <- anova(lmm_shoot_fertilized, lmm_shoot_fertilized_dplot)
@@ -307,10 +307,10 @@ shapiro.test(metadata$chloro) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_chloro_2008 <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
+lmm_chloro_2008 <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
 # model without plot as a random effect
-lmm_chloro_2008_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+lmm_chloro_2008_dplot <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
 
 # model comparison
 comp_chloro_2008 <- anova(lmm_chloro_2008, lmm_chloro_2008_dplot)
@@ -335,10 +335,10 @@ colnames(comb_chloro_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 #2018
 # full model with all random effects
-lmm_chloro_2018 <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+lmm_chloro_2018 <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
-lmm_chloro_2018_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+lmm_chloro_2018_dplot <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_chloro_2018 <- anova(lmm_chloro_2018, lmm_chloro_2018_dplot)
@@ -368,10 +368,10 @@ colnames(comb_chloro_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```{r}
 # 0N
 # full model with all random effects
-lmm_chloro_0N <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
+lmm_chloro_0N <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Control"))
 
 # model without plot as a random effect
-lmm_chloro_0N_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+lmm_chloro_0N_dplot <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Control"))
 
 # model comparison
 comp_chloro_0N <- anova(lmm_chloro_0N, lmm_chloro_0N_dplot)
@@ -397,10 +397,10 @@ colnames(comb_chloro_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # N-fertilized
 # full model with all random effects
-lmm_chloro_fertilized <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+lmm_chloro_fertilized <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model without plot as a random effect
-lmm_chloro_fertilized_dplot <- lmer(sqrt(chloro) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+lmm_chloro_fertilized_dplot <- lmer(sqrt(chloro) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model comparison
 comp_chloro_fertilized <- anova(lmm_chloro_fertilized, lmm_chloro_fertilized_dplot)
@@ -426,24 +426,24 @@ colnames(comb_chloro_fertilized) <- c("Chisq", "Df", "p-value", "broad-sense-her
 
 
 
-## Rhizobium nodnum models
+## Rhizobium nodulenum models
 
 ```{r}
 # test if shoot biomass is normally distributed
-shapiro.test(metadata$nodnum) # p<0.05, transform data
+shapiro.test(metadata$nodulenum) # p<0.05, transform data
 ```
 
 
-# Nodnum heritability by year
+# nodulenum heritability by year
 
 ```{r}
 # 2008
 # full model with all random effects
-lmm_nod_2008 <- lmer(sqrt(nodnum) ~  plantsp + (1|field) + (1|harvester) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year== "2008"))
+lmm_nod_2008 <- lmer(sqrt(nodulenum) ~  plantspori + (1|field) + (1|harvester) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year== "2008"))
 Anova(lmm_nod_2008, type = 3)
 
 # model without plot as a random effect
-lmm_nod_2008_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|field) + (1|harvester) + (1|plot) , data = metadata %>% filter(dataset_year=="2008"))
+lmm_nod_2008_dplot <- lmer(sqrt(nodulenum) ~ plantspori + (1|field) + (1|harvester) + (1|plot) , data = metadata %>% filter(dataset_year=="2008"))
 Anova(lmm_nod_2008_dplot)
 
 # model comparison
@@ -469,12 +469,12 @@ colnames(comb_nod_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 #2018
 # full model with all random effects
-lmm_nod_2018 <- lmer(sqrt(nodnum) ~ plantsp + dataset_year + (plantsp:dataset_year) +(1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nod_2018 <- lmer(sqrt(nodulenum) ~ plantspori + dataset_year + (plantspori:dataset_year) +(1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year=="2018"))
 summary(lmm_nod_2018)
 Anova(lmm_nod_2018, type = 3)
 
 # model without plot as a random effect
-lmm_nod_2018_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nod_2018_dplot <- lmer(sqrt(nodulenum) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_nod_2018 <- anova(lmm_nod_2018, lmm_nod_2018_dplot)
@@ -498,15 +498,15 @@ comb_nod_2018 <- cbind(chi_nod_2018[2], Df_nod_2018[2], sig_nod_2018[2], VG_nod_
 colnames(comb_nod_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```
 
-# Nodnum heritability by N environment
+# nodulenum heritability by N environment
 
 ```{r}
 # 0N
 # full model with all random effects
-lmm_nod_0N <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
+lmm_nod_0N <- lmer(sqrt(nodulenum) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Control"))
 
 # model without plot as a random effect
-lmm_nod_0N_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+lmm_nod_0N_dplot <- lmer(sqrt(nodulenum) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Control"))
 
 # model comparison
 comp_nod_0N <- anova(lmm_nod_0N, lmm_nod_0N_dplot)
@@ -532,10 +532,10 @@ colnames(comb_nod_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # N-fertilized
 # full model with all random effects
-lmm_nod_fertilized <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+lmm_nod_fertilized <- lmer(sqrt(nodulenum) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model without plot as a random effect
-lmm_nod_fertilized_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+lmm_nod_fertilized_dplot <- lmer(sqrt(nodulenum) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model comparison
 comp_nod_fertilized <- anova(lmm_nod_fertilized, lmm_nod_fertilized_dplot)
@@ -565,7 +565,7 @@ colnames(comb_nod_fertilized) <- c("Chisq", "Df", "p-value", "broad-sense-herit"
 
 ```{r}
 # test if shoot biomass is normally distributed
-shapiro.test(metadata$meannodweight) # p<0.05, transform data
+shapiro.test(metadata$meannodulemass) # p<0.05, transform data
 ```
 
 
@@ -574,10 +574,10 @@ shapiro.test(metadata$meannodweight) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_nodn_2008 <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
+lmm_nodn_2008 <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
 
 # model without plot as a random effect
-lmm_nodn_2008_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+lmm_nodn_2008_dplot <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
 
 # model comparison
 comp_nodn_2008 <- anova(lmm_nodn_2008, lmm_nodn_2008_dplot)
@@ -602,10 +602,10 @@ colnames(comb_nodn_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 #2018
 # full model with all random effects
-lmm_nodn_2018 <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nodn_2018 <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
-lmm_nodn_2018_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nodn_2018_dplot <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
 
 # model comparison
 comp_nodn_2018 <- anova(lmm_nodn_2018, lmm_nodn_2018_dplot)
@@ -635,10 +635,10 @@ colnames(comb_nodn_2018) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 ```{r}
 # 0N
 # full model with all random effects
-lmm_nodn_0N <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="0 N"))
+lmm_nodn_0N <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Control"))
 
 # model without plot as a random effect
-lmm_nodn_0N_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="0 N"))
+lmm_nodn_0N_dplot <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Control"))
 
 # model comparison
 comp_nodn_0N <- anova(lmm_nodn_0N, lmm_nodn_0N_dplot)
@@ -664,10 +664,10 @@ colnames(comb_nodn_0N) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # N-fertilized
 # full model with all random effects
-lmm_nodn_fertilized <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(fert=="Fertilized"))
+lmm_nodn_fertilized <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model without plot as a random effect
-lmm_nodn_fertilized_dplot <- lmer(sqrt(meannodweight) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(fert=="Fertilized"))
+lmm_nodn_fertilized_dplot <- lmer(sqrt(meannodulemass) ~ plantspori + (1|harvester) + (1|field), data = metadata %>% filter(nitrogen=="Nitrogen"))
 
 # model comparison
 comp_nodn_fertilized <- anova(lmm_nodn_fertilized, lmm_nodn_fertilized_dplot)
