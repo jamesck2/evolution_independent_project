@@ -27,11 +27,11 @@ This might help us plot our data
 ```{r}
 metadata.long <- gather(metadata, key = "trait", value = "value", nodnum, meannodweight, chloro, shootmass)
 
-plants.year.sum <- metadata.long %>% group_by(trait, plantsp, dataset_year) %>% summarize(count = n(),
+plants.year.sum <- metadata.long %>% group_by(trait, plantsp, fert, dataset_year) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year) %>% summarize(count = n(),
+strains.year.sum <- metadata.long %>% group_by(trait, strain, fert, dataset_year) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
@@ -53,7 +53,15 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 
 ```{r}
 ## by year
-(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
+(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum" & fert=="Fertilized"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Year") +
+   ylab("Nodule number") +
+   theme_bw() +
+   theme(legend.position = "none")
+  )
+(plot.nodnum.year <- ggplot(data = strains.year.sum %>% filter(trait=="nodnum" & fert=="0 N"), aes(x=dataset_year, y=mean, group=strain, color=strain)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
@@ -127,11 +135,11 @@ strains.fert.sum <- metadata.long %>% group_by(trait, strain, fert) %>% summariz
 
 ```{r}
 ## by year
-(plot.shootmass.year <- ggplot(data = plants.year.sum %>% filter(trait=="shootmass"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
+(plot.shootmass.year <- ggplot(data = plants.year.sum %>% filter(trait=="nodnum" & fert=="0 N"), aes(x=dataset_year, y=mean, group=plantsp, color=plantsp)) +
    geom_point(size=3, position = position_dodge(0.3)) +
    geom_line(position = position_dodge(0.3)) +
    xlab("Year") +
-   ylab("Shoot biomass") +
+   ylab("Nodnum") +
    theme_bw()
   )
 
@@ -164,10 +172,12 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) + (1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata)
+summary(lmm_shoot_2008)
+Anova(lmm_shoot_2008, type = 3)
 
 # model without plot as a random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) + (1|harvester) + (1|field) + (1|strain), data = metadata)
 
 # model comparison
 comp_shoot_2008 <- anova(lmm_shoot_2008, lmm_shoot_2008_dplot)
@@ -193,7 +203,7 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 # 2018
 # full model with all random effects
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~ plantsp + dataset_year + (plantsp:dataset_year) +(1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
 
 # model without plot as a random effect
 lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
@@ -429,10 +439,12 @@ shapiro.test(metadata$nodnum) # p<0.05, transform data
 ```{r}
 # 2008
 # full model with all random effects
-lmm_nod_2008 <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2008"))
+lmm_nod_2008 <- lmer(sqrt(nodnum) ~  plantsp + (1|field) + (1|harvester) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year== "2008"))
+Anova(lmm_nod_2008, type = 3)
 
 # model without plot as a random effect
-lmm_nod_2008_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2008"))
+lmm_nod_2008_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|field) + (1|harvester) + (1|plot) , data = metadata %>% filter(dataset_year=="2008"))
+Anova(lmm_nod_2008_dplot)
 
 # model comparison
 comp_nod_2008 <- anova(lmm_nod_2008, lmm_nod_2008_dplot)
@@ -457,7 +469,9 @@ colnames(comb_nod_2008) <- c("Chisq", "Df", "p-value", "broad-sense-herit")
 
 #2018
 # full model with all random effects
-lmm_nod_2008 <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field) + (1|plot), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nod_2018 <- lmer(sqrt(nodnum) ~ plantsp + dataset_year + (plantsp:dataset_year) +(1|harvester) + (1|field) + (1|plot) + (1|strain), data = metadata %>% filter(dataset_year=="2018"))
+summary(lmm_nod_2018)
+Anova(lmm_nod_2018, type = 3)
 
 # model without plot as a random effect
 lmm_nod_2018_dplot <- lmer(sqrt(nodnum) ~ plantsp + (1|harvester) + (1|field), data = metadata %>% filter(dataset_year=="2018"))
