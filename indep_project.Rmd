@@ -315,11 +315,11 @@ shapiro.test(metadata$chloro) # p<0.05, transform data
 
 ```{r}
 # 2008
-lmm_chloro_2008 <- lmer(sqrt(chloro) ~ nitrogen + leafnum + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
+lmm_chloro_2008 <- lmer(sqrt(chloro) ~ nitrogen + leafnum + nitrogen:leafnum +(1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
 Anova(lmm_chloro_2008, type = 3)
 
 # full model minus strain random effect
-lmm_chloro_2008_dplot <- lmer(sqrt(chloro) ~ nitrogen + leafnum + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
+lmm_chloro_2008_dplot <- lmer(sqrt(chloro) ~ nitrogen + leafnum + nitrogen:leafnum + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
 
 
 # model comparison
