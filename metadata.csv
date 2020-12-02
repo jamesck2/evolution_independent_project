@@ -1,1055 +1,1070 @@
-plant,strain,dataset_year,field,plot,nitrogen,plantsp,harvester,chloro,nodnum,meannodweight,shootmass,fert
-8,729,2018,1,1C,Control,T. hybridum,JL,NA,13,0.0522,0.0031,0 N
-11,3,2018,6,6C,Control,T. repens,MH,41.6,7,2.2606,0.0664,0 N
-12,3,2018,6,6C,Control,T. repens,CA,11.3,0,0,0.0022,0 N
-14,493,2018,5,5C,Control,T. pratense,JL,38.6,16,1.8409,0.0754,0 N
-15,901,2018,2,2C,Control,T. repens,JL,44.9,35,0.3957,0.1533,0 N
-17,493,2018,5,5C,Control,T. pratense,SJ,43.7,25,1.0435,0.1533,0 N
-28,100,2018,5,5C,Control,T. hybridum,JL,41.4,18,0.4782,0.1139,0 N
-35,415,2018,3,3C,Control,T. repens,JL,38.7,53,0.0485,0.0738,0 N
-56,559,2018,4,4C,Control,T. pratense,TG,30.1,37,0.1197,0.0187,0 N
-62,499,2018,3,3C,Control,T. pratense,TG,34.2,2,1.467,0.0365,0 N
-63,758,2018,1,1C,Control,T. repens,JL,37.6,13,0.1086,0.0333,0 N
-72,493,2018,5,5C,Control,T. pratense,SJ,42.8,6,0.4937,0.0583,0 N
-76,861,2018,5,5C,Control,T. repens,SJ,43.3,8,0.256,0.0733,0 N
-80,228,2018,1,1C,Control,T. pratense,MH,43.4,470,0.0565,0.2771,0 N
-83,901,2018,2,2C,Control,T. repens,MH,38.4,9,0.6577,0.1096,0 N
-92,325,2018,4,4C,Control,T. repens,MH,20,20,0.3143,0.0262,0 N
-100,758,2018,1,1C,Control,T. repens,SJ,24.8,23,0.5547,0.0368,0 N
-101,758,2018,1,1C,Control,T. repens,CA,39.7,31,0.167,0.0355,0 N
-118,837,2018,3,3C,Control,T. hybridum,SJ,31.6,10,0.1535,0.0188,0 N
-120,438,2018,4,4C,Control,T. hybridum,SJ,28,25,0.2569,0.024,0 N
-131,726,2018,6,6C,Control,T. hybridum,SC,46.9,0,0,0.0495,0 N
-139,706,2018,4,4C,Control,T. hybridum,CA,38.4,32,0.9957,0.2194,0 N
-149,108,2018,3,3C,Control,T. hybridum,SC,42.5,29,0.2303,0.0902,0 N
-155,461,2018,2,2C,Control,T. hybridum,SC,NA,4,0.5595,0.0033,0 N
-157,461,2018,2,2C,Control,T. hybridum,JL,46.3,11,0.6665,0.0337,0 N
-177,461,2018,2,2C,Control,T. hybridum,SJ,25.7,11,0.8507,0.0218,0 N
-186,636,2018,1,1C,Control,T. repens,JL,17.4,23,0.0841,0.0127,0 N
-190,499,2018,3,3C,Control,T. pratense,JL,41.1,13,1.9941,0.1068,0 N
-193,636,2018,1,1C,Control,T. repens,JL,47.1,30,0.6344,0.1482,0 N
-204,462,2018,5,5C,Control,T. hybridum,JL,39.8,36,1.1302,0.1595,0 N
-214,160,2018,5,5C,Control,T. pratense,SJ,38.6,18,0.4253,0.1328,0 N
-231,729,2018,1,1C,Control,T. hybridum,SJ,33.4,5,0.1558,0.0144,0 N
-233,461,2018,2,2C,Control,T. hybridum,MH,35.1,10,0.1088,0.1525,0 N
-235,636,2018,1,1C,Control,T. repens,MH,46.9,2,0.038,0.1057,0 N
-237,460,2018,3,3C,Control,T. repens,SJ,41.5,34,0.1697,0.1498,0 N
-240,837,2018,3,3C,Control,T. hybridum,SJ,34.4,10,0.3763,0.0478,0 N
-244,627,2018,6,6C,Control,T. repens,MH,37,13,1.1182,0.0728,0 N
-245,180,2018,5,5C,Control,T. repens,MH,45.4,180,0.0457,0.2266,0 N
-250,706,2018,4,4C,Control,T. hybridum,CA,29.4,0,0,0.0045,0 N
-252,726,2018,6,6C,Control,T. hybridum,SJ,38.7,3,1.0427,0.0603,0 N
-258,228,2018,1,1C,Control,T. pratense,SJ,47.5,11,0.0206,0.1716,0 N
-264,344,2018,6,6C,Control,T. pratense,SJ,41.7,3,0.0077,0.2034,0 N
-267,559,2018,4,4C,Control,T. pratense,SJ,33.1,20,1.1772,0.0523,0 N
-285,726,2018,6,6C,Control,T. hybridum,SJ,44.6,0,0,0.0309,0 N
-289,3,2018,6,6C,Control,T. repens,JL,27.4,8,0.8476,0.0223,0 N
-290,3,2018,6,6C,Control,T. repens,NA,NA,NA,NA,0.023,0 N
-292,499,2018,3,3C,Control,T. pratense,SJ,45.4,39,0.0585,0.1943,0 N
-314,50,2018,1,1C,Control,T. pratense,CA,30.6,24,0.0895,0.026,0 N
-320,145,2018,3,3C,Control,T. pratense,JL,47.2,24,2.1382,0.1381,0 N
-321,308,2018,6,6C,Control,T. pratense,JL,49.3,18,0.4356,0.0712,0 N
-329,499,2018,3,3C,Control,T. pratense,SJ,40.3,20,0.7735,0.2559,0 N
-334,901,2018,2,2C,Control,T. repens,SJ,38.5,5,0.0312,0.0376,0 N
-339,636,2018,1,1C,Control,T. repens,CA,48.9,18,0.2651,0.1143,0 N
-346,499,2018,3,3C,Control,T. pratense,MH,42.4,4,0.1475,0.1329,0 N
-362,74,2018,1,1C,Control,T. hybridum,TG,39.1,48,0.2061,0.1595,0 N
-379,462,2018,5,5C,Control,T. hybridum,TG,44.4,16,0.3016,0.0614,0 N
-391,438,2018,4,4C,Control,T. hybridum,MH,40.8,85,0.2605,0.1895,0 N
-394,449,2018,2,2C,Control,T. hybridum,MH,32.9,130,0.5054,0.231,0 N
-396,706,2018,4,4C,Control,T. hybridum,MH,41,12,0.84,0.0463,0 N
-401,726,2018,6,6C,Control,T. hybridum,SJ,41.7,6,0.8578,0.1099,0 N
-404,438,2018,4,4C,Control,T. hybridum,SJ,29.4,14,0.134,0.0454,0 N
-406,627,2018,6,6C,Control,T. repens,TG,36.7,34,0.7386,0.1997,0 N
-407,113,2018,6,6C,Control,T. hybridum,TG,29.2,33,0.6325,0.0276,0 N
-410,308,2018,6,6C,Control,T. pratense,TG,29.7,5,0.3018,0.0108,0 N
-418,180,2018,5,5C,Control,T. repens,CA,25.7,15,0.2364,0.0122,0 N
-422,861,2018,5,5C,Control,T. repens,TG,41.6,11,1.1766,0.0697,0 N
-445,3,2018,6,6C,Control,T. repens,JL,27.1,116,0.1562,0.1911,0 N
-458,180,2018,5,5C,Control,T. repens,JL,19.1,116,0.2096,0.0378,0 N
-459,837,2018,3,3C,Control,T. hybridum,JL,16.5,32,0.8324,0.0379,0 N
-460,837,2018,3,3C,Control,T. hybridum,CA,30.9,36,0.2793,0.018,0 N
-474,3,2018,6,6C,Control,T. repens,JL,32.2,64,0.1374,0.2945,0 N
-478,837,2018,3,3C,Control,T. hybridum,JL,36,100,0.4778,0.1656,0 N
-481,108,2018,3,3C,Control,T. hybridum,JL,22.8,31,0.6477,0.0243,0 N
-486,160,2018,5,5C,Control,T. pratense,JL,39.3,8,0.5641,0.046,0 N
-487,438,2018,4,4C,Control,T. hybridum,CA,34.1,12,0.3495,0.0175,0 N
-492,74,2018,1,1C,Control,T. hybridum,JL,37.9,18,0.7936,0.0446,0 N
-495,113,2018,6,6C,Control,T. hybridum,JL,45.2,83,0.3658,0.2009,0 N
-506,636,2018,1,1C,Control,T. repens,TG,34.1,21,0.9616,0.0394,0 N
-511,344,2018,6,6C,Control,T. pratense,TG,40.3,71,0.2116,0.245,0 N
-512,180,2018,5,5C,Control,T. repens,TG,53.1,87,0.0742,0.1359,0 N
-525,228,2018,1,1C,Control,T. pratense,TG,39,16,1.193,0.0648,0 N
-534,228,2018,1,1C,Control,T. pratense,SJ,41.9,84,0.037,0.1856,0 N
-538,758,2018,1,1C,Control,T. repens,TG,33.8,32,0.3901,0.0316,0 N
-541,160,2018,5,5C,Control,T. pratense,TG,38.7,21,0.7582,0.0442,0 N
-542,100,2018,5,5C,Control,T. hybridum,TG,38.6,23,1.0865,0.1072,0 N
-554,318,2018,2,2C,Control,T. pratense,NA,NA,NA,NA,NA,0 N
-555,706,2018,4,4C,Control,T. hybridum,JL,48.1,81,0.6288,0.2232,0 N
-559,460,2018,3,3C,Control,T. repens,SJ,39.3,26,0.213,0.0303,0 N
-572,493,2018,5,5C,Control,T. pratense,JL,27.5,6,2.2713,0.0425,0 N
-575,100,2018,5,5C,Control,T. hybridum,JL,41.9,57,1.4241,0.3252,0 N
-576,100,2018,5,5C,Control,T. hybridum,CA,24.6,13,0.099,0.0654,0 N
-587,228,2018,1,1C,Control,T. pratense,JL,10.5,14,0.1952,0.016,0 N
-591,113,2018,6,6C,Control,T. hybridum,JL,41.8,24,0.2329,0.1368,0 N
-608,100,2018,5,5C,Control,T. hybridum,MH,37.7,15,0.1976,0.1929,0 N
-615,861,2018,5,5C,Control,T. repens,SJ,23.4,45,0.7963,0.1034,0 N
-629,559,2018,4,4C,Control,T. pratense,MJH,37.8,23,0.0294,0.0911,0 N
-632,325,2018,4,4C,Control,T. repens,SJ,36.6,35,0.0674,0.2185,0 N
-633,173,2018,2,2C,Control,T. repens,MJH,39.2,90,0.1375,0.3211,0 N
-638,901,2018,2,2C,Control,T. repens,MJH,37.7,48,0.1804,0.0294,0 N
-645,74,2018,1,1C,Control,T. hybridum,SJ,38.7,2,0.896,0.0642,0 N
-647,160,2018,5,5C,Control,T. pratense,MJH,12.8,7,0.1789,0.0146,0 N
-648,308,2018,6,6C,Control,T. pratense,SJ,NA,19,0.0571,0.0118,0 N
-650,499,2018,3,3C,Control,T. pratense,CA,47.3,16,0.2154,0.1905,0 N
-666,325,2018,4,4C,Control,T. repens,MH,41.3,90,0.3428,0.2015,0 N
-685,173,2018,2,2C,Control,T. repens,SJ,35.9,23,0.5078,0.1528,0 N
-690,461,2018,2,2C,Control,T. hybridum,SJ,33.1,8,0.0208,0.0499,0 N
-703,145,2018,3,3C,Control,T. pratense,NA,29,NA,NA,NA,0 N
-704,861,2018,5,5C,Control,T. repens,SJ,33,18,0.3686,0.2172,0 N
-717,74,2018,1,1C,Control,T. hybridum,MH,49.2,22,1.6959,0.4622,0 N
-728,493,2018,5,5C,Control,T. pratense,MH,48.4,7,0.9817,0.04,0 N
-737,415,2018,3,3C,Control,T. repens,MH,NA,NA,NA,0.0039,0 N
-750,318,2018,2,2C,Control,T. pratense,MH,NA,NA,NA,NA,0 N
-753,729,2018,1,1C,Control,T. hybridum,NA,NA,NA,NA,NA,0 N
-755,627,2018,6,6C,Control,T. repens,MH,45.6,45,0.1348,0.2118,0 N
-756,180,2018,5,5C,Control,T. repens,MH,NA,NA,NA,NA,0 N
-759,145,2018,3,3C,Control,T. pratense,MH,38.9,45,0.416,0.2332,0 N
-768,173,2008,2,2A,Control,T. repens,CPT,45.8,64,0.0002375,0.15,0 N
-769,559,2008,4,4A,Control,T. hybridum,CPT,36.3,1,NA,0.06,0 N
-778,726,2008,6,6A,Control,T. hybridum,TB,45.4,49,0.000212245,0.32,0 N
-779,145,2008,3,3A,Control,T. hybridum,JL,29.2,0,NA,0.12,0 N
-780,493,2008,5,5A,Control,T. repens,JL,43.6,28,0.000257143,0.08,0 N
-783,110,2008,4,4A,Control,T. pratense,JL,35.8,99,0.000177778,0.31,0 N
-784,901,2008,2,2A,Control,T. hybridum,JL,46.1,41,0.000431707,0.17,0 N
-786,228,2008,1,1A,Control,T. hybridum,JL,29.5,60,6.17E-05,0.16,0 N
-787,50,2008,1,1A,Control,T. repens,JL,44.2,64,0.000160938,0.14,0 N
-790,3,2008,6,6A,Control,T. repens,JL,38.8,73,0.000454795,0.37,0 N
-793,3,2008,6,6A,Control,T. hybridum,JJ,35.7,36,0.000225,0.12,0 N
-795,113,2008,6,6A,Control,T. repens,CPT,43.5,105,8.10E-05,0.24,0 N
-797,318,2008,2,2A,Control,T. hybridum,JL,50.2,87,0.000254023,0.44,0 N
-802,861,2008,5,5A,Control,T. pratense,JL,50.5,107,0.000388785,0.34,0 N
-804,627,2008,6,6A,Control,T. hybridum,TB,44.5,64,0.000282813,0.32,0 N
-805,493,2008,5,5A,Control,T. pratense,JJ,53.3,40,0.00036,0.46,0 N
-814,50,2008,1,1A,Control,T. pratense,JL,44.8,258,0.000146899,0.22,0 N
-830,145,2008,3,3A,Control,T. pratense,CPT,53.3,66,0.00030303,0.75,0 N
-831,415,2008,3,3A,Control,T. repens,TB,51.1,60,0.000155,0.34,0 N
-832,110,2008,4,4A,Control,T. hybridum,MH,43.7,62,7.26E-05,0.38,0 N
-833,308,2008,6,6A,Control,T. pratense,MH,49.9,76,0.000121053,0.28,0 N
-835,559,2008,4,4A,Control,T. pratense,CPT,43.2,31,0.001096774,0.3,0 N
-838,729,2008,1,1A,Control,T. hybridum,MH,19,55,0.000205455,0.13,0 N
-841,108,2008,3,3A,Control,T. pratense,CPT,50.3,56,0.000178571,0.59,0 N
-843,145,2008,3,3A,Control,T. repens,DW,49.4,112,0.000199107,0.26,0 N
-847,100,2008,5,5A,Control,T. pratense,JL,44.8,124,0.000184677,0.22,0 N
-849,729,2008,1,1A,Control,T. hybridum,MH,26.7,388,2.99E-05,0.13,0 N
-859,228,2008,1,1A,Control,T. hybridum,JL,52.2,24,5.83E-05,0.46,0 N
-860,559,2008,4,4A,Control,T. hybridum,JL,37,3,0.001,0.21,0 N
-863,113,2008,6,6A,Control,T. pratense,CPT,43.8,195,6.10E-05,0.25,0 N
-865,308,2008,6,6A,Control,T. repens,JL,51.3,48,0.000335417,0.4,0 N
-867,3,2008,6,6A,Control,T. repens,DW,55.8,41,0.000502439,0.35,0 N
-877,438,2008,4,4A,Control,T. pratense,JL,33.5,114,0.000401754,0.18,0 N
-878,462,2008,5,5A,Control,T. repens,DW,45.7,93,0.000294624,1.5,0 N
-880,108,2008,3,3A,Control,T. repens,JL,51.7,79,0.000435443,0.7,0 N
-883,228,2008,1,1A,Control,T. repens,JL,46.7,41,0.000468293,0.55,0 N
-885,50,2008,1,1A,Control,T. pratense,JL,44.7,202,0.000446535,0.48,0 N
-890,460,2008,3,3A,Control,T. hybridum,JL,42.8,190,0.000265263,0.22,0 N
-891,344,2008,6,6A,Control,T. repens,JL,51.7,118,0.000254237,0.54,0 N
-893,493,2008,5,5A,Control,T. repens,JL,45.4,37,0.001132432,0.65,0 N
-902,3,2008,6,6A,Control,T. hybridum,JL,5.9,1,5.00E-05,0.07,0 N
-905,110,2008,4,4A,Control,T. pratense,JL,55.7,159,0.000315094,0.81,0 N
-907,110,2008,4,4A,Control,T. repens,MH,49.6,400,0.0001875,0.58,0 N
-909,559,2008,4,4A,Control,T. hybridum,JL,NA,2,0.00105,0.13,0 N
-910,3,2008,6,6A,Control,T. pratense,JL,45.5,37,0.001108108,0.33,0 N
-911,449,2008,2,2A,Control,T. repens,ES,26,1010,2.41E-05,0.28,0 N
-913,462,2008,5,5A,Control,T. pratense,ES,50.3,86,5.23E-05,0.63,0 N
-917,108,2008,3,3A,Control,T. pratense,JL,46.3,240,0.000236,0.3,0 N
-922,318,2008,2,2A,Control,T. pratense,DW,40.8,127,0.000376364,0.61,0 N
-923,837,2008,3,3A,Control,T. repens,DW,44.1,186,0.000258252,0.42,0 N
-926,460,2008,3,3A,Control,T. hybridum,MH,NA,547,0.000298,0.73,0 N
-937,344,2008,6,6A,Control,T. hybridum,DW,18.4,372,1.88E-05,0.18,0 N
-941,173,2008,2,2A,Control,T. repens,DW,43.9,283,0.000412381,0.81,0 N
-945,706,2008,4,4A,Control,T. pratense,MH,54.8,378,9.88E-05,0.73,0 N
-949,729,2008,1,1A,Control,T. hybridum,JL,21.4,156,0.000141,0.08,0 N
-953,499,2008,3,3A,Control,T. hybridum,JL,48.3,65,0.000544615,0.84,0 N
-961,325,2008,4,4A,Control,T. repens,DW,55.7,94,0.000340426,0.56,0 N
-966,559,2008,4,4A,Control,T. repens,DW,33.1,122,0.00040098,0.17,0 N
-971,100,2008,5,5A,Control,T. pratense,JL,52,205,0.000401,1.3,0 N
-974,758,2008,1,1A,Control,T. hybridum,JL,41.7,66,0.00024697,0.58,0 N
-980,460,2008,3,3A,Control,T. pratense,JL,37.4,255,0.000455,0.41,0 N
-981,758,2008,1,1A,Control,T. hybridum,JL,49,175,0.000328,0.37,0 N
-985,100,2008,5,5A,Control,T. pratense,DW,50.3,407,0.00040297,0.96,0 N
-993,325,2008,4,4A,Control,T. hybridum,DW,47.1,368,0.000309709,0.81,0 N
-995,308,2008,6,6A,Control,T. repens,JL,46.5,73,0.000352055,0.54,0 N
-996,145,2008,3,3A,Control,T. pratense,JL,44.8,96,0.00049375,0.7,0 N
-1004,100,2008,5,5A,Control,T. hybridum,JL,40.5,92,0.000443478,0.48,0 N
-1005,50,2008,1,1A,Control,T. repens,JL,45,105,0.000288571,0.41,0 N
-1006,726,2008,6,6A,Control,T. pratense,DW,37.9,377,0.000482,0.86,0 N
-1008,837,2008,3,3A,Control,T. pratense,DW,44.6,261,0.000324,0.39,0 N
-1013,180,2008,5,5A,Control,T. pratense,DW,43.1,388,4.22E-05,0.59,0 N
-1021,758,2008,1,1A,Control,T. repens,JL,34.5,28,0.000392857,0.14,0 N
-1033,636,2008,1,1A,Control,T. repens,DW,54.5,141,0.000294,1.08,0 N
-1036,180,2008,5,5A,Control,T. repens,JL,42.4,280,0.000461,1.08,0 N
-1039,837,2008,3,3A,Control,T. pratense,MH,50.3,138,0.000281,0.54,0 N
-1041,726,2008,6,6A,Control,T. hybridum,MH,44.1,75,0.000461333,0.81,0 N
-1053,493,2008,5,5A,Control,T. pratense,MH,42.8,147,0.000124,0.33,0 N
-1060,627,2008,6,6A,Control,T. repens,MH,45.7,265,0.000233,0.8,0 N
-1061,461,2008,2,2A,Control,T. repens,MH,53.5,67,0.000316418,NA,0 N
-1062,415,2008,3,3A,Control,T. hybridum,JL,46.8,165,0.00019,0.91,0 N
-1065,3,2008,6,6A,Control,T. pratense,MH,NA,0,NA,0.005,0 N
-1084,636,2008,1,1A,Control,T. pratense,JL,45.5,198,7.90E-05,0.91,0 N
-1087,100,2008,5,5A,Control,T. hybridum,JL,45.8,78,0.000491026,0.78,0 N
-1093,50,2008,1,1A,Control,T. pratense,JL,47.3,191,1.00E-04,0.59,0 N
-1097,145,2008,3,3A,Control,T. pratense,DW,34.5,154,0.00069703,0.42,0 N
-1098,758,2008,1,1A,Control,T. repens,DW,41.7,402,0.00047549,1.18,0 N
-1107,50,2008,1,1A,Control,T. hybridum,TS,25.9,174,0.000524,0.36,0 N
-1112,160,2008,5,5A,Control,T. hybridum,MH,57,55,0.000772727,0.52,0 N
-1114,180,2008,5,5A,Control,T. hybridum,JL,42.9,337,7.80E-05,0.72,0 N
-1117,308,2008,6,6A,Control,T. pratense,JL,38.6,79,0.000210127,2.65,0 N
-1124,493,2008,5,5A,Control,T. hybridum,DW,48.6,109,0.000456,0.39,0 N
-1127,100,2008,5,5A,Control,T. hybridum,DW,47.4,122,0.000393,0.95,0 N
-1129,325,2008,4,4A,Control,T. repens,TS,49.2,94,0.00047234,0.88,0 N
-1130,110,2008,4,4A,Control,T. repens,MH,48.2,84,0.000265476,0.83,0 N
-1131,318,2008,2,2A,Control,T. repens,DW,45.8,94,7.02E-05,0.64,0 N
-1132,461,2008,2,2A,Control,T. pratense,DW,55,220,0.00029902,0.69,0 N
-1135,415,2008,3,3A,Control,T. repens,JL,52.3,163,0.00049,1.32,0 N
-1137,462,2008,5,5A,Control,T. repens,MH,48.8,135,0.000284,0.84,0 N
-1138,74,2008,1,1A,Control,T. repens,JL,50.2,40,0.000275,0.87,0 N
-1139,861,2008,5,5A,Control,T. hybridum,MH,45.5,330,5.80E-05,0.79,0 N
-1140,228,2008,1,1A,Control,T. pratense,TS,52.6,78,0.000285897,0.73,0 N
-22,762,2018,5,5N,Nitrogen,T. pratense,SJ,45.6,240,0.0739,0.1586,0 N
-26,643,2018,2,2N,Nitrogen,T. pratense,CA,38.9,34,1.1174,0.1629,0 N
-27,262,2018,2,2N,Nitrogen,T. repens,SJ,35.8,21,0.6582,0.1432,0 N
-46,651,2018,6,6N,Nitrogen,T. hybridum,JL,19.5,8,0.0438,0.0325,0 N
-57,381,2018,3,3N,Nitrogen,T. repens,TG,NA,13,0.0863,0.0044,0 N
-59,40,2018,3,3N,Nitrogen,T. repens,JL,29.3,1,2.232,0.007,0 N
-68,97,2018,1,1N,Nitrogen,T. hybridum,SJ,NA,10,0.064,0.0059,0 N
-87,328,2018,2,2N,Nitrogen,T. pratense,MH,41,10,0.4799,0.2034,0 N
-89,40,2018,3,3N,Nitrogen,T. repens,MH,29.8,5,0.4148,0.0097,0 N
-91,596,2018,1,1N,Nitrogen,T. repens,SJ,40.2,4,0.7888,0.0973,0 N
-97,209,2018,6,6N,Nitrogen,T. hybridum,TG,46.8,114,0.1133,0.2687,0 N
-99,859,2018,4,4N,Nitrogen,T. repens,TG,40.8,179,0.2867,0.2142,0 N
-103,773,2018,4,4N,Nitrogen,T. pratense,TG,31.9,20,0.3172,0.0157,0 N
-107,116,2018,1,1N,Nitrogen,T. pratense,SJ,42,25,0.207,0.1394,0 N
-117,651,2018,6,6N,Nitrogen,T. hybridum,SJ,37.3,9,0.2113,0.1804,0 N
-124,328,2018,2,2N,Nitrogen,T. pratense,SJ,30.1,5,1.343,0.0385,0 N
-154,156,2018,2,2N,Nitrogen,T. hybridum,CA,30.6,20,0.281,0.0233,0 N
-164,762,2018,5,5N,Nitrogen,T. pratense,SJ,NA,39,0.0586,0.0143,0 N
-166,596,2018,1,1N,Nitrogen,T. repens,MH,47.3,19,0.0738,0.13,0 N
-173,475,2018,4,4N,Nitrogen,T. repens,SJ,36.4,18,0.2762,0.1133,0 N
-180,527,2018,3,3N,Nitrogen,T. pratense,SJ,43.4,32,0.1876,0.086,0 N
-189,16,2018,3,3N,Nitrogen,T. hybridum,JL,38.3,103,1.3818,0.1275,0 N
-194,796,2018,2,2N,Nitrogen,T. hybridum,JL,18.2,28,0.1538,0.0229,0 N
-224,538,2018,1,1N,Nitrogen,T. hybridum,MH,45.2,18,0.5412,0.0945,0 N
-228,56,2018,5,5N,Nitrogen,T. repens,SJ,45.8,12,0.8385,0.1151,0 N
-229,538,2018,1,1N,Nitrogen,T. hybridum,SJ,42.4,6,0.1032,0.2692,0 N
-256,717,2018,6,6N,Nitrogen,T. pratense,MH,43.3,40,0.4926,0.0544,0 N
-275,717,2018,6,6N,Nitrogen,T. pratense,SJ,45.4,8,0.6057,0.1244,0 N
-278,596,2018,1,1N,Nitrogen,T. repens,SJ,49.7,23,0.1483,0.2674,0 N
-298,859,2018,4,4N,Nitrogen,T. repens,MH,19,25,0.0378,0.0045,0 N
-302,762,2018,5,5N,Nitrogen,T. pratense,MH,29.3,150,0.0333,0.2564,0 N
-331,156,2018,2,2N,Nitrogen,T. hybridum,CA,39.2,8,0.5004,0.0238,0 N
-332,596,2018,1,1N,Nitrogen,T. repens,SJ,46.8,13,0.5357,0.2519,0 N
-363,773,2018,4,4N,Nitrogen,T. pratense,TG,45.5,63,0.1522,0.1613,0 N
-374,796,2018,2,2N,Nitrogen,T. hybridum,TG,14.4,75,0.1499,0.0169,0 N
-384,97,2018,1,1N,Nitrogen,T. hybridum,MJH,21.6,40,0.1736,0.0312,0 N
-392,538,2018,1,1N,Nitrogen,T. hybridum,TG,41.9,17,0.219,0.1642,0 N
-397,773,2018,4,4N,Nitrogen,T. pratense,SJ,NA,2,1.428,0.0117,0 N
-399,381,2018,3,3N,Nitrogen,T. repens,TG,33.9,17,0.9678,0.0394,0 N
-403,56,2018,5,5N,Nitrogen,T. repens,TG,43.9,22,2.1319,0.1499,0 N
-414,328,2018,2,2N,Nitrogen,T. pratense,TG,37.3,17,1.7586,0.0549,0 N
-426,527,2018,3,3N,Nitrogen,T. pratense,JL,40.9,70,0.5369,0.1695,0 N
-430,643,2018,2,2N,Nitrogen,T. pratense,JL,32.1,10,0.8133,0.0212,0 N
-440,475,2018,4,4N,Nitrogen,T. repens,CA,33.6,25,0.425,0.221,0 N
-446,156,2018,2,2N,Nitrogen,T. hybridum,JL,37,35,0.2263,0.1673,0 N
-454,156,2018,2,2N,Nitrogen,T. hybridum,CA,45.5,102,0.2761,0.3045,0 N
-456,643,2018,2,2N,Nitrogen,T. pratense,JL,33.1,57,0.6025,0.1799,0 N
-464,577,2018,3,3N,Nitrogen,T. hybridum,JL,38.5,8,1.0354,0.1013,0 N
-471,328,2018,2,2N,Nitrogen,T. pratense,SJ,42.5,1,2.496,0.0466,0 N
-489,643,2018,2,2N,Nitrogen,T. pratense,JL,33.6,10,1.1033,0.0266,0 N
-496,61,2018,5,5N,Nitrogen,T. pratense,JL,38.6,42,1.1976,0.0984,0 N
-517,699,2018,5,5N,Nitrogen,T. repens,JL,44.4,78,0.0364,0.2608,0 N
-520,40,2018,3,3N,Nitrogen,T. repens,JL,47.5,15,3.2645,0.2394,0 N
-521,773,2018,4,4N,Nitrogen,T. pratense,TG,44.4,53,1.4053,0.1095,0 N
-527,61,2018,5,5N,Nitrogen,T. pratense,SJ,37.6,4,2.8958,0.1128,0 N
-536,596,2018,1,1N,Nitrogen,T. repens,CA,37.8,26,0.4453,0.2203,0 N
-549,511,2018,3,3N,Nitrogen,T. pratense,MH,27.6,150,0.0405,0.2086,0 N
-561,56,2018,5,5N,Nitrogen,T. repens,MH,38.6,6,0.2227,0.0695,0 N
-568,262,2018,2,2N,Nitrogen,T. repens,JL,40.5,12,0.6828,0.031,0 N
-585,538,2018,1,1N,Nitrogen,T. hybridum,JL,47.1,6,1.6592,0.1634,0 N
-589,209,2018,6,6N,Nitrogen,T. hybridum,JL,22.2,100,0.4205,0.2236,0 N
-604,40,2018,3,3N,Nitrogen,T. repens,JL,NA,11,2.4027,0.2289,0 N
-607,262,2018,2,2N,Nitrogen,T. repens,JL,29.5,170,0.277,0.1645,0 N
-609,538,2018,1,1N,Nitrogen,T. hybridum,JL,41.3,6,3.671,0.0919,0 N
-610,209,2018,6,6N,Nitrogen,T. hybridum,MH,22.7,25,0.2061,0.0189,0 N
-613,231,2018,6,6N,Nitrogen,T. repens,JL,36.6,57,0.4047,0.043,0 N
-626,478,2018,2,2N,Nitrogen,T. repens,SJ,33.7,8,0.0545,0.0186,0 N
-635,16,2018,3,3N,Nitrogen,T. hybridum,MJH,48.2,16,0.7973,0.0668,0 N
-654,40,2018,3,3N,Nitrogen,T. repens,SJ,30.5,5,2.2964,0.0852,0 N
-662,16,2018,3,3N,Nitrogen,T. hybridum,MH,NA,NA,NA,NA,0 N
-673,796,2018,2,2N,Nitrogen,T. hybridum,SJ,48.9,24,0.0656,0.1681,0 N
-679,475,2018,4,4N,Nitrogen,T. repens,SJ,31.7,5,0.028,0.0335,0 N
-701,796,2018,2,2N,Nitrogen,T. hybridum,SJ,35.7,82,0.0368,0.1973,0 N
-709,699,2018,5,5N,Nitrogen,T. repens,SJ,48.3,15,0.0311,0.0376,0 N
-718,262,2018,2,2N,Nitrogen,T. repens,MH,45,72,0.4551,0.3022,0 N
-723,231,2018,6,6N,Nitrogen,T. repens,MH,40.7,65,0.0716,0.1656,0 N
-730,511,2018,3,3N,Nitrogen,T. pratense,MH,NA,20,0.1003,0.0072,0 N
-738,116,2018,1,1N,Nitrogen,T. pratense,MH,NA,NA,NA,NA,0 N
-739,97,2018,1,1N,Nitrogen,T. hybridum,MH,14.2,20,0.0924,0.0345,0 N
-741,40,2018,3,3N,Nitrogen,T. repens,MH,29.3,23,0.8223,0.0524,0 N
-757,262,2018,2,2N,Nitrogen,T. repens,NA,NA,NA,NA,NA,0 N
-760,209,2018,6,6N,Nitrogen,T. hybridum,MH,44.2,250,0.0613,0.3564,0 N
-765,859,2008,4,4B,Nitrogen,T. hybridum,CPT,34.6,83,6.51E-05,0.09,0 N
-766,56,2008,5,5B,Nitrogen,T. hybridum,CPT,43.3,0,NA,0.2,0 N
-767,328,2008,2,2B,Nitrogen,T. hybridum,CPT,41,58,9.14E-05,0.09,0 N
-782,116,2008,1,1B,Nitrogen,T. hybridum,KK,45.4,82,0.000121951,0.41,0 N
-788,773,2008,4,4B,Nitrogen,T. hybridum,JL,NA,0,NA,0.01,0 N
-791,116,2008,1,1B,Nitrogen,T. pratense,EM,48.8,94,0.000126596,0.39,0 N
-794,643,2008,2,2B,Nitrogen,T. pratense,JL,39.5,0,NA,0.17,0 N
-801,262,2008,2,2B,Nitrogen,T. repens,TB,42.6,36,0.000361111,0.08,0 N
-803,511,2008,3,3B,Nitrogen,T. repens,JL,50.7,49,0.000306122,0.3,0 N
-813,231,2008,6,6B,Nitrogen,T. pratense,NA,20.8,170,4.00E-05,0.09,0 N
-815,796,2008,2,2B,Nitrogen,T. pratense,MH,37.8,202,3.32E-05,0.18,0 N
-816,61,2008,5,5B,Nitrogen,T. repens,JL,43.9,97,0.000380412,0.36,0 N
-844,527,2008,3,3B,Nitrogen,T. pratense,DW,42.7,148,7.77E-05,0.25,0 N
-850,97,2008,1,1B,Nitrogen,T. pratense,MH,34.8,220,0.000148636,0.39,0 N
-855,773,2008,4,4B,Nitrogen,T. pratense,JL,32,68,0.000536765,0.22,0 N
-856,699,2008,5,5B,Nitrogen,T. repens,MH,20.4,556,2.57E-05,0.25,0 N
-866,577,2008,3,3B,Nitrogen,T. hybridum,JL,23.6,32,4.38E-05,0.14,0 N
-868,262,2008,2,2B,Nitrogen,T. pratense,CPT,33.1,340,NA,0.28,0 N
-871,231,2008,6,6B,Nitrogen,T. repens,JL,52.3,99,0.000260606,0.52,0 N
-872,328,2008,2,2B,Nitrogen,T. pratense,MH,52.7,117,0.000107692,0.45,0 N
-873,97,2008,1,1B,Nitrogen,T. hybridum,CPT,40.4,368,2.55E-05,0.45,0 N
-876,97,2008,1,1B,Nitrogen,T. hybridum,DW,20.7,52,1.54E-05,0.05,0 N
-881,61,2008,5,5B,Nitrogen,T. hybridum,DW,51.2,168,0.000116071,0.14,0 N
-884,56,2008,5,5B,Nitrogen,T. pratense,JL,52.7,92,0.000331522,0.86,0 N
-886,61,2008,5,5B,Nitrogen,T. repens,JL,47.3,124,0.000416935,0.67,0 N
-887,762,2008,5,5B,Nitrogen,T. repens,DW,44.4,28,0.002064286,0.65,0 N
-903,527,2008,3,3B,Nitrogen,T. pratense,JL,43.5,147,0.000251701,0.31,0 N
-915,97,2008,1,1B,Nitrogen,T. repens,DW,50.8,120,0.0003525,0.66,0 N
-924,61,2008,5,5B,Nitrogen,T. pratense,JL,36.7,580,0.0004225,0.52,0 N
-925,262,2008,2,2B,Nitrogen,T. hybridum,JL,13,115,0.000116,0.2,0 N
-929,699,2008,5,5B,Nitrogen,T. hybridum,JL,15,155,5.33E-05,0.12,0 N
-934,651,2008,6,6B,Nitrogen,T. repens,JL,48.2,185,9.80E-05,0.63,0 N
-942,859,2008,4,4B,Nitrogen,T. repens,JL,52.8,163,0.00050339,0.87,0 N
-943,209,2008,6,6B,Nitrogen,T. repens,JL,48.2,185,0.000297,0.66,0 N
-947,859,2008,4,4B,Nitrogen,T. hybridum,JL,37.5,87,3.91E-05,0.65,0 N
-950,538,2008,1,1B,Nitrogen,T. repens,JL,NA,38,0.000213158,0.04,0 N
-952,643,2008,2,2B,Nitrogen,T. hybridum,JL,32.2,133,0.000754,0.23,0 N
-956,643,2008,2,2B,Nitrogen,T. repens,JL,18.9,2,0.00405,0.07,0 N
-962,527,2008,3,3B,Nitrogen,T. pratense,DW,46.4,197,0.000594,0.74,0 N
-964,40,2008,3,3B,Nitrogen,T. hybridum,DW,29.3,137,0.000576238,0.17,0 N
-969,796,2008,2,2B,Nitrogen,T. hybridum,JL,5,80,NA,0.06,0 N
-972,773,2008,4,4B,Nitrogen,T. pratense,JL,53.1,51,0.001139216,0.41,0 N
-976,577,2008,3,3B,Nitrogen,T. hybridum,JL,31,250,NA,0.13,0 N
-979,651,2008,6,6B,Nitrogen,T. pratense,JL,46,300,0.00016,0.89,0 N
-984,209,2008,6,6B,Nitrogen,T. pratense,DW,44.1,327,0.000565714,0.96,0 N
-987,475,2008,4,4B,Nitrogen,T. repens,JL,40.9,158,0.000327,0.78,0 N
-994,40,2008,3,3B,Nitrogen,T. pratense,MH,21.7,9,0.000222222,0.16,0 N
-998,61,2008,5,5B,Nitrogen,T. hybridum,DW,45.1,230,0.000457,0.58,0 N
-999,478,2008,2,2B,Nitrogen,T. hybridum,DW,8.1,606,1.26E-05,0.09,0 N
-1000,61,2008,5,5B,Nitrogen,T. pratense,JL,49.3,235,0.000291,0.53,0 N
-1007,381,2008,3,3B,Nitrogen,T. repens,DW,41.8,33,0.000254545,0.05,0 N
-1010,156,2008,2,2B,Nitrogen,T. pratense,DW,54.7,381,0.000205607,1.02,0 N
-1011,498,2008,5,5B,Nitrogen,T. repens,DW,19.6,259,0.00022,0.09,0 N
-1016,97,2008,1,1B,Nitrogen,T. repens,DW,36.4,204,0.000486139,0.56,0 N
-1019,498,2008,5,5B,Nitrogen,T. repens,MH,15.8,760,0.000125,0.1,0 N
-1020,596,2008,1,1B,Nitrogen,T. hybridum,MH,39.6,36,2.00E-04,0.17,0 N
-1023,717,2008,6,6B,Nitrogen,T. repens,MH,50.5,25,0.000216,0.32,0 N
-1024,16,2008,3,3B,Nitrogen,T. repens,MH,54.5,154,0.000191,0.38,0 N
-1030,773,2008,4,4B,Nitrogen,T. hybridum,JL,41.4,63,0.000901587,0.27,0 N
-1032,859,2008,4,4B,Nitrogen,T. hybridum,DW,34.4,829,2.87E-05,0.23,0 N
-1034,773,2008,4,4B,Nitrogen,T. pratense,DW,6.8,10,0.00094,0.07,0 N
-1037,40,2008,3,3B,Nitrogen,T. pratense,JL,25.5,23,0.002526087,0.16,0 N
-1038,717,2008,6,6B,Nitrogen,T. hybridum,MH,44.2,160,0.000348,0.38,0 N
-1040,381,2008,3,3B,Nitrogen,T. hybridum,MH,9.1,82,0.000239024,0.07,0 N
-1042,538,2008,1,1B,Nitrogen,T. pratense,JL,43.4,125,0.000207,0.73,0 N
-1043,156,2008,2,2B,Nitrogen,T. hybridum,JL,46,55,0.000812727,0.49,0 N
-1044,511,2008,3,3B,Nitrogen,T. hybridum,JL,37.6,310,0.000251,0.51,0 N
-1049,577,2008,3,3B,Nitrogen,T. repens,MH,38.4,282,0.000136,0.33,0 N
-1054,511,2008,3,3B,Nitrogen,T. pratense,MH,32,230,9.00E-05,0.21,0 N
-1075,577,2008,3,3B,Nitrogen,T. pratense,MH,45,729,0.000139,0.69,0 N
-1078,762,2008,5,5B,Nitrogen,T. repens,DW,52.1,253,0.000370297,0.65,0 N
-1082,40,2008,3,3B,Nitrogen,T. hybridum,DW,34.8,2,6.00E-04,3.29,0 N
-1109,651,2008,6,6B,Nitrogen,T. repens,TS,49.1,62,0.001148387,0.83,0 N
-1111,859,2008,4,4B,Nitrogen,T. pratense,DW,43.9,807,0.000345545,0.79,0 N
-1113,56,2008,5,5B,Nitrogen,T. hybridum,MH,49.6,23,0.000343478,0.47,0 N
-1115,16,2008,3,3B,Nitrogen,T. pratense,TS,36.9,417,0.000211,0.6,0 N
-1116,596,2008,1,1B,Nitrogen,T. pratense,JL,47.7,197,0.000149,1.26,0 N
-1118,527,2008,3,3B,Nitrogen,T. hybridum,JL,51.2,1,5.00E-05,0.73,0 N
-1123,40,2008,3,3B,Nitrogen,T. repens,MH,22.1,60,0.000385,0.32,0 N
-1125,527,2008,3,3B,Nitrogen,T. pratense,DW,44,375,0.000477451,0.73,0 N
-1126,209,2008,6,6B,Nitrogen,T. repens,DW,41.9,277,0.000485294,0.9,0 N
-1128,231,2008,6,6B,Nitrogen,T. pratense,JL,54.4,182,0.000182,1.06,0 N
-1133,643,2008,2,2B,Nitrogen,T. pratense,DW,7.6,0,NA,0.04,0 N
-1134,773,2008,4,4B,Nitrogen,T. repens,JL,52.5,79,0.000710127,0.59,0 N
-1136,381,2008,3,3B,Nitrogen,T. hybridum,MH,20.6,180,5.60E-05,0.09,0 N
-1141,651,2008,6,6B,Nitrogen,T. pratense,JL,50.4,103,0.000207767,1.1,0 N
-2,627,2018,6,6C,Control,T. repens,MH,47.9,17,0.3697,0.1006,Fertilized
-3,180,2018,5,5C,Control,T. repens,MH,44.9,35,0.0721,0.1572,Fertilized
-4,460,2018,3,3C,Control,T. repens,MH,47.2,160,0.0896,0.1251,Fertilized
-5,460,2018,3,3C,Control,T. repens,CA,47.9,61,0.328,0.217,Fertilized
-13,108,2018,3,3C,Control,T. hybridum,JL,41.1,47,0.8119,0.1338,Fertilized
-24,438,2018,4,4C,Control,T. hybridum,SJ,42.3,29,0.1654,0.1127,Fertilized
-31,449,2018,2,2C,Control,T. hybridum,MH,40.8,370,0.2191,0.2716,Fertilized
-32,460,2018,3,3C,Control,T. repens,JL,30.2,30,0.8149,0.027,Fertilized
-38,449,2018,2,2C,Control,T. hybridum,TG,46.6,44,0.0554,0.1307,Fertilized
-51,325,2018,4,4C,Control,T. repens,JL,25,62,0.3905,0.0595,Fertilized
-53,415,2018,3,3C,Control,T. repens,TG,NA,27,0.099,0.0204,Fertilized
-69,50,2018,1,1C,Control,T. pratense,SJ,NA,15,0.0161,0.0028,Fertilized
-78,50,2018,1,1C,Control,T. pratense,SJ,37.6,17,0.7234,0.121,Fertilized
-81,228,2018,1,1C,Control,T. pratense,CA,39.5,45,0.0361,0.1752,Fertilized
-82,110,2018,4,4C,Control,T. repens,MH,42.1,9,0.9561,0.0536,Fertilized
-84,901,2018,2,2C,Control,T. repens,CA,37.7,19,0.1651,0.0234,Fertilized
-85,145,2018,3,3C,Control,T. pratense,TG,45.8,21,1.1738,0.2254,Fertilized
-105,729,2018,1,1C,Control,T. hybridum,SJ,46.3,24,0.0795,0.1572,Fertilized
-108,493,2018,5,5C,Control,T. pratense,TG,52.3,13,0.3432,0.1305,Fertilized
-128,636,2018,1,1C,Control,T. repens,JL,31.2,36,0.4411,0.0439,Fertilized
-133,627,2018,6,6C,Control,T. repens,SC,45.3,79,0.689,0.1095,Fertilized
-135,160,2018,5,5C,Control,T. pratense,SC,10.2,54,0.0943,0.0157,Fertilized
-138,344,2018,6,6C,Control,T. pratense,SC,26.2,26,0.2062,0.0107,Fertilized
-153,318,2018,2,2C,Control,T. pratense,JL,9.2,6,4.9718,0.081,Fertilized
-159,493,2018,5,5C,Control,T. pratense,JL,40.5,1,0.379,0.041,Fertilized
-160,110,2018,4,4C,Control,T. repens,JL,48.3,13,0.6131,0.1813,Fertilized
-163,627,2018,6,6C,Control,T. repens,SJ,24.7,11,1.3005,0.0343,Fertilized
-181,50,2018,1,1C,Control,T. pratense,JL,37.9,170,0.5358,0.1805,Fertilized
-184,110,2018,4,4C,Control,T. repens,SJ,36.4,2,4.734,0.0334,Fertilized
-187,344,2018,6,6C,Control,T. pratense,NA,NA,NA,NA,NA,Fertilized
-206,110,2018,4,4C,Control,T. repens,SJ,39.8,47,0.2136,0.268,Fertilized
-207,113,2018,6,6C,Control,T. hybridum,SJ,32.8,2,0.264,0.0498,Fertilized
-219,901,2018,2,2C,Control,T. repens,SJ,44.9,44,0.0434,0.2255,Fertilized
-221,462,2018,5,5C,Control,T. hybridum,JL,45.4,20,1.9751,0.1558,Fertilized
-225,145,2018,3,3C,Control,T. pratense,SJ,37.7,3,0.311,0.0663,Fertilized
-243,627,2018,6,6C,Control,T. repens,MH,5.9,0,0,0.0044,Fertilized
-248,108,2018,3,3C,Control,T. hybridum,SJ,26.5,20,0.0795,0.0165,Fertilized
-249,706,2018,4,4C,Control,T. hybridum,MH,37.4,38,0.2326,NA,Fertilized
-253,308,2018,6,6C,Control,T. pratense,SJ,40.2,20,0.3689,0.1008,Fertilized
-269,415,2018,3,3C,Control,T. repens,SJ,15.1,14,0.1006,0.0164,Fertilized
-277,108,2018,3,3C,Control,T. hybridum,SJ,33.8,6,0.8535,0.0266,Fertilized
-280,100,2018,5,5C,Control,T. hybridum,SJ,38.4,8,0.5476,0.1335,Fertilized
-284,758,2018,1,1C,Control,T. repens,SJ,43.7,49,0.3235,0.2067,Fertilized
-295,173,2018,2,2C,Control,T. repens,SJ,23.1,18,0.1362,0.0267,Fertilized
-342,462,2018,5,5C,Control,T. hybridum,SJ,46.7,17,0.7679,0.193,Fertilized
-351,415,2018,3,3C,Control,T. repens,TG,16.9,21,0.0624,0.0082,Fertilized
-352,415,2018,3,3C,Control,T. repens,NA,NA,NA,NA,NA,Fertilized
-360,3,2018,6,6C,Control,T. repens,MJH,33.7,29,0.532,0.0533,Fertilized
-361,108,2018,3,3C,Control,T. hybridum,TG,46.9,58,0.1575,0.1549,Fertilized
-383,173,2018,2,2C,Control,T. repens,MJH,27,35,0.1405,0.0445,Fertilized
-398,861,2018,5,5C,Control,T. repens,TG,41.1,17,0.6229,0.1626,Fertilized
-405,113,2018,6,6C,Control,T. hybridum,TG,36.8,48,0.44,0.0412,Fertilized
-408,113,2018,6,6C,Control,T. hybridum,MH,36,22,0.3036,0.0304,Fertilized
-424,837,2018,3,3C,Control,T. hybridum,JL,46.2,17,0.8222,0.0688,Fertilized
-428,559,2018,4,4C,Control,T. pratense,JL,46.2,120,0.1962,0.3354,Fertilized
-429,559,2018,4,4C,Control,T. pratense,MH,35,80,0.6589,0.4516,Fertilized
-432,901,2018,2,2C,Control,T. repens,JL,28,7,0.5553,0.0074,Fertilized
-436,325,2018,4,4C,Control,T. repens,JL,25.5,154,0.3472,0.3316,Fertilized
-437,325,2018,4,4C,Control,T. repens,NA,NA,NA,NA,NA,Fertilized
-438,113,2018,6,6C,Control,T. hybridum,CA,47.3,64,0.6384,0.203,Fertilized
-441,460,2018,3,3C,Control,T. repens,SJ,43.7,84,0.3667,0.3206,Fertilized
-442,462,2018,5,5C,Control,T. hybridum,JL,33.5,105,0.1029,0.177,Fertilized
-466,344,2018,6,6C,Control,T. pratense,JL,16.1,77,0.0785,0.0249,Fertilized
-480,415,2018,3,3C,Control,T. repens,JL,33.9,18,0.0668,0.1108,Fertilized
-483,449,2018,2,2C,Control,T. hybridum,SJ,28.9,38,0.2384,0.0581,Fertilized
-500,460,2018,3,3C,Control,T. repens,JL,29.8,16,1.635,0.0477,Fertilized
-501,460,2018,3,3C,Control,T. repens,MH,28.3,45,0.3404,0.0271,Fertilized
-507,449,2018,2,2C,Control,T. hybridum,TG,32.6,72,1.159,0.0955,Fertilized
-513,308,2018,6,6C,Control,T. pratense,TG,50.1,47,0.2118,0.1649,Fertilized
-526,228,2018,1,1C,Control,T. pratense,MH,NA,15,0.0873,0.005,Fertilized
-528,726,2018,6,6C,Control,T. hybridum,SJ,45.5,9,0.2006,0.2685,Fertilized
-533,74,2018,1,1C,Control,T. hybridum,TG,40.3,17,0.7537,0.0823,Fertilized
-550,758,2018,1,1C,Control,T. repens,TG,28,22,0.1576,0.0062,Fertilized
-562,415,2018,3,3C,Control,T. repens,MH,35.2,95,0.2198,0.1307,Fertilized
-563,110,2018,4,4C,Control,T. repens,JL,43.5,20,1.2162,0.097,Fertilized
-564,74,2018,1,1C,Control,T. hybridum,MH,34.4,35,1.2858,0.2564,Fertilized
-570,462,2018,5,5C,Control,T. hybridum,MH,34.2,60,0.4021,0.1139,Fertilized
-571,100,2018,5,5C,Control,T. hybridum,SJ,47.7,14,0.8095,0.1861,Fertilized
-578,318,2018,2,2C,Control,T. pratense,JL,43,35,1.7989,0.1687,Fertilized
-583,438,2018,4,4C,Control,T. hybridum,MH,27,105,0.1249,0.2393,Fertilized
-584,758,2018,1,1C,Control,T. repens,JL,47.5,100,0.3643,0.1474,Fertilized
-592,318,2018,2,2C,Control,T. pratense,JL,30.3,14,2.0922,0.1105,Fertilized
-601,729,2018,1,1C,Control,T. hybridum,JL,7.2,50,0.1489,0.0181,Fertilized
-605,145,2018,3,3C,Control,T. pratense,JL,43.4,4,0.1055,0.1067,Fertilized
-622,228,2018,1,1C,Control,T. pratense,SJ,NA,23,0.0315,0.0084,Fertilized
-651,180,2018,5,5C,Control,T. repens,SJ,NA,35,0.0353,0.0084,Fertilized
-655,325,2018,4,4C,Control,T. repens,SJ,34.7,11,0.5714,0.0703,Fertilized
-665,559,2018,4,4C,Control,T. pratense,SJ,50.1,128,0.1438,0.2602,Fertilized
-674,344,2018,6,6C,Control,T. pratense,SJ,40.3,0,0,0.0326,Fertilized
-678,110,2018,4,4C,Control,T. repens,SJ,4.1,35,0.5611,0.3665,Fertilized
-691,559,2018,4,4C,Control,T. pratense,SJ,40.3,43,0.2658,0.0566,Fertilized
-702,145,2018,3,3C,Control,T. pratense,SJ,43,58,0.8084,0.3263,Fertilized
-708,627,2018,6,6C,Control,T. repens,SJ,43.5,38,0.0721,0.0978,Fertilized
-725,461,2018,2,2C,Control,T. hybridum,SJ,37.9,3,0.3813,0.0801,Fertilized
-727,3,2018,6,6C,Control,T. repens,MH,29,3,1.6753,0.0171,Fertilized
-732,460,2018,3,3C,Control,T. repens,MH,39.3,140,0.2728,0.2147,Fertilized
-733,74,2018,1,1C,Control,T. hybridum,MH,NA,NA,NA,NA,Fertilized
-734,108,2018,3,3C,Control,T. hybridum,MH,34.5,370,0.2013,0.2771,Fertilized
-740,110,2018,4,4C,Control,T. repens,MH,39.8,12,2.7298,0.1078,Fertilized
-743,837,2018,3,3C,Control,T. hybridum,MH,23.9,30,0.2945,0.0208,Fertilized
-748,228,2018,1,1C,Control,T. pratense,MH,NA,70,0.07,0.0123,Fertilized
-771,110,2008,4,4A,Control,T. hybridum,ES,32.9,37,0.000191892,0.12,Fertilized
-772,758,2008,1,1A,Control,T. pratense,MH,40.7,77,0.00032987,0.24,Fertilized
-774,344,2008,6,6A,Control,T. hybridum,JL,45.9,2,2.50E-05,0.11,Fertilized
-775,901,2008,2,2A,Control,T. hybridum,TB,41.7,27,0.000133333,0.04,Fertilized
-776,726,2008,6,6A,Control,T. hybridum,TB,39.5,34,0.000255882,0.1,Fertilized
-781,318,2008,2,2A,Control,T. pratense,JL,42.5,73,0.000416438,0.18,Fertilized
-789,308,2008,6,6A,Control,T. pratense,CPT,44.4,69,0.000123188,0.24,Fertilized
-796,180,2008,5,5A,Control,T. pratense,NA,41.6,49,9.80E-05,0.27,Fertilized
-799,74,2008,1,1A,Control,T. pratense,CPT,50.5,103,0.000175728,0.34,Fertilized
-806,325,2008,4,4A,Control,T. pratense,FD,46.6,104,7.31E-05,0.18,Fertilized
-810,837,2008,3,3A,Control,T. pratense,CPT,22.9,38,7.37E-05,0.03,Fertilized
-811,108,2008,3,3A,Control,T. pratense,ES,38,251,3.51E-05,0.18,Fertilized
-817,461,2008,2,2A,Control,T. hybridum,JL,44.3,53,0.000343396,0.43,Fertilized
-818,318,2008,2,2A,Control,T. hybridum,JL,54,4,0.008075,0.28,Fertilized
-820,861,2008,5,5A,Control,T. hybridum,MH,42.4,50,0.000194,0.18,Fertilized
-821,113,2008,6,6A,Control,T. hybridum,DW,48.1,159,7.30E-05,0.63,Fertilized
-823,449,2008,2,2A,Control,T. pratense,JL,53.8,244,0.000214344,0.81,Fertilized
-826,113,2008,6,6A,Control,T. hybridum,RP,33.9,182,9.45E-05,0.18,Fertilized
-839,180,2008,5,5A,Control,T. pratense,CPT,42,276,0.000238768,0.43,Fertilized
-845,344,2008,6,6A,Control,T. pratense,DW,37.1,195,3.59E-05,0.44,Fertilized
-848,901,2008,2,2A,Control,T. pratense,JL,47.8,161,0.000240994,0.35,Fertilized
-852,636,2008,1,1A,Control,T. hybridum,CPT,28.7,29,3.45E-05,0.07,Fertilized
-853,559,2008,4,4A,Control,T. pratense,JL,22,50,0.000446,0.06,Fertilized
-858,758,2008,1,1A,Control,T. pratense,CPT,51.9,68,0.000236765,0.43,Fertilized
-869,74,2008,1,1A,Control,T. hybridum,CPT,47.1,117,0.000171795,0.41,Fertilized
-874,325,2008,4,4A,Control,T. repens,JL,44.8,131,0.000441985,0.4,Fertilized
-875,344,2008,6,6A,Control,T. pratense,JL,50,332,0.000117771,0.35,Fertilized
-879,415,2008,3,3A,Control,T. hybridum,JL,15.3,120,0.000164286,0.12,Fertilized
-882,438,2008,4,4A,Control,T. hybridum,TB,53.4,97,8.66E-05,0.41,Fertilized
-888,729,2008,1,1A,Control,T. repens,DW,48.2,190,0.000130526,0.6,Fertilized
-889,837,2008,3,3A,Control,T. hybridum,TB,36.8,328,8.02E-05,0.34,Fertilized
-892,758,2008,1,1A,Control,T. pratense,JL,40.1,185,0.000418378,0.5,Fertilized
-896,499,2008,3,3A,Control,T. hybridum,JL,39.5,68,0.000272059,0.44,Fertilized
-898,726,2008,6,6A,Control,T. pratense,JL,38.3,130,8.69E-05,0.43,Fertilized
-900,344,2008,6,6A,Control,T. hybridum,JL,46,183,0.000307104,0.43,Fertilized
-912,3,2008,6,6A,Control,T. pratense,DW,36.4,10,0.00026,0.22,Fertilized
-919,325,2008,4,4A,Control,T. hybridum,DW,NA,44,4.09E-05,0.01,Fertilized
-920,901,2008,2,2A,Control,T. repens,DW,53.6,135,0.000555372,0.69,Fertilized
-921,461,2008,2,2A,Control,T. pratense,MH,45.5,126,0.000206,0.28,Fertilized
-927,758,2008,1,1A,Control,T. hybridum,KK,45.2,88,8.41E-05,0.71,Fertilized
-930,308,2008,6,6A,Control,T. repens,MH,36.3,157,4.90E-05,0.52,Fertilized
-931,113,2008,6,6A,Control,T. repens,JL,40.7,265,0.000196,0.47,Fertilized
-932,74,2008,1,1A,Control,T. hybridum,JL,58.9,99,0.00030101,0.47,Fertilized
-939,415,2008,3,3A,Control,T. pratense,DW,44.4,220,0.000113889,0.41,Fertilized
-951,74,2008,1,1A,Control,T. pratense,JL,39.5,145,0.000184,0.31,Fertilized
-955,3,2008,6,6A,Control,T. hybridum,JL,13,10,0.00142,0.04,Fertilized
-957,729,2008,1,1A,Control,T. pratense,JL,51.7,295,0.000162,0.8,Fertilized
-958,901,2008,2,2A,Control,T. repens,JL,39.3,325,0.000249,0.25,Fertilized
-959,559,2008,4,4A,Control,T. hybridum,MH,46,50,0.000672,0.45,Fertilized
-960,74,2008,1,1A,Control,T. repens,DW,52.1,117,0.000294872,0.56,Fertilized
-965,499,2008,3,3A,Control,T. hybridum,DW,48.7,248,0.000282178,0.58,Fertilized
-967,729,2008,1,1A,Control,T. pratense,JL,39.7,245,0.000182,0.4,Fertilized
-968,318,2008,2,2A,Control,T. pratense,JL,50.6,112,0.00033,0.57,Fertilized
-970,145,2008,3,3A,Control,T. hybridum,JL,44.8,160,0.000398,0.21,Fertilized
-975,499,2008,3,3A,Control,T. hybridum,JL,49.4,115,0.000422,0.59,Fertilized
-977,449,2008,2,2A,Control,T. pratense,JL,39.8,310,0.00028,0.67,Fertilized
-978,145,2008,3,3A,Control,T. hybridum,JL,45,150,0.000483,0.47,Fertilized
-982,415,2008,3,3A,Control,T. hybridum,DW,47,756,0.000175,0.8,Fertilized
-986,493,2008,5,5A,Control,T. hybridum,DW,49.2,84,0.000372619,0.7,Fertilized
-989,636,2008,1,1A,Control,T. pratense,JL,46.9,185,0.00041,0.7,Fertilized
-992,636,2008,1,1A,Control,T. repens,DW,53.5,110,0.000292727,0.57,Fertilized
-1002,74,2008,1,1A,Control,T. repens,JL,44.4,107,0.000771963,1,Fertilized
-1009,493,2008,5,5A,Control,T. repens,DW,46.7,83,0.000361446,0.23,Fertilized
-1015,901,2008,2,2A,Control,T. pratense,DW,41.1,287,0.000466,0.43,Fertilized
-1018,318,2008,2,2A,Control,T. hybridum,MH,37.2,77,0.000275325,0.31,Fertilized
-1022,74,2008,1,1A,Control,T. hybridum,MH,32.8,15,0.000813333,0.037,Fertilized
-1025,493,2008,5,5A,Control,T. repens,MH,42,155,0.000102,0.07,Fertilized
-1028,461,2008,2,2A,Control,T. repens,JL,45.8,128,0.000444,0.67,Fertilized
-1035,228,2008,1,1A,Control,T. pratense,DW,50.2,419,0.000180189,0.96,Fertilized
-1046,50,2008,1,1A,Control,T. hybridum,DW,35.3,500,0.000105941,0.27,Fertilized
-1047,837,2008,3,3A,Control,T. repens,JL,11.6,113,0.00028,0.41,Fertilized
-1048,160,2008,5,5A,Control,T. hybridum,JL,43.8,57,0.001014035,0.54,Fertilized
-1052,449,2008,2,2A,Control,T. pratense,DW,38.9,441,5.74E-05,0.35,Fertilized
-1055,729,2008,1,1A,Control,T. hybridum,JL,15.6,80,0.0001575,0.08,Fertilized
-1057,559,2008,4,4A,Control,T. hybridum,JL,45.8,35,0.000334286,0.6,Fertilized
-1063,180,2008,5,5A,Control,T. pratense,JL,30.4,192,0.000766,0.39,Fertilized
-1067,726,2008,6,6A,Control,T. pratense,MH,50.2,484,0.000163,0.53,Fertilized
-1069,706,2008,4,4A,Control,T. repens,DW,41.9,233,0.00019,0.67,Fertilized
-1070,627,2008,6,6A,Control,T. hybridum,DW,49.4,170,0.000217647,0.58,Fertilized
-1072,449,2008,2,2A,Control,T. hybridum,MH,43,188,0.000446,0.24,Fertilized
-1076,74,2008,1,1A,Control,T. pratense,DW,42,271,0.000138739,0.85,Fertilized
-1080,461,2008,2,2A,Control,T. hybridum,DW,47,186,2.97E-05,0.65,Fertilized
-1081,559,2008,4,4A,Control,T. hybridum,DW,NA,0,NA,0.005,Fertilized
-1085,461,2008,2,2A,Control,T. pratense,DW,46,710,0.000195,1.15,Fertilized
-1086,108,2008,3,3A,Control,T. repens,DW,45.6,159,0.000214,0.78,Fertilized
-1088,499,2008,3,3A,Control,T. repens,JL,49.6,184,0.000149,0.83,Fertilized
-1089,861,2008,5,5A,Control,T. hybridum,JL,46.9,142,0.000155797,0.98,Fertilized
-1090,50,2008,1,1A,Control,T. pratense,NA,47.5,301,0.000175,0.77,Fertilized
-1091,228,2008,1,1A,Control,T. hybridum,JL,42.8,312,9.00E-05,0.97,Fertilized
-1094,449,2008,2,2A,Control,T. pratense,JL,46.2,59,0.000920339,0.99,Fertilized
-1095,706,2008,4,4A,Control,T. repens,JL,46.8,134,0.000936567,0.98,Fertilized
-1100,559,2008,4,4A,Control,T. pratense,DW,34.5,134,0.000644118,0.43,Fertilized
-1103,493,2008,5,5A,Control,T. pratense,MH,46.4,136,0.000269,0.21,Fertilized
-1105,173,2008,2,2A,Control,T. hybridum,JL,47.8,75,0.000106667,0.61,Fertilized
-1108,636,2008,1,1A,Control,T. hybridum,TS,40.9,126,0.00014,0.96,Fertilized
-1110,627,2008,6,6A,Control,T. hybridum,JL,50.3,64,0.000540625,0.45,Fertilized
-1119,461,2008,2,2A,Control,T. hybridum,JL,46.5,118,0.000132203,1.06,Fertilized
-1120,758,2008,1,1A,Control,T. repens,MH,53.3,250,0.000149,1.05,Fertilized
-1142,627,2008,6,6A,Control,T. repens,TS,44.5,76,6.18E-05,0.63,Fertilized
-1143,706,2008,4,4A,Control,T. pratense,JL,52.2,128,0.000395313,0.95,Fertilized
-1144,460,2008,3,3A,Control,T. pratense,JL,50.6,165,0.000296,1.16,Fertilized
-1145,729,2008,1,1A,Control,T. pratense,MH,42.2,250,3.60E-05,0.35,Fertilized
-1147,160,2008,5,5A,Control,T. pratense,DW,42.8,219,0.000193269,0.78,Fertilized
-1149,636,2008,1,1A,Control,T. repens,DW,62,75,0.000306667,0.72,Fertilized
-1,381,2018,3,3N,Nitrogen,T. repens,MH,46.3,25,0.0545,0.0625,Fertilized
-7,762,2018,5,5N,Nitrogen,T. pratense,MH,6,38,0.0786,0.0075,Fertilized
-16,527,2018,3,3N,Nitrogen,T. pratense,MH,38.1,60,0.3986,0.1074,Fertilized
-21,511,2018,3,3N,Nitrogen,T. pratense,SJ,38.1,19,0.5828,0.0297,Fertilized
-23,116,2018,1,1N,Nitrogen,T. pratense,SJ,44.7,24,0.0774,0.1342,Fertilized
-33,717,2018,6,6N,Nitrogen,T. pratense,TG,42.3,19,1.14,0.0633,Fertilized
-36,116,2018,1,1N,Nitrogen,T. pratense,TG,25.9,19,0.3908,0.0404,Fertilized
-52,577,2018,3,3N,Nitrogen,T. hybridum,JL,29,0,0,0.0178,Fertilized
-60,498,2018,5,5N,Nitrogen,T. hybridum,JL,37.9,40,0.2127,0.1507,Fertilized
-64,56,2018,5,5N,Nitrogen,T. repens,JL,46.9,46,0.5447,0.235,Fertilized
-66,717,2018,6,6N,Nitrogen,T. pratense,JL,38.2,46,1.1367,0.0752,Fertilized
-104,859,2018,4,4N,Nitrogen,T. repens,SJ,16.6,8,0.6219,0.0194,Fertilized
-112,651,2018,6,6N,Nitrogen,T. hybridum,TG,50.7,71,0.2392,0.1634,Fertilized
-115,61,2018,5,5N,Nitrogen,T. pratense,TG,51.1,12,2.4489,0.2979,Fertilized
-132,773,2018,4,4N,Nitrogen,T. pratense,JL,46.4,51,0.2498,0.204,Fertilized
-137,209,2018,6,6N,Nitrogen,T. hybridum,SC,35.4,49,1.3031,0.0567,Fertilized
-142,577,2018,3,3N,Nitrogen,T. hybridum,SC,45.1,40,1.3434,0.1208,Fertilized
-151,796,2018,2,2N,Nitrogen,T. hybridum,SC,40.4,165,0.4121,0.2292,Fertilized
-161,498,2018,5,5N,Nitrogen,T. hybridum,JL,13.5,6,0.1238,0.0082,Fertilized
-165,596,2018,1,1N,Nitrogen,T. repens,SJ,32.1,11,2.2955,0.0998,Fertilized
-175,61,2018,5,5N,Nitrogen,T. pratense,SJ,38.1,8,1.1809,0.0889,Fertilized
-191,97,2018,1,1N,Nitrogen,T. hybridum,JL,9.3,9,0.2083,0.0062,Fertilized
-196,97,2018,1,1N,Nitrogen,T. hybridum,JL,41.6,62,0.0065,0.1627,Fertilized
-205,651,2018,6,6N,Nitrogen,T. hybridum,SJ,22,23,0.0698,0.0228,Fertilized
-210,699,2018,5,5N,Nitrogen,T. repens,JL,49.3,78,0.0675,0.2523,Fertilized
-215,478,2018,2,2N,Nitrogen,T. repens,SJ,35.5,58,0.0428,0.261,Fertilized
-223,699,2018,5,5N,Nitrogen,T. repens,MH,14.1,30,0.0468,0.0314,Fertilized
-234,643,2018,2,2N,Nitrogen,T. pratense,MH,7.9,10,0.1536,0.027,Fertilized
-242,511,2018,3,3N,Nitrogen,T. pratense,SJ,NA,4,0.0343,0.002,Fertilized
-247,209,2018,6,6N,Nitrogen,T. hybridum,SJ,44.5,6,0.243,0.0748,Fertilized
-251,381,2018,3,3N,Nitrogen,T. repens,SJ,38.9,20,0.3085,0.0547,Fertilized
-260,651,2018,6,6N,Nitrogen,T. hybridum,MH,15.9,5,0.216,0.0225,Fertilized
-265,527,2018,3,3N,Nitrogen,T. pratense,SJ,38.8,7,0.1867,0.0192,Fertilized
-283,56,2018,5,5N,Nitrogen,T. repens,SJ,42.2,40,0.1418,0.2436,Fertilized
-287,498,2018,5,5N,Nitrogen,T. hybridum,SJ,42.4,315,0.0141,0.288,Fertilized
-288,328,2018,2,2N,Nitrogen,T. pratense,SJ,49,2,0.2545,0.2476,Fertilized
-297,859,2018,4,4N,Nitrogen,T. repens,JL,11.8,28,0.4217,0.0311,Fertilized
-307,796,2018,2,2N,Nitrogen,T. hybridum,CA,22.5,21,0.0582,0.016,Fertilized
-337,773,2018,4,4N,Nitrogen,T. pratense,CA,50.4,4,0.9308,0.0419,Fertilized
-353,527,2018,3,3N,Nitrogen,T. pratense,MH,28.6,55,0.1583,0.0479,Fertilized
-366,478,2018,2,2N,Nitrogen,T. repens,MH,32.5,230,0.1465,0.292,Fertilized
-371,478,2018,2,2N,Nitrogen,T. repens,MJH,NA,7,0.0994,0.002,Fertilized
-373,231,2018,6,6N,Nitrogen,T. repens,TG,45.3,93,0.0746,0.22,Fertilized
-378,116,2018,1,1N,Nitrogen,T. pratense,TG,25.2,19,0.6516,0.013,Fertilized
-388,577,2018,3,3N,Nitrogen,T. hybridum,SJ,46.5,0,0,0.0737,Fertilized
-402,511,2018,3,3N,Nitrogen,T. pratense,TG,41.8,14,0.8122,0.0642,Fertilized
-420,511,2018,3,3N,Nitrogen,T. pratense,SJ,NA,13,0.0195,0.0034,Fertilized
-444,859,2018,4,4N,Nitrogen,T. repens,JL,32.3,63,0.2883,0.1114,Fertilized
-482,262,2018,2,2N,Nitrogen,T. repens,JL,36.3,13,0.641,0.0257,Fertilized
-484,231,2018,6,6N,Nitrogen,T. repens,JL,30.1,20,0.9999,0.0264,Fertilized
-490,475,2018,4,4N,Nitrogen,T. repens,JL,41.4,40,0.179,0.0913,Fertilized
-504,40,2018,3,3N,Nitrogen,T. repens,JL,47.1,13,2.1547,0.1093,Fertilized
-510,97,2018,1,1N,Nitrogen,T. hybridum,TG,37.2,166,0.3452,0.2537,Fertilized
-516,156,2018,2,2N,Nitrogen,T. hybridum,CA,38.2,9,0.1268,0.021,Fertilized
-522,762,2018,5,5N,Nitrogen,T. pratense,TG,38.9,99,0.1212,0.1696,Fertilized
-523,262,2018,2,2N,Nitrogen,T. repens,SJ,NA,3,0.06,0.0089,Fertilized
-535,56,2018,5,5N,Nitrogen,T. repens,TG,41.2,19,0.2945,0.1019,Fertilized
-537,717,2018,6,6N,Nitrogen,T. pratense,TG,47.8,82,0.1402,0.2335,Fertilized
-548,511,2018,3,3N,Nitrogen,T. pratense,TG,38.6,276,0.0442,0.1431,Fertilized
-551,511,2018,3,3N,Nitrogen,T. pratense,SJ,38.2,81,0.046,0.3218,Fertilized
-557,699,2018,5,5N,Nitrogen,T. repens,SJ,NA,4,0.1063,0.0043,Fertilized
-560,97,2018,1,1N,Nitrogen,T. hybridum,CA,35.2,23,0.0483,0.0924,Fertilized
-567,538,2018,1,1N,Nitrogen,T. hybridum,MH,39.9,30,0.3625,0.1879,Fertilized
-593,643,2018,2,2N,Nitrogen,T. pratense,JL,30.5,47,0.6491,0.1675,Fertilized
-600,231,2018,6,6N,Nitrogen,T. repens,JL,34.8,23,0.3597,0.0113,Fertilized
-614,209,2018,6,6N,Nitrogen,T. hybridum,SJ,30.2,21,0.0168,0.0145,Fertilized
-617,16,2018,3,3N,Nitrogen,T. hybridum,SJ,45.5,42,0.0681,0.3471,Fertilized
-634,156,2018,2,2N,Nitrogen,T. hybridum,SJ,21.8,4,2.2538,0.0483,Fertilized
-642,381,2018,3,3N,Nitrogen,T. repens,SJ,49.1,13,0.1792,0.1899,Fertilized
-646,527,2018,3,3N,Nitrogen,T. pratense,MJH,41.9,38,0.0668,0.1445,Fertilized
-659,116,2018,1,1N,Nitrogen,T. pratense,CA,33.6,26,0.5687,0.0329,Fertilized
-669,577,2018,3,3N,Nitrogen,T. hybridum,SJ,45,12,1.4233,0.2918,Fertilized
-681,478,2018,2,2N,Nitrogen,T. repens,SJ,45.9,105,0.0316,0.2443,Fertilized
-695,596,2018,1,1N,Nitrogen,T. repens,SJ,31.4,10,1.405,0.0681,Fertilized
-698,717,2018,6,6N,Nitrogen,T. pratense,SJ,28.7,13,0.4082,0.0945,Fertilized
-700,16,2018,3,3N,Nitrogen,T. hybridum,SJ,39.8,21,1.347,0.1173,Fertilized
-719,262,2018,2,2N,Nitrogen,T. repens,MH,35.6,170,0.2643,0.03481,Fertilized
-724,577,2018,3,3N,Nitrogen,T. hybridum,MH,9.9,24,0.0711,0.0252,Fertilized
-731,97,2018,1,1N,Nitrogen,T. hybridum,MH,NA,NA,NA,NA,Fertilized
-735,209,2018,6,6N,Nitrogen,T. hybridum,MH,NA,NA,NA,NA,Fertilized
-736,577,2018,3,3N,Nitrogen,T. hybridum,MH,12.8,40,0.0623,0.0318,Fertilized
-764,762,2008,5,5B,Nitrogen,T. hybridum,NA,45.6,194,5.15E-05,0.29,Fertilized
-770,156,2008,2,2B,Nitrogen,T. repens,MH,50.7,123,7.40E-05,0.35,Fertilized
-773,262,2008,2,2B,Nitrogen,T. repens,JL,41.1,80,0.000425,0.22,Fertilized
-777,61,2008,5,5B,Nitrogen,T. hybridum,ES,39,47,0.000210638,0.07,Fertilized
-785,61,2008,5,5B,Nitrogen,T. pratense,TB,54.8,87,0.000181609,0.36,Fertilized
-792,643,2008,2,2B,Nitrogen,T. hybridum,JJ,40.9,0,NA,0.39,Fertilized
-798,762,2008,5,5B,Nitrogen,T. pratense,EM,47.7,109,5.87E-05,0.37,Fertilized
-800,773,2008,4,4B,Nitrogen,T. repens,CPT,30.4,39,0.000810256,0.2,Fertilized
-807,97,2008,1,1B,Nitrogen,T. hybridum,MH,40.1,320,1.63E-05,0.38,Fertilized
-808,475,2008,4,4B,Nitrogen,T. pratense,TB,35.9,169,5.27E-05,0.23,Fertilized
-809,61,2008,5,5B,Nitrogen,T. pratense,FD,43.3,189,0.000118519,0.29,Fertilized
-812,56,2008,5,5B,Nitrogen,T. hybridum,ES,42.9,3,1.67E-05,0.47,Fertilized
-819,116,2008,1,1B,Nitrogen,T. hybridum,JL,45.8,36,0.000319444,0.14,Fertilized
-822,796,2008,2,2B,Nitrogen,T. repens,MH,52,69,0.000176812,0.48,Fertilized
-824,699,2008,5,5B,Nitrogen,T. pratense,MH,24.1,60,7.00E-05,0.06,Fertilized
-825,209,2008,6,6B,Nitrogen,T. pratense,KK,48.8,227,0.000115419,0.43,Fertilized
-827,796,2008,2,2B,Nitrogen,T. repens,MH,39.8,73,0.000365753,0.69,Fertilized
-828,538,2008,1,1B,Nitrogen,T. pratense,JJ,48.5,131,0.000139695,0.52,Fertilized
-829,262,2008,2,2B,Nitrogen,T. hybridum,JL,25.2,90,4.33E-05,0.11,Fertilized
-834,231,2008,6,6B,Nitrogen,T. pratense,MH,38.8,82,0.00024878,0.31,Fertilized
-836,717,2008,6,6B,Nitrogen,T. pratense,CPT,NA,65,0.000261538,0.35,Fertilized
-837,596,2008,1,1B,Nitrogen,T. repens,CPT,39.4,85,0.000572941,0.22,Fertilized
-840,478,2008,2,2B,Nitrogen,T. repens,CPT,47.2,71,0.000278873,0.33,Fertilized
-846,40,2008,3,3B,Nitrogen,T. hybridum,RP,22.4,0,NA,0.1,Fertilized
-851,699,2008,5,5B,Nitrogen,T. hybridum,CPT,29.5,125,NA,0.25,Fertilized
-854,498,2008,5,5B,Nitrogen,T. pratense,JL,24,550,0.000100625,0.37,Fertilized
-857,56,2008,5,5B,Nitrogen,T. hybridum,CPT,50,43,0.000144186,0.28,Fertilized
-861,511,2008,3,3B,Nitrogen,T. hybridum,JL,26,20,5.00E-06,0.11,Fertilized
-862,651,2008,6,6B,Nitrogen,T. repens,MH,44.4,69,0.000104348,0.09,Fertilized
-864,762,2008,5,5B,Nitrogen,T. hybridum,MH,9.7,121,3.97E-05,0.22,Fertilized
-870,478,2008,2,2B,Nitrogen,T. pratense,CPT,44.7,143,7.83E-05,0.41,Fertilized
-894,478,2008,2,2B,Nitrogen,T. pratense,JL,36.1,430,0.000175882,0.34,Fertilized
-895,717,2008,6,6B,Nitrogen,T. pratense,DW,43.8,88,0.000288636,0.45,Fertilized
-897,577,2008,3,3B,Nitrogen,T. pratense,JL,50.1,175,0.000156571,0.43,Fertilized
-899,209,2008,6,6B,Nitrogen,T. pratense,JL,38,259,0.000466795,0.45,Fertilized
-901,40,2008,3,3B,Nitrogen,T. hybridum,TB,13.1,25,0.000596,0.09,Fertilized
-904,156,2008,2,2B,Nitrogen,T. repens,JL,38.4,87,0.001352874,0.41,Fertilized
-906,717,2008,6,6B,Nitrogen,T. pratense,JL,37.6,74,0.000478378,0.11,Fertilized
-908,478,2008,2,2B,Nitrogen,T. hybridum,JL,14.4,31,2.26E-05,0.07,Fertilized
-914,762,2008,5,5B,Nitrogen,T. repens,DW,51,155,0.000177419,0.5,Fertilized
-916,773,2008,4,4B,Nitrogen,T. hybridum,ES,45.6,20,0.0018,0.14,Fertilized
-918,478,2008,2,2B,Nitrogen,T. repens,MH,43.1,104,0.000273,0.47,Fertilized
-928,651,2008,6,6B,Nitrogen,T. pratense,JL,51.5,315,0.000264,0.69,Fertilized
-933,475,2008,4,4B,Nitrogen,T. repens,JL,35.2,126,0.001163492,0.52,Fertilized
-935,596,2008,1,1B,Nitrogen,T. repens,JL,40.2,235,0.000413,0.7,Fertilized
-936,859,2008,4,4B,Nitrogen,T. pratense,DW,23.3,862,8.27E-05,0.24,Fertilized
-938,717,2008,6,6B,Nitrogen,T. pratense,DW,49.5,161,0.000112871,0.6,Fertilized
-940,381,2008,3,3B,Nitrogen,T. hybridum,DW,15.1,248,6.00E-05,0.11,Fertilized
-944,56,2008,5,5B,Nitrogen,T. hybridum,JL,48.3,95,0.000383158,0.53,Fertilized
-946,328,2008,2,2B,Nitrogen,T. hybridum,MH,42.6,349,0.000271,0.73,Fertilized
-948,717,2008,6,6B,Nitrogen,T. hybridum,DW,42.8,191,0.000540196,0.45,Fertilized
-954,231,2008,6,6B,Nitrogen,T. repens,MH,36.6,330,0.000383,0.63,Fertilized
-963,209,2008,6,6B,Nitrogen,T. pratense,DW,41,244,0.000373585,0.43,Fertilized
-973,717,2008,6,6B,Nitrogen,T. pratense,JL,54.1,110,0.000477,0.82,Fertilized
-983,231,2008,6,6B,Nitrogen,T. repens,DW,47.5,304,0.000431132,0.88,Fertilized
-988,762,2008,5,5B,Nitrogen,T. hybridum,MH,53.3,279,0.000123529,0.75,Fertilized
-990,381,2008,3,3B,Nitrogen,T. hybridum,MH,41.9,188,0.000158,0.6,Fertilized
-997,796,2008,2,2B,Nitrogen,T. repens,JL,47.6,83,0.000838554,0.68,Fertilized
-1001,577,2008,3,3B,Nitrogen,T. repens,JL,27.2,230,0.000391,0.47,Fertilized
-1003,61,2008,5,5B,Nitrogen,T. repens,JL,45.1,131,0.00025,0.55,Fertilized
-1012,56,2008,5,5B,Nitrogen,T. pratense,MH,52.3,148,0.000183,1.05,Fertilized
-1014,596,2008,1,1B,Nitrogen,T. hybridum,DW,46,177,0.00023,0.65,Fertilized
-1017,762,2008,5,5B,Nitrogen,T. pratense,JL,44.2,77,0.000458442,0.63,Fertilized
-1026,796,2008,2,2B,Nitrogen,T. pratense,MH,20.7,312,0.000172321,0.19,Fertilized
-1027,16,2008,3,3B,Nitrogen,T. pratense,JL,44.3,459,0.000353,0.97,Fertilized
-1029,859,2008,4,4B,Nitrogen,T. repens,JL,37.7,205,0.000154,0.78,Fertilized
-1031,56,2008,5,5B,Nitrogen,T. pratense,DW,41.7,201,0.000708,0.52,Fertilized
-1045,116,2008,1,1B,Nitrogen,T. pratense,MH,36.1,299,0.000137,0.16,Fertilized
-1051,56,2008,5,5B,Nitrogen,T. repens,DW,38.4,239,0.000240952,0.79,Fertilized
-1056,527,2008,3,3B,Nitrogen,T. repens,JL,41.1,182,0.000257,0.39,Fertilized
-1058,156,2008,2,2B,Nitrogen,T. hybridum,JL,46.4,138,0.000338,0.48,Fertilized
-1059,651,2008,6,6B,Nitrogen,T. repens,JL,44.6,205,0.000269,0.38,Fertilized
-1064,596,2008,1,1B,Nitrogen,T. pratense,JL,45.5,178,0.000338,0.41,Fertilized
-1068,762,2008,5,5B,Nitrogen,T. hybridum,MH,6.3,303,3.00E-05,0.18,Fertilized
-1071,231,2008,6,6B,Nitrogen,T. hybridum,MH,47.4,65,0.000110769,0.9,Fertilized
-1073,61,2008,5,5B,Nitrogen,T. repens,DW,44.4,190,0.001108911,1.05,Fertilized
-1074,511,2008,3,3B,Nitrogen,T. repens,DW,48.2,553,0.00029901,0.98,Fertilized
-1077,527,2008,3,3B,Nitrogen,T. repens,DW,45.4,477,0.000229412,0.6,Fertilized
-1079,651,2008,6,6B,Nitrogen,T. hybridum,DW,NA,52,1.54E-05,0.05,Fertilized
-1083,262,2008,2,2B,Nitrogen,T. hybridum,JL,NA,0,NA,0.005,Fertilized
-1092,381,2008,3,3B,Nitrogen,T. pratense,JL,45.7,208,3.30E-05,0.4,Fertilized
-1096,116,2008,1,1B,Nitrogen,T. repens,JL,45,94,0.000332979,0.49,Fertilized
-1099,511,2008,3,3B,Nitrogen,T. repens,TS,40.5,254,0.000164444,0.75,Fertilized
-1101,475,2008,4,4B,Nitrogen,T. hybridum,DW,33.1,248,3.07E-05,0.24,Fertilized
-1102,643,2008,2,2B,Nitrogen,T. pratense,DW,49.9,64,0.000809375,0.46,Fertilized
-1104,651,2008,6,6B,Nitrogen,T. pratense,DW,37.6,717,0.000257282,0.57,Fertilized
-1106,511,2008,3,3B,Nitrogen,T. repens,JL,48,185,0.000244,0.96,Fertilized
-1121,651,2008,6,6B,Nitrogen,T. hybridum,TS,9.9,216,4.40E-05,0.05,Fertilized
-1122,209,2008,6,6B,Nitrogen,T. hybridum,MH,46.5,240,6.10E-05,0.71,Fertilized
-1146,262,2008,2,2B,Nitrogen,T. pratense,DW,50,272,0.000240777,0.53,Fertilized
-1148,56,2008,5,5B,Nitrogen,T. repens,DW,46.6,136,0.000533333,0.75,Fertilized
-1150,325,2008,4,4A,Control,T. pratense,DW,42,589,0.000501887,0.66,0 N
-1151,113,2008,6,6A,Control,T. pratense,JL,48.2,166,0.000431818,0.6,0 N
-1152,113,2008,6,6A,Control,T. hybridum,MH,21.2,180,0.000264,0.11,0 N
-1158,636,2008,1,1A,Control,T. hybridum,JL,11.5,39,6.92E-05,0.06,0 N
-1161,308,2008,6,6A,Control,T. repens,TS,51.9,133,0.000294,0.74,0 N
-1162,758,2008,1,1A,Control,T. hybridum,TS,48.7,73,0.000136986,0.56,0 N
-1164,461,2008,2,2A,Control,T. pratense,TS,54.2,113,0.000641,1.27,0 N
-1165,837,2008,3,3A,Control,T. hybridum,TS,38.5,307,0.000637,0.43,0 N
-1166,861,2008,5,5A,Control,T. pratense,TS,39.4,149,0.000339,0.95,0 N
-1169,726,2008,6,6A,Control,T. repens,JL,46.8,99,0.000456566,0.68,0 N
-1172,50,2008,1,1A,Control,T. hybridum,MH,40.7,800,6.30E-05,1.03,0 N
-1177,308,2008,6,6A,Control,T. hybridum,TS,44.8,62,0.000303226,0.55,0 N
-1178,758,2008,1,1A,Control,T. hybridum,MH,50.5,190,0.000307,0.59,0 N
-1179,113,2008,6,6A,Control,T. pratense,DW,46,185,0.000167327,1.07,0 N
-1181,50,2008,1,1A,Control,T. pratense,JL,41.1,138,0.000227,0.63,0 N
-1182,861,2008,5,5A,Control,T. repens,JL,42.8,151,0.000247,0.3,0 N
-1184,50,2008,1,1A,Control,T. hybridum,JL,40.6,141,0.000287,0.27,0 N
-1186,113,2008,6,6A,Control,T. repens,JL,48.3,51,0.000323529,0.55,0 N
-1187,50,2008,1,1A,Control,T. hybridum,JL,42.9,195,8.70E-05,0.89,0 N
-1189,438,2008,4,4A,Control,T. hybridum,JL,33.8,438,0.000178,0.29,0 N
-1190,493,2008,5,5A,Control,T. repens,JL,53.6,110,0.000533,0.75,0 N
-1193,837,2008,3,3A,Control,T. repens,DW,53.7,203,0.000246602,1.05,0 N
-1194,729,2008,1,1A,Control,T. repens,DW,52.5,233,0.000327723,0.93,0 N
-1195,901,2008,2,2A,Control,T. repens,AR,46.2,241,0.000225,0.95,0 N
-1197,729,2008,1,1A,Control,T. pratense,JL,30.4,295,0.000364,0.66,0 N
-1198,729,2008,1,1A,Control,T. repens,DW,38.7,360,0.000168317,1.13,0 N
-1199,729,2008,1,1A,Control,T. repens,DW,46.3,182,0.000277451,0.71,0 N
-1201,100,2008,5,5A,Control,T. repens,JL,38.9,244,0.000134,0.94,0 N
-1205,837,2008,3,3A,Control,T. hybridum,MH,35.5,375,0.000119,0.34,0 N
-1206,726,2008,6,6A,Control,T. repens,DW,36.7,191,NA,1.02,0 N
-1207,3,2008,6,6A,Control,T. pratense,MH,52.8,45,0.00068,1.11,0 N
-1208,706,2008,4,4A,Control,T. repens,DW,30.5,489,NA,0.27,0 N
-1209,160,2008,5,5A,Control,T. pratense,MH,48.9,45,0.000122222,1.39,0 N
-1211,228,2008,1,1A,Control,T. repens,TS,39.1,46,NA,0.61,0 N
-1212,344,2008,6,6A,Control,T. hybridum,MH,40.1,201,0.000102,0.72,0 N
-1213,499,2008,3,3A,Control,T. repens,JL,54.3,102,0.000202941,0.86,0 N
-1214,108,2008,3,3A,Control,T. hybridum,DW,48.8,259,NA,1.21,0 N
-1219,173,2008,2,2A,Control,T. pratense,JL,37.9,293,0.000489,0.6,0 N
-1220,74,2008,1,1A,Control,T. repens,JL,49.4,68,0.000539706,0.84,0 N
-1222,462,2008,5,5A,Control,T. repens,DW,51.9,241,0.000135,1.05,0 N
-1223,100,2008,5,5A,Control,T. repens,DW,15.6,1557,0.000156863,0.38,0 N
-1224,344,2008,6,6A,Control,T. pratense,DW,39.4,554,0.000166,0.64,0 N
-1225,110,2008,4,4A,Control,T. pratense,JL,47.7,162,0.000227,0.86,0 N
-1226,110,2008,4,4A,Control,T. pratense,JL,42.8,91,0.000392308,0.61,0 N
-1227,706,2008,4,4A,Control,T. hybridum,JL,58.2,63,0.000233333,0.51,0 N
-1228,325,2008,4,4A,Control,T. pratense,TS,45.2,457,0.000352,0.81,0 N
-1231,438,2008,4,4A,Control,T. pratense,JL,49.2,76,0.000134211,0.54,0 N
-1232,108,2008,3,3A,Control,T. pratense,JL,33.5,131,0.000342748,0.46,0 N
-1233,627,2008,6,6A,Control,T. repens,TS,36.8,90,0.000124444,0.81,0 N
-1234,901,2008,2,2A,Control,T. pratense,MH,38.7,287,0.000181818,0.52,0 N
-1235,173,2008,2,2A,Control,T. repens,JL,43.3,228,0.000415,1.02,0 N
-1238,559,2008,4,4A,Control,T. repens,DW,46,125,0.000366,0.59,0 N
-1239,861,2008,5,5A,Control,T. repens,JL,57.7,32,0.00100625,0.83,0 N
-1241,460,2008,3,3A,Control,T. hybridum,JL,40.8,360,0.00019,0.29,0 N
-1242,318,2008,2,2A,Control,T. hybridum,JL,47.4,126,0.000218519,0.52,0 N
-1243,108,2008,3,3A,Control,T. pratense,JL,50,294,0.00202,0.97,0 N
-1244,318,2008,2,2A,Control,T. pratense,TS,55.4,125,0.00054,1.19,0 N
-1248,145,2008,3,3A,Control,T. repens,JL,40,60,0.000278333,0.43,0 N
-1249,901,2008,2,2A,Control,T. hybridum,TS,37.7,82,0.000239024,0.23,0 N
-1250,415,2008,3,3A,Control,T. repens,TS,41.8,66,0.000371212,0.37,0 N
-1252,901,2008,2,2A,Control,T. hybridum,JL,29.4,170,2.00E-04,0.31,0 N
-1253,3,2008,6,6A,Control,T. hybridum,JL,11.9,18,0.001111111,0.14,0 N
-1256,173,2008,2,2A,Control,T. pratense,TS,45.6,156,NA,0.69,0 N
-1258,160,2008,5,5A,Control,T. pratense,JL,43.3,71,0.000207042,0.94,0 N
-1259,837,2008,3,3A,Control,T. repens,JL,35.8,75,0.000406667,0.36,0 N
-1261,462,2008,5,5A,Control,T. hybridum,JL,51.1,99,0.00019899,0.45,0 N
-1263,449,2008,2,2A,Control,T. hybridum,DW,15.1,324,0.000152475,0.08,0 N
-1264,180,2008,5,5A,Control,T. repens,DW,38.9,210,0.000191176,0.53,0 N
-1266,706,2008,4,4A,Control,T. pratense,DW,48.7,484,0.000110891,0.87,0 N
-1269,460,2008,3,3A,Control,T. repens,MH,46,258,9.41E-05,0.61,0 N
-1270,901,2008,2,2A,Control,T. repens,MH,34.5,255,7.54E-05,0.47,0 N
-1271,3,2008,6,6A,Control,T. hybridum,MH,48.5,130,0.000145,0.31,0 N
-1272,499,2008,3,3A,Control,T. hybridum,JL,36,34,0.000397059,0.35,0 N
-1273,729,2008,1,1A,Control,T. hybridum,JL,21.1,80,8.88E-05,0.06,0 N
-1275,493,2008,5,5A,Control,T. hybridum,MH,46.5,65,0.000412308,0.37,0 N
-1278,462,2008,5,5A,Control,T. hybridum,JL,43.2,55,0.000396364,0.48,0 N
-1281,493,2008,5,5A,Control,T. hybridum,MH,NA,15,6.67E-05,0.02,0 N
-1286,499,2008,3,3A,Control,T. repens,MH,53.2,119,0.000257983,0.54,0 N
-1287,726,2008,6,6A,Control,T. repens,DW,39.2,116,0.000177586,0.76,0 N
-1288,462,2008,5,5A,Control,T. pratense,MH,36.6,88,0.000188636,0.5,0 N
-1290,228,2008,1,1A,Control,T. hybridum,DW,25,0,NA,0.21,0 N
-1292,460,2008,3,3A,Control,T. repens,DW,44.1,91,0.000394505,0.81,0 N
-1296,861,2008,5,5A,Control,T. hybridum,TS,42.3,137,0.000322,0.57,0 N
-1298,499,2008,3,3A,Control,T. pratense,DW,45,232,0.000104959,1.03,0 N
-1299,228,2008,1,1A,Control,T. hybridum,DW,41.3,203,4.65E-05,0.46,0 N
-1300,160,2008,5,5A,Control,T. pratense,DW,53.5,175,9.80E-05,1.28,0 N
-1301,145,2008,3,3A,Control,T. repens,DW,42,138,0.000155,0.87,0 N
-1302,308,2008,6,6A,Control,T. hybridum,DW,43.1,477,9.81E-05,0.67,0 N
-1303,3,2008,6,6A,Control,T. repens,DW,49.6,50,0.000248,0.84,0 N
-1304,228,2008,1,1A,Control,T. pratense,DW,28.5,357,0.000192593,0.42,0 N
-1305,729,2008,1,1A,Control,T. repens,DW,47.6,132,8.70E-05,0.97,0 N
-1306,113,2008,6,6A,Control,T. hybridum,DW,42.3,327,0.000147115,0.33,0 N
-1308,438,2008,4,4A,Control,T. pratense,AC,33.8,310,0.000523,0.52,0 N
-1309,108,2008,3,3A,Control,T. repens,DW,43.6,76,0.000134211,0.5,0 N
-1312,499,2008,3,3A,Control,T. pratense,DW,49.1,186,0.000196154,0.58,0 N
-1315,861,2008,5,5A,Control,T. pratense,DW,48.7,288,9.42E-05,0.94,0 N
-1318,74,2008,1,1A,Control,T. hybridum,DW,38.4,104,0.000290385,0.52,0 N
-1320,180,2008,5,5A,Control,T. repens,MH,29.9,469,7.77E-05,1.09,0 N
-1322,180,2008,5,5A,Control,T. pratense,MH,41.1,217,0.00019469,0.48,0 N
-1323,3,2008,6,6A,Control,T. repens,MH,32.3,66,0.00059697,0.24,0 N
-1324,861,2008,5,5A,Control,T. repens,DW,44.1,131,0.00015,0.72,0 N
-1327,308,2008,6,6A,Control,T. hybridum,JL,20.2,267,0.000116,0.37,0 N
-1328,344,2008,6,6A,Control,T. repens,TS,46.4,142,0.000331,0.62,0 N
-1329,438,2008,4,4A,Control,T. hybridum,MH,NA,121,0.00011157,0.03,0 N
-1330,706,2008,4,4A,Control,T. hybridum,TS,40.7,151,0.000596,0.5,0 N
-1331,460,2008,3,3A,Control,T. repens,MH,48.7,67,0.000150746,0.78,0 N
-1332,726,2008,6,6A,Control,T. hybridum,MH,37.3,200,0.000154,0.49,0 N
-1333,627,2008,6,6A,Control,T. pratense,TS,43.6,134,0.000414,0.82,0 N
-1337,108,2008,3,3A,Control,T. pratense,DW,47.4,451,0.000175472,1.15,0 N
-1338,145,2008,3,3A,Control,T. pratense,DW,28.2,52,0.00055,0.11,0 N
-1341,318,2008,2,2A,Control,T. hybridum,JL,48.1,129,0.00027,0.97,0 N
-1344,462,2008,5,5A,Control,T. hybridum,DW,40.9,82,0.000347561,0.48,0 N
-1346,415,2008,3,3A,Control,T. repens,JL,51.4,162,0.000291,1.16,0 N
-1350,627,2008,6,6A,Control,T. pratense,TS,46.2,267,0.000214,0.78,0 N
-1352,145,2008,3,3A,Control,T. pratense,DW,47.2,104,0.000949038,0.34,0 N
-1353,460,2008,3,3A,Control,T. hybridum,JL,44.2,108,0.000174,0.7,0 N
-1356,462,2008,5,5A,Control,T. pratense,JL,46.2,145,0.000226,0.79,0 N
-1357,559,2008,4,4A,Control,T. pratense,JL,34.1,79,0.00114557,1.02,0 N
-1358,461,2008,2,2A,Control,T. repens,TS,41.3,230,0.000775,1.17,0 N
-1361,228,2008,1,1A,Control,T. pratense,DW,45.9,164,0.000375238,0.83,0 N
-1362,726,2008,6,6A,Control,T. hybridum,JL,48.3,220,0.00015,0.99,0 N
-1364,173,2008,2,2A,Control,T. pratense,KK,38.5,142,0.000185915,0.63,0 N
-1366,145,2008,3,3A,Control,T. hybridum,DW,22.6,113,0.000739806,0.27,0 N
-1369,160,2008,5,5A,Control,T. repens,JL,39,137,0.000361,0.51,0 N
-1373,110,2008,4,4A,Control,T. hybridum,MH,47.3,75,0.000192,0.96,0 N
-1375,325,2008,4,4A,Control,T. hybridum,MH,39.9,460,9.50E-05,0.3,0 N
-1376,308,2008,6,6A,Control,T. pratense,JL,44.1,59,0.00029661,0.54,0 N
-1378,559,2008,4,4A,Control,T. pratense,MH,50.4,69,0.000756522,0.77,0 N
-1380,461,2008,2,2A,Control,T. hybridum,TB,46.1,140,0.000249,0.98,0 N
-1385,228,2008,1,1A,Control,T. pratense,TB,47.8,125,0.0001576,1.36,0 N
-1386,415,2008,3,3A,Control,T. hybridum,DW,26.1,577,8.00E-06,0.21,0 N
-1387,758,2008,1,1A,Control,T. pratense,DW,39.2,353,0.000113881,0.57,0 N
-1389,493,2008,5,5A,Control,T. hybridum,DW,27.2,117,0.000219658,0.35,0 N
-1391,415,2008,3,3A,Control,T. pratense,TS,35.3,241,0.000466,0.58,0 N
-1392,627,2008,6,6A,Control,T. repens,KK,44.9,126,0.000115079,0.96,0 N
-1394,113,2008,6,6A,Control,T. hybridum,DW,40.8,378,0.000168,0.65,0 N
-1395,415,2008,3,3A,Control,T. pratense,DW,49.5,177,0.000334,0.49,0 N
-1397,160,2008,5,5A,Control,T. pratense,TB,43.9,89,7.98E-05,0.51,0 N
-1399,308,2008,6,6A,Control,T. hybridum,DW,39,343,0.000187129,0.39,0 N
-1400,325,2008,4,4A,Control,T. repens,DW,54.8,317,0.000205941,1.23,0 N
-1401,901,2008,2,2A,Control,T. hybridum,DW,47,456,0.000252174,0.41,0 N
-1402,180,2008,5,5A,Control,T. hybridum,DW,33.8,1109,8.28E-05,0.48,0 N
-1403,499,2008,3,3A,Control,T. hybridum,DW,50.8,42,0.001111905,0.5,0 N
-1404,706,2008,4,4A,Control,T. hybridum,JL,47.4,72,0.000251389,0.76,0 N
-1406,460,2008,3,3A,Control,T. pratense,JL,41.1,77,0.000145455,0.66,0 N
-1408,559,2008,4,4A,Control,T. repens,JL,22.7,42,0.000502381,0.9,0 N
-1409,462,2008,5,5A,Control,T. hybridum,TS,44.8,111,0.00012,0.67,0 N
-1411,108,2008,3,3A,Control,T. repens,JL,39.8,230,NA,0.9,0 N
-1412,50,2008,1,1A,Control,T. repens,JL,40.4,102,0.000151961,0.43,0 N
-1413,180,2008,5,5A,Control,T. hybridum,JL,12.7,185,0.00034,0.22,0 N
-1415,726,2008,6,6A,Control,T. hybridum,DW,46.6,71,0.000308451,0.71,0 N
-1416,559,2008,4,4A,Control,T. repens,TS,39.6,234,0.000524,0.74,0 N
-1418,180,2008,5,5A,Control,T. hybridum,JL,36.7,310,0.00019,0.4,0 N
-1419,636,2008,1,1A,Control,T. hybridum,JL,45.4,95,0.000115789,0.75,0 N
-1421,493,2008,5,5A,Control,T. pratense,DW,52.8,194,0.000190196,0.66,0 N
-1422,113,2008,6,6A,Control,T. pratense,DW,47.9,449,8.82E-05,1.08,0 N
-1424,308,2008,6,6A,Control,T. hybridum,DW,33.2,739,3.50E-05,0.72,0 N
-1426,160,2008,5,5A,Control,T. repens,MH,34.9,175,4.50E-05,0.41,0 N
-1428,344,2008,6,6A,Control,T. repens,DW,46.2,137,0.000161386,1.17,0 N
-1431,100,2008,5,5A,Control,T. hybridum,DW,44.5,330,5.40E-05,0.99,0 N
-1433,100,2008,5,5A,Control,T. hybridum,JL,30.9,51,0.000119608,0.07,0 N
-1438,113,2008,6,6A,Control,T. repens,NA,43.8,153,0.00018,0.82,0 N
-1439,344,2008,6,6A,Control,T. pratense,RP,52.5,379,5.98E-05,0.97,0 N
-1442,415,2008,3,3A,Control,T. pratense,KK,30,256,9.10E-05,0.14,0 N
-1446,861,2008,5,5A,Control,T. repens,NA,42.6,86,0.000223256,0.32,0 N
-1447,462,2008,5,5A,Control,T. hybridum,JL,44.6,4,5.00E-05,0.76,0 N
-1153,796,2008,2,2B,Nitrogen,T. hybridum,JL,3.9,95,7.37E-05,0.04,Fertilized
-1155,97,2008,1,1B,Nitrogen,T. hybridum,DW,45.4,708,1.73E-05,0.56,Fertilized
-1156,209,2008,6,6B,Nitrogen,T. hybridum,NA,40.5,217,4.84E-05,0.67,Fertilized
-1157,475,2008,4,4B,Nitrogen,T. hybridum,JL,10.2,28,2.14E-05,0.05,Fertilized
-1159,527,2008,3,3B,Nitrogen,T. repens,TS,54.3,74,0.00027973,NA,Fertilized
-1160,538,2008,1,1B,Nitrogen,T. pratense,MH,44,220,8.40E-05,0.49,Fertilized
-1163,511,2008,3,3B,Nitrogen,T. hybridum,MH,15.8,220,1.60E-05,0.06,Fertilized
-1167,717,2008,6,6B,Nitrogen,T. repens,JL,46.9,204,0.000244,0.62,Fertilized
-1168,699,2008,5,5B,Nitrogen,T. repens,MH,22.7,700,5.30E-05,0.13,Fertilized
-1170,328,2008,2,2B,Nitrogen,T. repens,JL,48,227,0.000175,0.87,Fertilized
-1171,717,2008,6,6B,Nitrogen,T. pratense,JL,33.3,163,0.000214,0.54,Fertilized
-1173,527,2008,3,3B,Nitrogen,T. pratense,NA,37.2,590,0.000144,0.85,Fertilized
-1174,97,2008,1,1B,Nitrogen,T. repens,DW,41.1,34,0.000582353,0.64,Fertilized
-1175,527,2008,3,3B,Nitrogen,T. hybridum,DW,38.4,415,3.76E-05,0.46,Fertilized
-1176,328,2008,2,2B,Nitrogen,T. pratense,JL,50.2,135,0.000355,1.01,Fertilized
-1180,651,2008,6,6B,Nitrogen,T. hybridum,NA,13.6,191,6.20E-05,0.09,Fertilized
-1183,116,2008,1,1B,Nitrogen,T. repens,JL,41.9,90,0.000767778,0.73,Fertilized
-1185,478,2008,2,2B,Nitrogen,T. hybridum,JL,3.9,25,0.000112,0.12,Fertilized
-1188,478,2008,2,2B,Nitrogen,T. hybridum,JL,21.9,434,8.17E-05,0.32,Fertilized
-1191,328,2008,2,2B,Nitrogen,T. pratense,DW,31.3,127,0.000533663,0.48,Fertilized
-1192,538,2008,1,1B,Nitrogen,T. hybridum,DW,43.6,330,0.000133,0.77,Fertilized
-1196,762,2008,5,5B,Nitrogen,T. hybridum,DW,44.2,405,0.000141,0.94,Fertilized
-1200,156,2008,2,2B,Nitrogen,T. repens,DW,51.5,143,0.000315,0.92,Fertilized
-1202,381,2008,3,3B,Nitrogen,T. pratense,JL,29.5,310,0.000331,0.86,Fertilized
-1203,538,2008,1,1B,Nitrogen,T. repens,DW,53.2,171,NA,1.11,Fertilized
-1204,231,2008,6,6B,Nitrogen,T. pratense,DW,44.3,518,NA,1.06,Fertilized
-1210,97,2008,1,1B,Nitrogen,T. pratense,MH,38.2,658,0.000156481,0.93,Fertilized
-1215,498,2008,5,5B,Nitrogen,T. repens,DW,15.8,1105,8.17E-05,0.15,Fertilized
-1216,577,2008,3,3B,Nitrogen,T. repens,DW,48.3,190,0.000268317,0.78,Fertilized
-1217,156,2008,2,2B,Nitrogen,T. pratense,DW,51.4,192,0.000568807,1.06,Fertilized
-1218,699,2008,5,5B,Nitrogen,T. hybridum,MH,28.2,400,1.40E-05,0.135,Fertilized
-1221,651,2008,6,6B,Nitrogen,T. pratense,DW,36.4,710,0.000257,0.6,Fertilized
-1229,859,2008,4,4B,Nitrogen,T. hybridum,TS,32.1,416,0.000328,0.14,Fertilized
-1230,596,2008,1,1B,Nitrogen,T. hybridum,JL,41.9,84,0.000141667,1.04,Fertilized
-1236,381,2008,3,3B,Nitrogen,T. pratense,JL,41.8,166,0.000288,1.06,Fertilized
-1237,651,2008,6,6B,Nitrogen,T. hybridum,JL,31.1,830,6.10E-05,0.56,Fertilized
-1240,538,2008,1,1B,Nitrogen,T. hybridum,JL,49.6,51,0.000233333,0.32,Fertilized
-1245,231,2008,6,6B,Nitrogen,T. hybridum,TS,43.3,176,0.000117,0.99,Fertilized
-1246,116,2008,1,1B,Nitrogen,T. repens,JL,35.6,82,0.000189024,0.32,Fertilized
-1247,577,2008,3,3B,Nitrogen,T. pratense,JL,37.8,278,0.000259,0.34,Fertilized
-1251,478,2008,2,2B,Nitrogen,T. pratense,JL,33.3,203,0.000246,0.36,Fertilized
-1254,328,2008,2,2B,Nitrogen,T. hybridum,JL,49.1,54,0.000261111,0.43,Fertilized
-1255,527,2008,3,3B,Nitrogen,T. pratense,JL,47.8,54,0.000453704,0.6,Fertilized
-1257,328,2008,2,2B,Nitrogen,T. pratense,TS,55.1,69,0.000475362,0.62,Fertilized
-1260,859,2008,4,4B,Nitrogen,T. pratense,JL,23.7,182,0.003,0.09,Fertilized
-1262,116,2008,1,1B,Nitrogen,T. hybridum,JL,36.3,117,0.000285,0.81,Fertilized
-1265,328,2008,2,2B,Nitrogen,T. repens,DW,25.7,144,0.000147619,0.59,Fertilized
-1267,651,2008,6,6B,Nitrogen,T. hybridum,DW,20.5,812,3.17E-05,0.11,Fertilized
-1268,156,2008,2,2B,Nitrogen,T. hybridum,JL,37.3,133,0.000343609,0.51,Fertilized
-1276,40,2008,3,3B,Nitrogen,T. hybridum,MH,22.5,27,0.001518519,0.08,Fertilized
-1277,262,2008,2,2B,Nitrogen,T. hybridum,MH,17.5,550,2.20E-05,0.12,Fertilized
-1279,596,2008,1,1B,Nitrogen,T. hybridum,JL,47.6,46,0.000452174,0.49,Fertilized
-1280,56,2008,5,5B,Nitrogen,T. pratense,TS,48.4,142,0.000211,NA,Fertilized
-1283,717,2008,6,6B,Nitrogen,T. repens,TS,31.6,63,0.000222222,0.24,Fertilized
-1284,478,2008,2,2B,Nitrogen,T. pratense,JL,43.1,75,0.000305333,0.3,Fertilized
-1285,209,2008,6,6B,Nitrogen,T. hybridum,JL,37.3,217,0.000295,0.65,Fertilized
-1289,16,2008,3,3B,Nitrogen,T. repens,TS,56.7,303,0.000251,0.59,Fertilized
-1291,156,2008,2,2B,Nitrogen,T. hybridum,MH,39.4,320,0.000185714,0.84,Fertilized
-1293,773,2008,4,4B,Nitrogen,T. pratense,TS,46.8,158,0.000749,0.67,Fertilized
-1294,527,2008,3,3B,Nitrogen,T. hybridum,AC,32.6,497,0.00016,0.71,Fertilized
-1295,116,2008,1,1B,Nitrogen,T. pratense,DW,46.8,245,0.000269307,0.73,Fertilized
-1297,717,2008,6,6B,Nitrogen,T. hybridum,DW,44.9,267,6.76E-05,0.75,Fertilized
-1307,596,2008,1,1B,Nitrogen,T. pratense,DW,39.4,184,0.000171845,0.44,Fertilized
-1310,478,2008,2,2B,Nitrogen,T. hybridum,DW,22.4,584,1.49E-05,0.27,Fertilized
-1311,40,2008,3,3B,Nitrogen,T. repens,DW,45.4,182,0.000563107,0.55,Fertilized
-1313,16,2008,3,3B,Nitrogen,T. hybridum,DW,38,461,9.81E-05,0.37,Fertilized
-1314,475,2008,4,4B,Nitrogen,T. hybridum,DW,25,164,0.00026,0.12,Fertilized
-1316,773,2008,4,4B,Nitrogen,T. repens,DW,32.1,134,0.000545,0.74,Fertilized
-1317,56,2008,5,5B,Nitrogen,T. pratense,MH,34.5,124,0.000283,0.49,Fertilized
-1319,262,2008,2,2B,Nitrogen,T. pratense,JL,48.3,178,0.000251,1.43,Fertilized
-1321,511,2008,3,3B,Nitrogen,T. pratense,MH,30.3,96,0.000136842,0.28,Fertilized
-1325,475,2008,4,4B,Nitrogen,T. repens,DW,47.1,174,0.000258333,0.79,Fertilized
-1326,381,2008,3,3B,Nitrogen,T. repens,JL,48,93,0.000253763,0.4,Fertilized
-1334,328,2008,2,2B,Nitrogen,T. hybridum,TS,47.7,32,0.0020875,0.56,Fertilized
-1335,156,2008,2,2B,Nitrogen,T. repens,TS,37.6,269,0.00044,0.77,Fertilized
-1336,762,2008,5,5B,Nitrogen,T. repens,MH,36.6,186,8.82E-05,0.52,Fertilized
-1339,475,2008,4,4B,Nitrogen,T. hybridum,DW,43.9,326,3.63E-05,0.51,Fertilized
-1340,596,2008,1,1B,Nitrogen,T. repens,DW,36.2,212,0.000291,0.81,Fertilized
-1342,478,2008,2,2B,Nitrogen,T. repens,JL,38.7,100,0.00049,0.76,Fertilized
-1343,262,2008,2,2B,Nitrogen,T. hybridum,DW,NA,18,1.11E-05,0.005,Fertilized
-1345,116,2008,1,1B,Nitrogen,T. hybridum,DW,45.9,122,0.000226,0.7,Fertilized
-1347,577,2008,3,3B,Nitrogen,T. hybridum,JL,16,19,0.000273684,0.09,Fertilized
-1349,40,2008,3,3B,Nitrogen,T. repens,JL,31,2,0.00215,0.05,Fertilized
-1351,262,2008,2,2B,Nitrogen,T. pratense,DW,14.2,241,0.000174257,0.15,Fertilized
-1354,328,2008,2,2B,Nitrogen,T. repens,JL,40.4,75,0.000393333,1,Fertilized
-1355,328,2008,2,2B,Nitrogen,T. hybridum,JL,43.7,140,0.000305,0.79,Fertilized
-1359,577,2008,3,3B,Nitrogen,T. repens,DW,36.3,90,0.000837778,1.12,Fertilized
-1360,475,2008,4,4B,Nitrogen,T. pratense,DW,40.3,228,0.000327,1.39,Fertilized
-1365,97,2008,1,1B,Nitrogen,T. pratense,TS,33.5,397,7.70E-05,0.3,Fertilized
-1367,796,2008,2,2B,Nitrogen,T. repens,MH,44.8,68,0.000425,0.68,Fertilized
-1368,773,2008,4,4B,Nitrogen,T. hybridum,KK,6.1,NA,9.23E-05,0.1,Fertilized
-1370,16,2008,3,3B,Nitrogen,T. repens,TS,40.6,446,0.000593,0.78,Fertilized
-1371,475,2008,4,4B,Nitrogen,T. pratense,DW,36.6,599,6.83E-05,0.44,Fertilized
-1372,231,2008,6,6B,Nitrogen,T. pratense,MH,46.6,182,0.00010396,0.49,Fertilized
-1374,796,2008,2,2B,Nitrogen,T. hybridum,JL,9.7,70,5.71E-05,0.07,Fertilized
-1377,538,2008,1,1B,Nitrogen,T. hybridum,DW,37.2,151,0.000265049,0.37,Fertilized
-1379,116,2008,1,1B,Nitrogen,T. repens,JL,45.8,125,0.000358,0.76,Fertilized
-1381,16,2008,3,3B,Nitrogen,T. pratense,TB,30.9,354,0.000209901,0.54,Fertilized
-1382,596,2008,1,1B,Nitrogen,T. repens,TB,32.4,96,2.50E-05,0.52,Fertilized
-1383,231,2008,6,6B,Nitrogen,T. repens,TS,36.4,83,0.000222892,0.7,Fertilized
-1384,773,2008,4,4B,Nitrogen,T. hybridum,TS,41.1,327,0.000931,0.42,Fertilized
-1388,40,2008,3,3B,Nitrogen,T. repens,DW,49.3,62,0.00023871,0.61,Fertilized
-1390,699,2008,5,5B,Nitrogen,T. pratense,TB,9.8,715,1.91E-05,0.15,Fertilized
-1393,511,2008,3,3B,Nitrogen,T. pratense,KK,51,234,2.78E-05,0.7,Fertilized
-1396,651,2008,6,6B,Nitrogen,T. hybridum,TS,25.7,307,0.000307,0.18,Fertilized
-1398,498,2008,5,5B,Nitrogen,T. pratense,TB,19.2,451,3.37E-05,0.14,Fertilized
-1405,40,2008,3,3B,Nitrogen,T. pratense,JL,31.5,231,0.000583,0.6,Fertilized
-1407,796,2008,2,2B,Nitrogen,T. hybridum,JL,11.1,270,9.10E-05,0.19,Fertilized
-1410,643,2008,2,2B,Nitrogen,T. repens,JL,50.3,66,0.000610606,0.66,Fertilized
-1414,116,2008,1,1B,Nitrogen,T. pratense,JL,46.3,112,0.000195536,0.45,Fertilized
-1417,699,2008,5,5B,Nitrogen,T. pratense,DW,23.7,275,9.90E-05,0.06,Fertilized
-1420,796,2008,2,2B,Nitrogen,T. hybridum,DW,29,1371,0.000132,0.35,Fertilized
-1423,538,2008,1,1B,Nitrogen,T. pratense,TS,45.4,113,0.000345,0.7,Fertilized
-1425,231,2008,6,6B,Nitrogen,T. hybridum,NA,35.1,222,8.60E-05,0.21,Fertilized
-1427,527,2008,3,3B,Nitrogen,T. hybridum,DW,45.1,143,6.67E-05,0.55,Fertilized
-1429,498,2008,5,5B,Nitrogen,T. hybridum,DW,14.9,240,2.40E-05,0.04,Fertilized
-1430,475,2008,4,4B,Nitrogen,T. hybridum,RP,NA,38,5.00E-05,0.18,Fertilized
-1432,328,2008,2,2B,Nitrogen,T. hybridum,NA,49,54,0.000457407,0.74,Fertilized
-1434,97,2008,1,1B,Nitrogen,T. hybridum,KK,24.1,358,2.50E-05,0.09,Fertilized
-1435,651,2008,6,6B,Nitrogen,T. repens,NA,40.1,9,6.67E-05,0.69,Fertilized
-1437,859,2008,4,4B,Nitrogen,T. pratense,JL,49.2,32,0.00011875,0.9,Fertilized
-1440,577,2008,3,3B,Nitrogen,T. repens,MH,43.5,124,0.000206,0.81,Fertilized
-1441,699,2008,5,5B,Nitrogen,T. repens,JL,23.4,410,0.000147,0.24,Fertilized
-1443,511,2008,3,3B,Nitrogen,T. hybridum,KK,41.2,771,0.000168,0.35,Fertilized
-1444,796,2008,2,2B,Nitrogen,T. hybridum,NA,31.7,729,5.30E-05,0.61,Fertilized
-1445,762,2008,5,5B,Nitrogen,T. pratense,NA,27.8,167,0.000152,0.18,Fertilized
+﻿,shootmass,leafnum,nodulenum,meannodulemass,totalnodulemass,chloro,harvester,harvestdate,plant_age,strain,nitrogen,field,plot,plantspori,plantpopori,plantsprear,plantpoprear,type,dataset_year
+1,0.29,11,194,0.0515000,0.0100000,45.6,NA,1/22/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+2,0.09,9,83,0.0651000,0.0054000,34.6,CPT,1/14/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. hybridum,Russia,treat,2008
+3,0.20,9,0,NA,NA,43.3,CPT,1/14/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+4,0.09,6,58,0.0914000,0.0053000,41,CPT,1/14/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+5,0.15,14,64,0.2375000,0.0152000,45.8,CPT,1/14/08,90,173,Control,2,2A,T. repens,Chile,T. repens,Idaho,treat,2008
+6,0.06,7,1,NA,NA,36.3,CPT,1/14/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+7,0.35,23,123,0.0740000,0.0091000,50.7,MH,1/14/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+8,0.12,12,37,0.1918920,0.0071000,32.9,ES,1/18/08,90,110,Control,4,4A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+9,0.24,6,77,0.3298700,0.0254000,40.7,MH,1/14/08,90,758,Control,1,1A,T. repens,Idaho,T. pratense,Greece,treat,2008
+10,0.22,20,80,0.4250000,0.0340000,41.1,JL,1/14/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. repens,Idaho,treat,2008
+11,0.11,8,2,0.0250000,0.0000500,45.9,JL,1/14/08,90,344,Control,6,6A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+12,0.04,6,27,0.1333330,0.0036000,41.7,TB,1/14/08,90,901,Control,2,2A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+13,0.10,12,34,0.2558820,0.0087000,39.5,TB,1/14/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+14,0.07,8,47,0.2106380,0.0099000,39,ES,1/14/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. hybridum,Colorado,treat,2008
+15,0.32,18,49,0.2122450,0.0104000,45.4,TB,1/14/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+16,0.12,16,0,NA,NA,29.2,JL,1/14/08,90,145,Control,3,3A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+17,0.08,11,28,0.2571430,0.0072000,43.6,JL,1/14/08,90,493,Control,5,5A,T. pratense,Greece,T. repens,Chile,treat,2008
+18,0.18,6,73,0.4164380,0.0304000,42.5,JL,1/14/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+19,0.41,12,82,0.1219510,0.0100000,45.4,KK,1/14/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+20,0.31,11,99,0.1777780,0.0176000,35.8,JL,1/14/08,90,110,Control,4,4A,T. repens,Idaho,T. pratense,Greece,treat,2008
+21,0.17,11,41,0.4317070,0.0177000,46.1,JL,1/14/08,90,901,Control,2,2A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+22,0.36,9,87,0.1816090,0.0158000,54.8,TB,1/14/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. pratense,Pennsylvania,treat,2008
+23,0.16,11,60,0.0617000,0.0037000,29.5,JL,1/14/08,90,228,Control,1,1A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+24,0.14,14,64,0.1609380,0.0103000,44.2,JL,1/14/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+25,0.01,5,0,NA,NA,NA,JL,1/14/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+26,0.24,8,69,0.1231880,0.0085000,44.4,CPT,1/14/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+27,0.37,21,73,0.4547950,0.0332000,38.8,JL,1/14/08,90,3,Control,6,6A,T. repens,Idaho,T. repens,Idaho,treat,2008
+28,0.39,11,94,0.1265960,0.0119000,48.8,EM,1/14/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+29,0.39,14,0,NA,NA,40.9,JJ,1/14/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+30,0.12,9,36,0.2250000,0.0081000,35.7,JJ,1/14/08,90,3,Control,6,6A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+31,0.17,6,0,NA,NA,39.5,JL,1/14/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Greece,treat,2008
+32,0.24,19,105,0.0810000,0.0085000,43.5,CPT,1/14/08,90,113,Control,6,6A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+33,0.27,4,49,0.0980000,0.0048000,41.6,NA,1/14/08,90,180,Control,5,5A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+34,0.44,20,87,0.2540230,0.0221000,50.2,JL,1/14/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+35,0.37,8,109,0.0587000,0.0064000,47.7,EM,1/14/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+36,0.34,9,103,0.1757280,0.0181000,50.5,CPT,1/14/08,90,74,Control,1,1A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+37,0.20,13,39,0.8102560,0.0316000,30.4,CPT,1/14/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. repens,Idaho,treat,2008
+38,0.08,5,36,0.3611110,0.0130000,42.6,TB,1/14/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. repens,Idaho,treat,2008
+39,0.34,11,107,0.3887850,0.0416000,50.5,JL,1/14/08,90,861,Control,5,5A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+40,0.30,22,49,0.3061220,0.0150000,50.7,JL,1/14/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+41,0.32,19,64,0.2828130,0.0181000,44.5,TB,1/14/08,90,627,Control,6,6A,T. repens,Chile,T. hybridum,Russia,treat,2008
+42,0.46,11,40,0.3600000,0.0144000,53.3,JJ,1/14/08,90,493,Control,5,5A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+43,0.18,7,104,0.0731000,0.0076000,46.6,FD,1/14/08,90,325,Control,4,4A,T. repens,Chile,T. pratense,Greece,treat,2008
+44,0.38,11,320,0.0162500,0.0052000,40.1,MH,1/14/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+45,0.23,8,169,0.0527000,0.0089000,35.9,TB,1/14/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. pratense,Greece,treat,2008
+46,0.29,8,189,0.1185190,0.0224000,43.3,FD,1/14/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. pratense,Greece,treat,2008
+47,0.03,3,38,0.0737000,0.0028000,22.9,CPT,1/14/08,90,837,Control,3,3A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+48,0.18,8,251,0.0351000,0.0088000,38,ES,1/14/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+49,0.47,15,3,0.0167000,0.0000500,42.9,ES,1/14/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+50,0.09,5,170,0.0400000,0.0068000,20.8,NA,1/18/08,90,231,Nitrogen,6,6B,T. repens,France,T. pratense,Greece,treat,2008
+51,0.22,8,258,0.1468990,0.0379000,44.8,JL,1/14/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+52,0.18,13,202,0.0332000,0.0067000,37.8,MH,1/14/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+53,0.36,23,97,0.3804120,0.0369000,43.9,JL,1/14/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. repens,Chile,treat,2008
+54,0.43,19,53,0.3433960,0.0182000,44.3,JL,1/14/08,90,461,Control,2,2A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+55,0.28,11,4,8.0750000,0.0323000,54,JL,1/14/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+56,0.14,10,36,0.3194440,0.0115000,45.8,JL,1/14/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+57,0.18,11,50,0.1940000,0.0097000,42.4,MH,1/17/08,90,861,Control,5,5A,T. repens,Chile,T. hybridum,Russia,treat,2008
+58,0.63,17,159,0.0730000,0.0116000,48.1,DW,1/17/08,90,113,Control,6,6A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+59,0.48,34,69,0.1768120,0.0122000,52,MH,1/14/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+60,0.81,14,244,0.2143440,0.0523000,53.8,JL,1/15/08,90,449,Control,2,2A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+61,0.06,3,60,0.0700000,0.0042000,24.1,MH,1/15/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+62,0.43,8,227,0.1154190,0.0262000,48.8,KK,1/15/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. pratense,Pennsylvania,treat,2008
+63,0.18,12,182,0.0945000,0.0172000,33.9,RP,1/17/08,90,113,Control,6,6A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+64,0.69,18,73,0.3657530,0.0267000,39.8,MH,1/17/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+65,0.52,16,131,0.1396950,0.0183000,48.5,JJ,1/15/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+66,0.11,5,90,0.0433000,0.0039000,25.2,JL,1/15/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+67,0.75,8,66,0.3030300,0.0200000,53.3,CPT,1/15/08,90,145,Control,3,3A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+68,0.34,17,60,0.1550000,0.0093000,51.1,TB,1/17/08,90,415,Control,3,3A,T. repens,Idaho,T. repens,Idaho,treat,2008
+69,0.38,10,62,0.0726000,0.0045000,43.7,MH,1/17/08,90,110,Control,4,4A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+70,0.28,6,76,0.1210530,0.0092000,49.9,MH,1/14/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+71,0.31,5,82,0.2487800,0.0204000,38.8,MH,1/14/08,90,231,Nitrogen,6,6B,T. repens,France,T. pratense,Pennsylvania,treat,2008
+72,0.30,6,31,1.0967740,0.0340000,43.2,CPT,1/15/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+73,0.35,4,65,0.2615380,0.0170000,NA,CPT,1/15/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+74,0.22,8,85,0.5729410,0.0487000,39.4,CPT,1/15/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. repens,Chile,treat,2008
+75,0.13,8,55,0.2054550,0.0113000,19,MH,1/16/08,90,729,Control,1,1A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+76,0.43,11,276,0.2387680,0.0659000,42,CPT,1/17/08,90,180,Control,5,5A,T. repens,Idaho,T. pratense,Greece,treat,2008
+77,0.33,16,71,0.2788730,0.0198000,47.2,CPT,1/15/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. repens,Idaho,treat,2008
+78,0.59,7,56,0.1785710,0.0100000,50.3,CPT,1/15/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+79,0.29,15,31,0.0032300,0.0001000,42.9,DW,1/18/08,90,155,Control,4,4A,T. pratense,Greece,T. repens,Idaho,treat,2008
+80,0.26,13,112,0.1991070,0.0223000,49.4,DW,1/18/08,90,145,Control,3,3A,T. pratense,Greece,T. repens,Chile,treat,2008
+81,0.25,12,148,0.0777000,0.0115000,42.7,DW,1/18/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Greece,treat,2008
+82,0.44,6,195,0.0359000,0.0070000,37.1,DW,1/17/08,90,344,Control,6,6A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+83,0.10,4,0,NA,NA,22.4,RP,1/17/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+84,0.22,8,124,0.1846770,0.0229000,44.8,JL,1/15/08,90,100,Control,5,5A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+85,0.35,6,161,0.2409940,0.0388000,47.8,JL,1/15/08,90,901,Control,2,2A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+86,0.13,6,388,0.0299000,0.0115912,26.7,MH,1/18/08,90,729,Control,1,1A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+87,0.39,6,220,0.1486360,0.0327000,34.8,MH,1/17/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+88,0.25,9,125,NA,NA,29.5,CPT,1/17/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. hybridum,Russia,treat,2008
+89,0.07,4,29,0.0345000,0.0010000,28.7,CPT,1/17/08,90,636,Control,1,1A,T. repens,Chile,T. hybridum,Russia,treat,2008
+90,0.06,5,50,0.4460000,0.0223000,22,JL,1/17/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+91,0.37,7,550,0.1006250,0.0553438,24,JL,1/17/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+92,0.22,5,68,0.5367650,0.0365000,32,JL,1/17/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. pratense,Greece,treat,2008
+93,0.25,7,556,0.0257000,0.0143000,20.4,MH,1/17/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. repens,Idaho,treat,2008
+94,0.28,14,43,0.1441860,0.0062000,50,CPT,1/17/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+95,0.43,9,68,0.2367650,0.0161000,51.9,CPT,1/17/08,90,758,Control,1,1A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+96,0.46,14,24,0.0583000,0.0014000,52.2,JL,1/17/08,90,228,Control,1,1A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+97,0.21,10,3,1.0000000,0.0030000,37,JL,1/17/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+98,0.11,7,20,0.0050000,0.0001000,26,JL,1/17/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+99,0.09,17,69,0.1043480,0.0072000,44.4,MH,1/18/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+100,0.25,9,195,0.0610000,0.0119000,43.8,CPT,1/17/08,90,113,Control,6,6A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+101,0.22,6,121,0.0397000,0.0048000,9.7,MH,1/18/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+102,0.40,22,48,0.3354170,0.0161000,51.3,JL,1/17/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+103,0.14,9,32,0.0437500,0.0014000,23.6,JL,1/17/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+104,0.35,13,41,0.5024390,0.0206000,55.8,DW,1/18/08,90,3,Control,6,6A,T. repens,Idaho,T. repens,Chile,treat,2008
+105,0.28,9,340,NA,NA,33.1,CPT,1/17/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. pratense,Greece,treat,2008
+106,0.41,14,117,0.1717950,0.0201000,47.1,CPT,1/17/08,90,74,Control,1,1A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+107,0.41,5,143,0.0783000,0.0112000,44.7,CPT,1/17/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+108,0.52,27,99,0.2606060,0.0258000,52.3,JL,1/18/08,90,231,Nitrogen,6,6B,T. repens,France,T. repens,Chile,treat,2008
+109,0.45,8,117,0.1076920,0.0126000,52.7,MH,1/18/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+110,0.45,11,368,0.0255000,0.0094000,40.4,CPT,1/17/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+111,0.40,25,131,0.4419850,0.0579000,44.8,JL,1/17/08,90,325,Control,4,4A,T. repens,Chile,T. repens,Idaho,treat,2008
+112,0.35,9,332,0.1177710,0.0391000,50,JL,1/18/08,90,344,Control,6,6A,T. pratense,Greece,T. pratense,Greece,treat,2008
+113,0.05,5,52,0.0154000,0.0008000,20.7,DW,1/18/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+114,0.18,6,114,0.4017540,0.0458000,33.5,JL,1/18/08,90,438,Control,4,4A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+115,1.50,28,93,0.2946240,0.0274000,45.7,DW,1/17/08,90,462,Control,5,5A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+116,0.12,6,120,0.1642860,0.0197143,15.3,JL,1/17/08,90,415,Control,3,3A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+117,0.70,29,79,0.4354430,0.0344000,51.7,JL,1/17/08,90,108,Control,3,3A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+118,0.14,6,168,0.1160710,0.0195000,51.2,DW,1/18/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. hybridum,Russia,treat,2008
+119,0.41,19,97,0.0866000,0.0084000,53.4,TB,1/17/08,90,438,Control,4,4A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+120,0.55,30,41,0.4682930,0.0192000,46.7,JL,1/17/08,90,228,Control,1,1A,T. pratense,Greece,T. repens,Chile,treat,2008
+121,0.86,20,92,0.3315220,0.0305000,52.7,JL,1/17/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+122,0.48,11,202,0.4465350,0.0902000,44.7,JL,1/17/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+123,0.67,56,124,0.4169350,0.0517000,47.3,JL,1/17/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. repens,Idaho,treat,2008
+124,0.65,18,28,2.0642860,0.0578000,44.4,DW,1/18/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. repens,Chile,treat,2008
+125,0.60,21,190,0.1305260,0.0248000,48.2,DW,1/19/08,90,729,Control,1,1A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+126,0.34,17,328,0.0802000,0.0263000,36.8,TB,1/17/08,90,837,Control,3,3A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+127,0.22,11,190,0.2652630,0.0504000,42.8,JL,1/17/08,90,460,Control,3,3A,T. repens,Chile,T. hybridum,Russia,treat,2008
+128,0.54,37,118,0.2542370,0.0300000,51.7,JL,1/17/08,90,344,Control,6,6A,T. pratense,Greece,T. repens,Idaho,treat,2008
+129,0.50,16,185,0.4183780,0.0774000,40.1,JL,1/17/08,90,758,Control,1,1A,T. repens,Idaho,T. pratense,Greece,treat,2008
+130,0.65,35,37,1.1324320,0.0419000,45.4,JL,1/17/08,90,493,Control,5,5A,T. pratense,Greece,T. repens,Chile,treat,2008
+131,0.34,7,430,0.1758820,0.0756294,36.1,JL,1/17/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. pratense,Greece,treat,2008
+132,0.45,13,88,0.2886360,0.0254000,43.8,DW,1/19/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Greece,treat,2008
+133,0.44,26,68,0.2720590,0.0185000,39.5,JL,1/17/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+134,0.43,8,175,0.1565710,0.0274000,50.1,JL,1/17/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+135,0.43,13,130,0.0869000,0.0113000,38.3,JL,1/17/08,90,726,Control,6,6A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+136,0.45,10,259,0.4667950,0.1209000,38,JL,1/17/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. pratense,Greece,treat,2008
+137,0.43,31,183,0.3071040,0.0562000,46,JL,1/17/08,90,344,Control,6,6A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+138,0.09,10,25,0.5960000,0.0149000,13.1,TB,1/17/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+139,0.07,6,1,0.0500000,0.0000500,5.9,JL,1/17/08,90,3,Control,6,6A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+140,0.31,10,147,0.2517010,0.0370000,43.5,JL,1/17/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Greece,treat,2008
+141,0.41,24,87,1.3528740,0.1177000,38.4,JL,1/17/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+142,0.81,13,159,0.3150940,0.0501000,55.7,JL,1/17/08,90,110,Control,4,4A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+143,0.11,5,74,0.4783780,0.0354000,37.6,JL,1/17/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Greece,treat,2008
+144,0.58,30,400,0.1875000,0.0750000,49.6,MH,1/18/08,90,110,Control,4,4A,T. repens,Idaho,T. repens,Idaho,treat,2008
+145,0.07,6,31,0.0226000,0.0007000,14.4,JL,1/17/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. hybridum,Russia,treat,2008
+146,0.13,7,2,1.0500000,0.0021000,NA,JL,1/17/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+147,0.33,7,37,1.1081080,0.0410000,45.5,JL,1/17/08,90,3,Control,6,6A,T. repens,Idaho,T. pratense,Greece,treat,2008
+148,0.28,33,1010,0.0241000,0.0242911,26,ES,1/17/08,90,449,Control,2,2A,T. hybridum,Russia,T. repens,Chile,treat,2008
+149,0.22,8,10,0.2600000,0.0026000,36.4,DW,1/19/08,90,3,Control,6,6A,T. repens,Idaho,T. pratense,Greece,treat,2008
+150,0.63,14,86,0.0523000,0.0045000,50.3,ES,1/17/08,90,462,Control,5,5A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+151,0.50,21,155,0.1774190,0.0275000,51,DW,1/19/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. repens,Idaho,treat,2008
+152,0.66,58,120,0.3525000,0.0423000,50.8,DW,1/21/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+153,0.14,12,20,1.8000000,0.0360000,45.6,ES,1/17/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+154,0.30,10,240,0.2360000,0.0566400,46.3,JL,1/19/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+155,0.47,16,104,0.2730000,0.0283920,43.1,MH,1/19/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. repens,Idaho,treat,2008
+156,0.01,5,44,0.0409000,0.0018000,NA,DW,1/21/08,90,325,Control,4,4A,T. repens,Chile,T. hybridum,Russia,treat,2008
+157,0.69,32,135,0.5553720,0.0749752,53.6,DW,1/21/08,90,901,Control,2,2A,T. repens,Idaho,T. repens,Chile,treat,2008
+158,0.28,10,126,0.2060000,0.0259560,45.5,MH,1/21/08,90,461,Control,2,2A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+159,0.61,17,127,0.3763640,0.0477982,40.8,DW,1/21/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+160,0.42,21,186,0.2582520,0.0480350,44.1,DW,1/21/08,90,837,Control,3,3A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+161,0.52,19,580,0.4225000,0.2450500,36.7,JL,1/19/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. pratense,Greece,treat,2008
+162,0.20,9,115,0.1160000,0.0133400,13,JL,1/19/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+163,0.73,21,547,0.2980000,0.1630060,NA,MH,1/19/08,90,460,Control,3,3A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+164,0.71,17,88,0.0841000,0.0074000,45.2,KK,1/21/08,90,758,Control,1,1A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+165,0.69,7,315,0.2640000,0.0831600,51.5,JL,1/21/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+166,0.12,5,155,0.0533000,0.0082667,15,JL,1/19/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+167,0.52,30,157,0.0490000,0.0076930,36.3,MH,1/19/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+168,0.47,30,265,0.1960000,0.0519400,40.7,JL,1/21/08,90,113,Control,6,6A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+169,0.47,19,99,0.3010100,0.0298000,58.9,JL,1/21/08,90,74,Control,1,1A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+170,0.52,19,126,1.1634920,0.1466000,35.2,JL,1/21/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. repens,Chile,treat,2008
+171,0.63,36,185,0.0980000,0.0181300,48.2,JL,1/21/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+172,0.70,53,235,0.4130000,0.0970550,40.2,JL,1/21/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. repens,Idaho,treat,2008
+173,0.24,5,862,0.0827000,0.0712808,23.3,DW,1/22/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. pratense,Greece,treat,2008
+174,0.18,10,372,0.0188000,0.0069980,18.4,DW,1/22/08,90,344,Control,6,6A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+175,0.60,8,161,0.1128710,0.0181723,49.5,DW,1/22/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+176,0.41,7,220,0.1138890,0.0250556,44.4,DW,1/22/08,90,415,Control,3,3A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+177,0.11,5,248,0.0600000,0.0148800,15.1,DW,1/22/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. hybridum,Russia,treat,2008
+178,0.81,38,283,0.4123810,0.1167038,43.9,DW,1/22/08,90,173,Control,2,2A,T. repens,Chile,T. repens,Idaho,treat,2008
+179,0.87,67,163,0.5033900,0.0820525,52.8,JL,1/22/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. repens,Idaho,treat,2008
+180,0.66,38,185,0.2970000,0.0549450,48.2,JL,1/22/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. repens,Chile,treat,2008
+181,0.53,18,95,0.3831580,0.0364000,48.3,JL,1/22/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+182,0.73,12,378,0.0988000,0.0373333,54.8,MH,1/23/08,90,706,Control,4,4A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+183,0.73,32,349,0.2710000,0.0945790,42.6,MH,1/23/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+184,0.65,21,87,0.0391000,0.0034000,37.5,JL,1/22/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+185,0.45,17,191,0.5401960,0.1031775,42.8,DW,1/22/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+186,0.08,8,156,0.1410000,0.0219960,21.4,JL,1/22/08,90,729,Control,1,1A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+187,0.04,7,38,0.2131580,0.0081000,NA,JL,1/22/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+188,0.31,10,145,0.1840000,0.0266800,39.5,JL,1/22/08,90,74,Control,1,1A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+189,0.23,13,133,0.7540000,0.1002820,32.2,JL,1/22/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+190,0.84,32,65,0.5446150,0.0354000,48.3,JL,1/22/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+191,0.63,43,330,0.3830000,0.1263900,36.6,MH,1/23/08,90,231,Nitrogen,6,6B,T. repens,France,T. repens,Idaho,treat,2008
+192,0.04,5,10,1.4200000,0.0142000,13,JL,1/22/08,90,3,Control,6,6A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+193,0.07,5,2,4.0500000,0.0081000,18.9,JL,1/22/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. repens,Chile,treat,2008
+194,0.80,17,295,0.1620000,0.0477900,51.7,JL,1/22/08,90,729,Control,1,1A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+195,0.25,24,325,0.2490000,0.0809250,39.3,JL,1/22/08,90,901,Control,2,2A,T. repens,Idaho,T. repens,Idaho,treat,2008
+196,0.45,20,50,0.6720000,0.0336000,46,MH,1/23/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+197,0.56,25,117,0.2948720,0.0345000,52.1,DW,1/23/08,90,74,Control,1,1A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+198,0.56,37,94,0.3404260,0.0320000,55.7,DW,1/23/08,90,325,Control,4,4A,T. repens,Chile,T. repens,Idaho,treat,2008
+199,0.74,10,197,0.5940000,0.1170180,46.4,DW,1/23/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+200,0.43,14,244,0.3735850,0.0911547,41,DW,1/23/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. pratense,Greece,treat,2008
+201,0.17,14,137,0.5762380,0.0789446,29.3,DW,1/23/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+202,0.58,28,248,0.2821780,0.0699802,48.7,DW,1/23/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+203,0.17,15,122,0.4009800,0.0489196,33.1,DW,1/23/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+204,0.40,7,245,0.1820000,0.0445900,39.7,JL,1/23/08,90,729,Control,1,1A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+205,0.57,10,112,0.3300000,0.0369600,50.6,JL,1/23/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+206,0.06,5,80,NA,NA,5,JL,1/23/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+207,0.21,9,160,0.3980000,0.0636800,44.8,JL,1/23/08,90,145,Control,3,3A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+208,1.30,20,205,0.4010000,0.0822050,52,JL,1/23/08,90,100,Control,5,5A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+209,0.41,9,51,1.1392160,0.0581000,53.1,JL,1/23/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+210,0.82,10,110,0.4770000,0.0524700,54.1,JL,1/23/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+211,0.58,29,66,0.2469700,0.0163000,41.7,JL,1/23/08,90,758,Control,1,1A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+212,0.59,18,115,0.4220000,0.0485300,49.4,JL,1/23/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+213,0.13,7,250,NA,NA,31,JL,1/23/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+214,0.67,13,310,0.2800000,0.0868000,39.8,JL,1/23/08,90,449,Control,2,2A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+215,0.47,19,150,0.4830000,0.0724500,45,JL,1/23/08,90,145,Control,3,3A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+216,0.89,12,300,0.1600000,0.0480000,46,JL,1/23/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+217,0.41,12,255,0.4550000,0.1160250,37.4,JL,1/23/08,90,460,Control,3,3A,T. repens,Chile,T. pratense,Greece,treat,2008
+218,0.37,16,175,0.3280000,0.0574000,49,JL,1/23/08,90,758,Control,1,1A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+219,0.80,36,756,0.1750000,0.1323000,47,DW,1/24/08,90,415,Control,3,3A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+220,0.88,38,304,0.4311320,0.1310642,47.5,DW,1/24/08,90,231,Nitrogen,6,6B,T. repens,France,T. repens,Idaho,treat,2008
+221,0.96,17,327,0.5657140,0.1849886,44.1,DW,1/24/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. pratense,Pennsylvania,treat,2008
+222,0.96,16,407,0.4029700,0.1640089,50.3,DW,1/24/08,90,100,Control,5,5A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+223,0.70,13,84,0.3726190,0.0313000,49.2,DW,1/24/08,90,493,Control,5,5A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+224,0.78,58,158,0.3270000,0.0516660,40.9,JL,1/24/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. repens,Idaho,treat,2008
+225,0.75,30,279,0.1235290,0.0344647,53.3,MH,1/24/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+226,0.70,17,185,0.4100000,0.0758500,46.9,JL,1/24/08,90,636,Control,1,1A,T. repens,Chile,T. pratense,Greece,treat,2008
+227,0.60,19,188,0.1580000,0.0297040,41.9,MH,1/24/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+228,1.01,14,267,0.2850000,0.0760950,52.1,DW,1/24/08,90,155,Control,4,4A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+229,0.57,15,110,0.2927270,0.0322000,53.5,DW,1/24/08,90,636,Control,1,1A,T. repens,Chile,T. repens,Chile,treat,2008
+230,0.81,39,368,0.3097090,0.1139728,47.1,DW,1/24/08,90,325,Control,4,4A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+231,0.16,6,9,0.2222220,0.0020000,21.7,MH,1/24/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+232,0.54,31,73,0.3520550,0.0257000,46.5,JL,1/24/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+233,0.70,12,96,0.4937500,0.0474000,44.8,JL,1/24/08,90,145,Control,3,3A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+234,0.68,27,83,0.8385540,0.0696000,47.6,JL,1/24/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. repens,Chile,treat,2008
+235,0.58,25,230,0.4570000,0.1051100,45.1,DW,1/24/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. hybridum,Russia,treat,2008
+236,0.09,5,606,0.0126000,0.0076485,8.1,DW,1/25/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+237,0.53,5,235,0.2910000,0.0683850,49.3,JL,1/24/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. pratense,Pennsylvania,treat,2008
+238,0.47,29,230,0.3910000,0.0899300,27.2,JL,1/24/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+239,1.00,55,107,0.7719630,0.0826000,44.4,JL,1/24/08,90,74,Control,1,1A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+240,0.55,24,131,0.2500000,0.0327500,45.1,JL,1/24/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. repens,Idaho,treat,2008
+241,0.48,16,92,0.4434780,0.0408000,40.5,JL,1/25/08,90,100,Control,5,5A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+242,0.41,23,105,0.2885710,0.0303000,45,JL,1/25/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+243,0.86,13,377,0.4820000,0.1817140,37.9,DW,1/25/08,90,726,Control,6,6A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+244,0.05,12,33,0.2545450,0.0084000,41.8,DW,1/25/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. repens,Idaho,treat,2008
+245,0.39,14,261,0.3240000,0.0845640,44.6,DW,1/25/08,90,837,Control,3,3A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+246,0.23,19,83,0.3614460,0.0300000,46.7,DW,1/25/08,90,493,Control,5,5A,T. pratense,Greece,T. repens,Idaho,treat,2008
+247,1.02,18,381,0.2056070,0.0783364,54.7,DW,1/25/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+248,0.09,4,259,0.2200000,0.0569800,19.6,DW,1/25/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+249,1.05,26,148,0.1830000,0.0270840,52.3,MH,1/25/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+250,0.59,8,388,0.0422000,0.0163569,43.1,DW,1/25/08,90,180,Control,5,5A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+251,0.65,24,177,0.2300000,0.0407100,46,DW,1/25/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+252,0.43,13,287,0.4660000,0.1337420,41.1,DW,1/25/08,90,901,Control,2,2A,T. repens,Idaho,T. pratense,Greece,treat,2008
+253,0.56,24,204,0.4861390,0.0991723,36.4,DW,1/25/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+254,0.63,14,77,0.4584420,0.0353000,44.2,JL,1/25/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+255,0.31,22,77,0.2753250,0.0212000,37.2,MH,1/25/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+256,0.10,3,760,0.1250000,0.0950000,15.8,MH,1/25/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+257,0.17,13,36,0.2000000,0.0072000,39.6,MH,1/25/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+258,0.14,9,28,0.3928570,0.0110000,34.5,JL,1/25/08,90,758,Control,1,1A,T. repens,Idaho,T. repens,Idaho,treat,2008
+259,0.04,13,15,0.8133330,0.0122000,32.8,MH,1/25/08,90,74,Control,1,1A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+260,0.32,14,25,0.2160000,0.0054000,50.5,MH,1/25/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. repens,Idaho,treat,2008
+261,0.38,16,154,0.1910000,0.0294140,54.5,MH,1/25/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. repens,Idaho,treat,2008
+262,0.07,6,155,0.1020000,0.0158100,42,MH,1/25/08,90,493,Control,5,5A,T. pratense,Greece,T. repens,Chile,treat,2008
+263,0.19,7,312,0.1723210,0.0537643,20.7,MH,1/25/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+264,0.97,14,459,0.3530000,0.1620270,44.3,JL,1/25/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. pratense,Pennsylvania,treat,2008
+265,0.67,51,128,0.4440000,0.0568320,45.8,JL,1/25/08,90,461,Control,2,2A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+266,0.78,63,205,0.1540000,0.0315700,37.7,JL,1/25/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. repens,Idaho,treat,2008
+267,0.27,11,63,0.9015870,0.0568000,41.4,JL,1/25/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+268,0.52,19,201,0.7080000,0.1423080,41.7,DW,1/26/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. pratense,Greece,treat,2008
+269,0.23,9,829,0.0287000,0.0238030,34.4,DW,1/26/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+270,1.08,37,141,0.2940000,0.0414540,54.5,DW,1/26/08,90,636,Control,1,1A,T. repens,Chile,T. repens,Idaho,treat,2008
+271,0.07,4,10,0.9400000,0.0094000,6.8,DW,1/26/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+272,0.96,19,419,0.1801890,0.0754991,50.2,DW,1/28/08,90,228,Control,1,1A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+273,1.08,102,280,0.4610000,0.1290800,42.4,JL,1/26/08,90,180,Control,5,5A,T. repens,Idaho,T. repens,Idaho,treat,2008
+274,0.16,7,23,2.5260870,0.0581000,25.5,JL,1/26/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+275,0.38,20,160,0.3480000,0.0556800,44.2,MH,1/27/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+276,0.54,6,138,0.2810000,0.0387780,50.3,MH,1/27/08,90,837,Control,3,3A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+277,0.07,4,82,0.2390240,0.0196000,9.1,MH,1/26/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. hybridum,Russia,treat,2008
+278,0.81,33,75,0.4613330,0.0346000,44.1,MH,1/26/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+279,0.73,13,125,0.2070000,0.0258750,43.4,JL,1/26/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+280,0.49,26,55,0.8127270,0.0447000,46,JL,1/26/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+281,0.51,18,310,0.2510000,0.0778100,37.6,JL,1/26/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+282,0.16,12,299,0.1370000,0.0409630,36.1,MH,1/27/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. pratense,Greece,treat,2008
+283,0.27,18,500,0.1059410,0.0529703,35.3,DW,1/28/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+284,0.41,27,113,0.2800000,0.0316400,11.6,JL,1/26/08,90,837,Control,3,3A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+285,0.54,22,57,1.0140350,0.0578000,43.8,JL,1/26/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+286,0.33,22,282,0.1360000,0.0383520,38.4,MH,1/27/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+287,0.95,18,271,0.3313730,0.0898020,49.2,DW,1/28/08,90,155,Control,4,4A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+288,0.79,75,239,0.2409520,0.0575876,38.4,DW,1/30/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. repens,Idaho,treat,2008
+289,0.35,11,441,0.0574000,0.0253248,38.9,DW,1/30/08,90,449,Control,2,2A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+290,0.33,10,147,0.1240000,0.0182280,42.8,MH,1/29/08,90,493,Control,5,5A,T. pratense,Greece,T. pratense,Greece,treat,2008
+291,0.21,8,230,0.0900000,0.0207000,32,MH,1/28/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+292,0.08,6,80,0.1575000,0.0126000,15.6,JL,1/28/08,90,729,Control,1,1A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+293,0.39,30,182,0.2570000,0.0467740,41.1,JL,1/28/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. repens,Chile,treat,2008
+294,0.60,30,35,0.3342860,0.0117000,45.8,JL,1/30/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+295,0.48,22,138,0.3380000,0.0466440,46.4,JL,1/30/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+296,0.38,21,205,0.2690000,0.0551450,44.6,JL,1/30/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. repens,Chile,treat,2008
+297,0.80,41,265,0.2330000,0.0617450,45.7,MH,1/29/08,90,627,Control,6,6A,T. repens,Chile,T. repens,Chile,treat,2008
+298,NA,53,67,0.3164180,0.0212000,53.5,MH,1/28/08,90,461,Control,2,2A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+299,0.91,28,165,0.1900000,0.0313500,46.8,JL,1/28/08,90,415,Control,3,3A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+300,0.39,12,192,0.7660000,0.1470720,30.4,JL,1/28/08,90,180,Control,5,5A,T. repens,Idaho,T. pratense,Greece,treat,2008
+301,0.41,23,178,0.3380000,0.0601640,45.5,JL,1/30/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. pratense,Greece,treat,2008
+302,0.01,1,0,NA,NA,NA,MH,1/29/08,90,3,Control,6,6A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+303,0.83,36,187,0.3950000,0.0738650,45,JL,1/30/08,90,155,Control,4,4A,T. pratense,Greece,T. repens,Chile,treat,2008
+304,0.53,13,484,0.1630000,0.0788920,50.2,MH,1/28/08,90,726,Control,6,6A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+305,0.18,7,303,0.0300000,0.0090900,6.3,MH,1/28/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+306,0.67,60,233,0.1900000,0.0442700,41.9,DW,1/30/08,90,706,Control,4,4A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+307,0.58,27,170,0.2176470,0.0370000,49.4,DW,1/30/08,90,627,Control,6,6A,T. repens,Chile,T. hybridum,Russia,treat,2008
+308,0.90,32,65,0.1107690,0.0072000,47.4,MH,1/29/08,90,231,Nitrogen,6,6B,T. repens,France,T. hybridum,Colorado,treat,2008
+309,0.24,15,188,0.4460000,0.0838480,43,MH,1/29/08,90,449,Control,2,2A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+310,1.05,43,190,1.1089110,0.2106931,44.4,DW,1/28/08,90,61,Nitrogen,5,5B,T. pratense,Germany,T. repens,Idaho,treat,2008
+311,0.98,36,553,0.2990100,0.1653525,48.2,DW,1/28/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+312,0.69,10,729,0.1390000,0.1013310,45,MH,1/28/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+313,0.85,23,271,0.1387390,0.0375982,42,DW,1/30/08,90,74,Control,1,1A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+314,0.60,30,477,0.2294120,0.1094294,45.4,DW,1/30/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. repens,Idaho,treat,2008
+315,0.65,47,253,0.3702970,0.0936851,52.1,DW,1/30/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. repens,Idaho,treat,2008
+316,0.05,3,52,0.0154000,0.0008000,NA,DW,1/31/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+317,0.65,25,186,0.0297000,0.0055248,47,DW,1/31/08,90,461,Control,2,2A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+318,0.01,3,0,NA,NA,NA,DW,1/31/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+319,3.29,10,2,0.6000000,0.0012000,34.8,DW,1/31/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+320,0.01,3,0,NA,NA,NA,JL,1/30/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+321,0.91,19,198,0.0790000,0.0156420,45.5,JL,1/30/08,90,636,Control,1,1A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+322,1.15,31,710,0.1950000,0.1384500,46,DW,1/31/08,90,461,Control,2,2A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+323,0.78,41,159,0.2140000,0.0340260,45.6,DW,1/31/08,90,108,Control,3,3A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+324,0.78,36,78,0.4910260,0.0383000,45.8,JL,1/31/08,90,100,Control,5,5A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+325,0.83,46,184,0.1490000,0.0274160,49.6,JL,1/31/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+326,0.98,34,142,0.1557970,0.0221232,46.9,JL,1/31/08,90,861,Control,5,5A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+327,0.77,14,301,0.1750000,0.0526750,47.5,NA,1/18/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+328,0.97,41,312,0.0900000,0.0280800,42.8,JL,1/31/08,90,228,Control,1,1A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+329,0.40,10,208,0.0330000,0.0068640,45.7,JL,1/31/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. pratense,Greece,treat,2008
+330,0.59,9,191,0.1000000,0.0191000,47.3,JL,1/31/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+331,0.99,8,59,0.9203390,0.0543000,46.2,JL,1/30/08,90,449,Control,2,2A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+332,0.98,53,134,0.9365670,0.1255000,46.8,JL,1/30/08,90,706,Control,4,4A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+333,0.49,26,94,0.3329790,0.0313000,45,JL,1/30/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. repens,Idaho,treat,2008
+334,0.42,12,154,0.6970300,0.1073426,34.5,DW,1/31/08,90,145,Control,3,3A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+335,1.18,88,402,0.4754900,0.1911471,41.7,DW,1/31/08,90,758,Control,1,1A,T. repens,Idaho,T. repens,Idaho,treat,2008
+336,0.75,37,254,0.1644440,0.0417689,40.5,TS,1/31/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+337,0.43,10,134,0.6441180,0.0863118,34.5,DW,1/31/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+338,0.24,20,248,0.0307000,0.0076119,33.1,DW,1/31/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+339,0.46,9,64,0.8093750,0.0518000,49.9,DW,1/31/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+340,0.21,12,136,0.2690000,0.0365840,46.4,MH,1/31/08,90,493,Control,5,5A,T. pratense,Greece,T. pratense,Greece,treat,2008
+341,0.57,15,717,0.2572820,0.1844709,37.6,DW,2/1/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+342,0.61,21,75,0.1066670,0.0080000,47.8,JL,2/1/08,90,173,Control,2,2A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+343,0.96,52,185,0.2440000,0.0451400,48,JL,2/1/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+344,0.36,18,174,0.5240000,0.0911760,25.9,TS,2/1/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+345,0.96,23,126,0.1400000,0.0176400,40.9,TS,2/1/08,90,636,Control,1,1A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+346,0.83,33,62,1.1483870,0.0712000,49.1,TS,1/31/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. repens,Chile,treat,2008
+347,0.45,23,64,0.5406250,0.0346000,50.3,JL,1/31/08,90,627,Control,6,6A,T. repens,Chile,T. hybridum,Russia,treat,2008
+348,0.79,12,807,0.3455450,0.2788545,43.9,DW,2/1/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+349,0.52,17,55,0.7727270,0.0425000,57,MH,2/1/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+350,0.47,22,23,0.3434780,0.0079000,49.6,MH,2/1/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+351,0.72,24,337,0.0780000,0.0262860,42.9,JL,2/1/08,90,180,Control,5,5A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+352,0.60,18,417,0.2110000,0.0879870,36.9,TS,1/31/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. pratense,Greece,treat,2008
+353,1.26,22,197,0.1490000,0.0293530,47.7,JL,1/31/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+354,2.65,32,79,0.2101270,0.0166000,38.6,JL,2/1/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+355,0.73,29,1,0.0500000,0.0000500,51.2,JL,2/1/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+356,1.06,24,118,0.1322030,0.0156000,46.5,JL,1/31/08,90,461,Control,2,2A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+357,1.05,34,250,0.1490000,0.0372500,53.3,MH,1/31/08,90,758,Control,1,1A,T. repens,Idaho,T. repens,Chile,treat,2008
+358,0.05,5,216,0.0440000,0.0095040,9.9,TS,2/2/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+359,0.71,15,240,0.0610000,0.0146400,46.5,MH,2/4/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. hybridum,Colorado,treat,2008
+360,0.32,18,60,0.3850000,0.0231000,22.1,MH,2/4/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. repens,Idaho,treat,2008
+361,0.39,26,109,0.4560000,0.0497040,48.6,DW,2/3/08,90,493,Control,5,5A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+362,0.73,12,375,0.4774510,0.1790441,44,DW,2/3/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+363,0.90,67,277,0.4852940,0.1344265,41.9,DW,2/3/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. repens,Idaho,treat,2008
+364,0.95,38,122,0.3930000,0.0479460,47.4,DW,2/3/08,90,100,Control,5,5A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+365,1.06,17,182,0.1820000,0.0331240,54.4,JL,2/1/08,90,231,Nitrogen,6,6B,T. repens,France,T. pratense,Pennsylvania,treat,2008
+366,0.88,31,94,0.4723400,0.0444000,49.2,TS,2/2/08,90,325,Control,4,4A,T. repens,Chile,T. repens,Chile,treat,2008
+367,0.83,54,84,0.2654760,0.0223000,48.2,MH,2/3/08,90,110,Control,4,4A,T. repens,Idaho,T. repens,Idaho,treat,2008
+368,0.64,41,94,0.0702000,0.0066000,45.8,DW,2/3/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+369,0.69,15,220,0.2990200,0.0657843,55,DW,2/3/08,90,461,Control,2,2A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+370,0.04,5,0,NA,NA,7.6,DW,2/3/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Greece,treat,2008
+371,0.59,35,79,0.7101270,0.0561000,52.5,JL,2/1/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. repens,Idaho,treat,2008
+372,1.32,89,163,0.4900000,0.0798700,52.3,JL,2/1/08,90,415,Control,3,3A,T. repens,Idaho,T. repens,Chile,treat,2008
+373,0.09,5,180,0.0560000,0.0100800,20.6,MH,2/4/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. hybridum,Russia,treat,2008
+374,0.84,44,135,0.2840000,0.0383400,48.8,MH,2/3/08,90,462,Control,5,5A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+375,0.87,40,40,0.2750000,0.0110000,50.2,JL,2/3/08,90,74,Control,1,1A,T. hybridum,Russia,T. repens,Chile,treat,2008
+376,0.79,23,330,0.0580000,0.0191400,45.5,MH,2/3/08,90,861,Control,5,5A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+377,0.73,11,78,0.2858970,0.0223000,52.6,TS,2/2/08,90,228,Control,1,1A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+378,1.10,12,103,0.2077670,0.0214000,50.4,JL,2/1/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+379,0.63,31,76,0.0618000,0.0047000,44.5,TS,2/2/08,90,627,Control,6,6A,T. repens,Chile,T. repens,Idaho,treat,2008
+380,0.95,16,128,0.3953130,0.0506000,52.2,JL,2/3/08,90,706,Control,4,4A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+381,1.16,14,165,0.2960000,0.0488400,50.6,JL,2/3/08,90,460,Control,3,3A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+382,0.35,5,250,0.0360000,0.0090000,42.2,MH,2/3/08,90,729,Control,1,1A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+383,0.53,11,272,0.2407770,0.0654913,50,DW,2/3/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+384,0.78,20,219,0.1932690,0.0423260,42.8,DW,2/3/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+385,0.75,57,136,0.5333330,0.0725333,46.6,DW,2/3/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. repens,Idaho,treat,2008
+386,0.72,36,75,0.3066670,0.0230000,62,DW,2/3/08,90,636,Control,1,1A,T. repens,Chile,T. repens,Idaho,treat,2008
+387,0.66,11,589,0.5018870,0.2956113,42,DW,2/4/08,90,325,Control,4,4A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+388,0.60,16,166,0.4318180,0.0716818,48.2,JL,2/3/08,90,113,Control,6,6A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+389,0.11,10,180,0.2640000,0.0475200,21.2,MH,2/3/08,90,113,Control,6,6A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+390,0.04,4,95,0.0737000,0.0070000,3.9,JL,2/3/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+391,0.59,23,273,0.2475730,0.0675874,46.6,DW,2/4/08,90,155,Control,4,4A,T. pratense,Greece,T. pratense,Greece,treat,2008
+392,0.56,29,708,0.0173000,0.0122538,45.4,DW,2/4/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+393,0.67,34,217,0.0484000,0.0105000,40.5,NA,2/4/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. hybridum,Colorado,treat,2008
+394,0.05,4,28,0.0214000,0.0006000,10.2,JL,2/3/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+395,0.06,5,39,0.0692000,0.0027000,11.5,JL,2/3/08,90,636,Control,1,1A,T. repens,Chile,T. hybridum,Russia,treat,2008
+396,NA,22,74,0.2797300,0.0207000,54.3,TS,2/3/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. repens,Chile,treat,2008
+397,0.49,16,220,0.0840000,0.0184800,44,MH,2/3/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+398,0.74,61,133,0.2940000,0.0391020,51.9,TS,2/4/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+399,0.56,24,73,0.1369860,0.0100000,48.7,TS,2/4/08,90,758,Control,1,1A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+400,0.06,3,220,0.0160000,0.0035200,15.8,MH,2/5/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+401,1.27,17,113,0.6410000,0.0724330,54.2,TS,2/3/08,90,461,Control,2,2A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+402,0.43,18,307,0.6370000,0.1955590,38.5,TS,2/3/08,90,837,Control,3,3A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+403,0.95,10,149,0.3390000,0.0505110,39.4,TS,2/4/08,90,861,Control,5,5A,T. repens,Chile,T. pratense,Greece,treat,2008
+404,0.62,58,204,0.2440000,0.0497760,46.9,JL,2/4/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. repens,Idaho,treat,2008
+405,0.13,7,700,0.0530000,0.0371000,22.7,MH,2/5/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. repens,Chile,treat,2008
+406,0.68,46,99,0.4565660,0.0452000,46.8,JL,2/3/08,90,726,Control,6,6A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+407,0.87,30,227,0.1750000,0.0397250,48,JL,2/3/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. repens,Idaho,treat,2008
+408,0.54,11,163,0.2140000,0.0348820,33.3,JL,2/3/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. pratense,Greece,treat,2008
+409,1.03,18,800,0.0630000,0.0504000,40.7,MH,2/5/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+410,0.85,14,590,0.1440000,0.0849600,37.2,NA,2/5/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Greece,treat,2008
+411,0.64,26,34,0.5823530,0.0198000,41.1,DW,2/5/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+412,0.46,22,415,0.0376000,0.0156139,38.4,DW,2/5/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+413,1.01,20,135,0.3550000,0.0479250,50.2,JL,2/4/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Greece,treat,2008
+414,0.55,14,62,0.3032260,0.0188000,44.8,TS,2/4/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+415,0.59,25,190,0.3070000,0.0583300,50.5,MH,2/5/08,90,758,Control,1,1A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+416,1.07,12,185,0.1673270,0.0309554,46,DW,2/5/08,90,113,Control,6,6A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+417,0.09,7,191,0.0620000,0.0118420,13.6,NA,2/5/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+418,0.63,13,138,0.2270000,0.0313260,41.1,JL,2/4/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+419,0.30,18,151,0.2470000,0.0372970,42.8,JL,2/4/08,90,861,Control,5,5A,T. repens,Chile,T. repens,Chile,treat,2008
+420,0.73,29,90,0.7677780,0.0691000,41.9,JL,2/5/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. repens,Chile,treat,2008
+421,0.27,17,141,0.2870000,0.0404670,40.6,JL,2/5/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+422,0.12,7,25,0.1120000,0.0028000,3.9,JL,2/5/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. hybridum,Russia,treat,2008
+423,0.55,34,51,0.3235290,0.0165000,48.3,JL,2/5/08,90,113,Control,6,6A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+424,0.89,30,195,0.0870000,0.0169650,42.9,JL,2/4/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+425,0.32,13,434,0.0817000,0.0354712,21.9,JL,2/5/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. hybridum,Colorado,treat,2008
+426,0.29,12,438,0.1780000,0.0779640,33.8,JL,2/5/08,90,438,Control,4,4A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+427,0.75,44,110,0.5330000,0.0586300,53.6,JL,2/5/08,90,493,Control,5,5A,T. pratense,Greece,T. repens,Idaho,treat,2008
+428,0.48,16,127,0.5336630,0.0677752,31.3,DW,2/6/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Greece,treat,2008
+429,0.77,27,330,0.1330000,0.0438900,43.6,DW,2/6/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+430,1.05,35,203,0.2466020,0.0500602,53.7,DW,2/6/08,90,837,Control,3,3A,T. hybridum,Russia,T. repens,Chile,treat,2008
+431,0.93,43,233,0.3277230,0.0763594,52.5,DW,2/6/08,90,729,Control,1,1A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+432,0.95,55,241,0.2250000,0.0542250,46.2,AR,2/6/08,90,901,Control,2,2A,T. repens,Idaho,T. repens,Idaho,treat,2008
+433,0.94,35,405,0.1410000,0.0571050,44.2,DW,2/6/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+434,0.66,8,295,0.3640000,0.1073800,30.4,JL,2/5/08,90,729,Control,1,1A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+435,1.13,44,360,0.1683170,0.0605941,38.7,DW,2/7/08,90,729,Control,1,1A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+436,0.71,42,182,0.2774510,0.0504961,46.3,DW,2/7/08,90,729,Control,1,1A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+437,0.92,33,143,0.3150000,0.0450450,51.5,DW,2/7/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+438,0.94,25,244,0.1340000,0.0326960,38.9,JL,2/5/08,90,100,Control,5,5A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+439,0.86,17,310,0.3310000,0.1026100,29.5,JL,2/5/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. pratense,Greece,treat,2008
+440,1.11,46,171,NA,NA,53.2,DW,2/7/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. repens,Chile,treat,2008
+441,1.06,28,518,NA,NA,44.3,DW,2/7/08,90,231,Nitrogen,6,6B,T. repens,France,T. pratense,Greece,treat,2008
+442,0.34,15,375,0.1190000,0.0446250,35.5,MH,2/6/08,90,837,Control,3,3A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+443,1.02,53,191,NA,NA,36.7,DW,2/7/08,90,726,Control,6,6A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+444,1.11,17,45,0.6800000,0.0306000,52.8,MH,2/7/08,90,3,Control,6,6A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+445,0.27,25,489,NA,NA,30.5,DW,2/7/08,90,706,Control,4,4A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+446,1.39,25,45,0.1222220,0.0055000,48.9,MH,2/7/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+447,0.93,24,658,0.1564810,0.1029648,38.2,MH,2/6/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+448,0.61,29,46,NA,NA,39.1,TS,2/7/08,90,228,Control,1,1A,T. pratense,Greece,T. repens,Idaho,treat,2008
+449,0.72,21,201,0.1020000,0.0205020,40.1,MH,2/6/08,90,344,Control,6,6A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+450,0.86,62,102,0.2029410,0.0207000,54.3,JL,2/5/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+451,1.21,40,259,NA,NA,48.8,DW,2/7/08,90,108,Control,3,3A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+452,0.15,17,1105,0.0817000,0.0903125,15.8,DW,2/8/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+453,0.78,49,190,0.2683170,0.0509802,48.3,DW,2/8/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+454,1.06,12,192,0.5688070,0.1092110,51.4,DW,2/8/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+455,0.14,11,400,0.0140000,0.0056000,28.2,MH,2/7/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. hybridum,Russia,treat,2008
+456,0.60,17,293,0.4890000,0.1432770,37.9,JL,2/8/08,90,173,Control,2,2A,T. repens,Chile,T. pratense,Greece,treat,2008
+457,0.84,32,68,0.5397060,0.0367000,49.4,JL,2/8/08,90,74,Control,1,1A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+458,0.60,17,710,0.2570000,0.1824700,36.4,DW,2/8/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+459,1.05,47,241,0.1350000,0.0325350,51.9,DW,2/8/08,90,462,Control,5,5A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+460,0.38,48,1557,0.1568630,0.2442353,15.6,DW,2/9/08,90,100,Control,5,5A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+461,0.64,15,554,0.1660000,0.0919640,39.4,DW,2/9/08,90,344,Control,6,6A,T. pratense,Greece,T. pratense,Greece,treat,2008
+462,0.86,13,162,0.2270000,0.0367740,47.7,JL,2/9/08,90,110,Control,4,4A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+463,0.61,25,91,0.3923080,0.0357000,42.8,JL,2/8/08,90,110,Control,4,4A,T. repens,Idaho,T. pratense,Greece,treat,2008
+464,0.51,19,63,0.2333330,0.0147000,58.2,JL,2/8/08,90,706,Control,4,4A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+465,0.81,20,457,0.3520000,0.1608640,45.2,TS,2/7/08,90,325,Control,4,4A,T. repens,Chile,T. pratense,Greece,treat,2008
+466,0.14,10,416,0.3280000,0.1364480,32.1,TS,2/8/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. hybridum,Russia,treat,2008
+467,1.04,29,84,0.1416670,0.0119000,41.9,JL,2/9/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+468,0.54,6,76,0.1342110,0.0102000,49.2,JL,2/9/08,90,438,Control,4,4A,T. hybridum,Russia,T. pratense,Pennsylvania,treat,2008
+469,0.46,16,131,0.3427480,0.0449000,33.5,JL,2/8/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+470,0.81,51,90,0.1244440,0.0112000,36.8,TS,2/8/08,90,627,Control,6,6A,T. repens,Chile,T. repens,Idaho,treat,2008
+471,0.52,11,287,0.1818180,0.0521818,38.7,MH,2/9/08,90,901,Control,2,2A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+472,1.02,51,228,0.4150000,0.0946200,43.3,JL,2/9/08,90,173,Control,2,2A,T. repens,Chile,T. repens,Idaho,treat,2008
+473,1.06,12,166,0.2880000,0.0478080,41.8,JL,2/8/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+474,0.56,16,830,0.0610000,0.0506300,31.1,JL,2/8/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+475,0.59,39,125,0.3660000,0.0457500,46,DW,2/9/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+476,0.83,32,32,1.0062500,0.0322000,57.7,JL,2/10/08,90,861,Control,5,5A,T. repens,Chile,T. repens,Chile,treat,2008
+477,0.32,15,51,0.2333330,0.0119000,49.6,JL,2/10/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+478,0.29,18,360,0.1900000,0.0684000,40.8,JL,2/10/08,90,460,Control,3,3A,T. repens,Chile,T. hybridum,Russia,treat,2008
+479,0.52,23,126,0.2185190,0.0275333,47.4,JL,2/10/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+480,0.97,16,294,2.0200000,0.5938800,50,JL,2/10/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+481,1.19,17,125,0.5400000,0.0675000,55.4,TS,2/9/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+482,0.99,21,176,0.1170000,0.0205920,43.3,TS,2/10/08,90,231,Nitrogen,6,6B,T. repens,France,T. hybridum,Colorado,treat,2008
+483,0.32,14,82,0.1890240,0.0155000,35.6,JL,2/10/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. repens,Idaho,treat,2008
+484,0.34,11,278,0.2590000,0.0720020,37.8,JL,2/10/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+485,0.43,20,60,0.2783330,0.0167000,40,JL,2/10/08,90,145,Control,3,3A,T. pratense,Greece,T. repens,Idaho,treat,2008
+486,0.23,14,82,0.2390240,0.0196000,37.7,TS,2/9/08,90,901,Control,2,2A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+487,0.37,22,66,0.3712120,0.0245000,41.8,TS,2/10/08,90,415,Control,3,3A,T. repens,Idaho,T. repens,Idaho,treat,2008
+488,0.36,10,203,0.2460000,0.0499380,33.3,JL,2/10/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. pratense,Greece,treat,2008
+489,0.31,15,170,0.2000000,0.0340000,29.4,JL,2/10/08,90,901,Control,2,2A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+490,0.14,14,18,1.1111110,0.0200000,11.9,JL,2/10/08,90,3,Control,6,6A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+491,0.43,22,54,0.2611110,0.0141000,49.1,JL,2/10/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+492,0.60,9,54,0.4537040,0.0245000,47.8,JL,2/10/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+493,0.69,13,156,NA,NA,45.6,TS,2/9/08,90,173,Control,2,2A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+494,0.62,17,69,0.4753620,0.0328000,55.1,TS,2/10/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. pratense,Greece,treat,2008
+495,0.94,16,71,0.2070420,0.0147000,43.3,JL,2/10/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+496,0.36,21,75,0.4066670,0.0305000,35.8,JL,2/10/08,90,837,Control,3,3A,T. hybridum,Russia,T. repens,Chile,treat,2008
+497,0.09,4,182,3.0000000,0.5460000,23.7,JL,2/10/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. pratense,Greece,treat,2008
+498,0.45,16,99,0.1989900,0.0197000,51.1,JL,2/9/08,90,462,Control,5,5A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+499,0.81,16,117,0.2850000,0.0333450,36.3,JL,2/10/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+500,0.08,11,324,0.1524750,0.0494020,15.1,DW,2/11/08,90,449,Control,2,2A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+501,0.53,32,210,0.1911760,0.0401471,38.9,DW,2/11/08,90,180,Control,5,5A,T. repens,Idaho,T. repens,Idaho,treat,2008
+502,0.59,44,144,0.1476190,0.0212571,25.7,DW,2/11/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. repens,Idaho,treat,2008
+503,0.87,13,484,0.1108910,0.0536713,48.7,DW,2/11/08,90,706,Control,4,4A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+504,0.11,8,812,0.0317000,0.0257267,20.5,DW,2/11/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+505,0.51,19,133,0.3436090,0.0457000,37.3,JL,2/11/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+506,0.61,23,258,0.0941000,0.0242695,46,MH,2/11/08,90,460,Control,3,3A,T. repens,Chile,T. repens,Idaho,treat,2008
+507,0.47,14,255,0.0754000,0.0192368,34.5,MH,2/11/08,90,901,Control,2,2A,T. repens,Idaho,T. repens,Chile,treat,2008
+508,0.31,17,130,0.1450000,0.0188500,48.5,MH,2/11/08,90,3,Control,6,6A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+509,0.35,13,34,0.3970590,0.0135000,36,JL,2/11/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+510,0.06,5,80,0.0887500,0.0071000,21.1,JL,2/11/08,90,729,Control,1,1A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+511,0.41,17,136,0.1380950,0.0187810,29.7,MH,2/11/08,90,155,Control,4,4A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+512,0.37,15,65,0.4123080,0.0268000,46.5,MH,2/11/08,90,493,Control,5,5A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+513,0.08,5,27,1.5185190,0.0410000,22.5,MH,2/11/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+514,0.12,10,550,0.0220000,0.0121000,17.5,MH,2/11/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+515,0.48,27,55,0.3963640,0.0218000,43.2,JL,2/11/08,90,462,Control,5,5A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+516,0.49,26,46,0.4521740,0.0208000,47.6,JL,2/11/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+517,NA,6,142,0.2110000,0.0299620,48.4,TS,2/10/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+518,0.02,5,15,0.0667000,0.0010000,NA,MH,2/11/08,90,493,Control,5,5A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+519,0.46,12,287,0.0618000,0.0177418,39.5,MH,2/11/08,90,155,Control,4,4A,T. pratense,Greece,T. pratense,Greece,treat,2008
+520,0.24,22,63,0.2222220,0.0140000,31.6,TS,2/11/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. repens,Idaho,treat,2008
+521,0.30,5,75,0.3053330,0.0229000,43.1,JL,2/11/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+522,0.65,24,217,0.2950000,0.0640150,37.3,JL,2/11/08,90,209,Nitrogen,6,6B,T. hybridum,Greece,T. hybridum,Russia,treat,2008
+523,0.54,30,119,0.2579830,0.0307000,53.2,MH,2/14/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+524,0.76,44,116,0.1775860,0.0206000,39.2,DW,2/14/08,90,726,Control,6,6A,T. hybridum,Russia,T. repens,Idaho,treat,2008
+525,0.50,9,88,0.1886360,0.0166000,36.6,MH,2/14/08,90,462,Control,5,5A,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+526,0.59,28,303,0.2510000,0.0760530,56.7,TS,2/14/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. repens,Idaho,treat,2008
+527,0.21,10,0,NA,NA,25,DW,2/13/08,90,228,Control,1,1A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+528,0.84,33,320,0.1857140,0.0594286,39.4,MH,2/14/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+529,0.81,36,91,0.3945050,0.0359000,44.1,DW,2/14/08,90,460,Control,3,3A,T. repens,Chile,T. repens,Idaho,treat,2008
+530,0.67,12,158,0.7490000,0.1183420,46.8,TS,2/11/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+531,0.71,21,497,0.1600000,0.0795200,32.6,AC,2/12/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+532,0.73,26,245,0.2693070,0.0659802,46.8,DW,2/14/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. pratense,Greece,treat,2008
+533,0.57,24,137,0.3220000,0.0441140,42.3,TS,2/11/08,90,861,Control,5,5A,T. repens,Chile,T. hybridum,Russia,treat,2008
+534,0.75,29,267,0.0676000,0.0180618,44.9,DW,2/14/08,90,717,Nitrogen,6,6B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+535,1.03,18,232,0.1049590,0.0243504,45,DW,2/13/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+536,0.46,34,203,0.0465000,0.0094465,41.3,DW,2/13/08,90,228,Control,1,1A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+537,1.28,23,175,0.0980000,0.0171500,53.5,DW,2/13/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+538,0.87,43,138,0.1550000,0.0213900,42,DW,2/13/08,90,145,Control,3,3A,T. pratense,Greece,T. repens,Idaho,treat,2008
+539,0.67,31,477,0.0981000,0.0467914,43.1,DW,2/13/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+540,0.84,44,50,0.2480000,0.0124000,49.6,DW,2/12/08,90,3,Control,6,6A,T. repens,Idaho,T. repens,Idaho,treat,2008
+541,0.42,13,357,0.1925930,0.0687556,28.5,DW,2/12/08,90,228,Control,1,1A,T. pratense,Greece,T. pratense,Greece,treat,2008
+542,0.97,34,132,0.0870000,0.0114840,47.6,DW,2/12/08,90,729,Control,1,1A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+543,0.33,15,327,0.1471150,0.0481067,42.3,DW,2/12/08,90,113,Control,6,6A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+544,0.44,11,184,0.1718450,0.0316194,39.4,DW,2/12/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+545,0.52,16,310,0.5230000,0.1621300,33.8,AC,2/12/08,90,438,Control,4,4A,T. hybridum,Russia,T. pratense,Greece,treat,2008
+546,0.50,26,76,0.1342110,0.0102000,43.6,DW,2/12/08,90,108,Control,3,3A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+547,0.27,13,584,0.0149000,0.0086733,22.4,DW,2/12/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. hybridum,Russia,treat,2008
+548,0.55,46,182,0.5631070,0.1024854,45.4,DW,2/14/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. repens,Idaho,treat,2008
+549,0.58,10,186,0.1961540,0.0364846,49.1,DW,2/14/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+550,0.37,23,461,0.0981000,0.0452135,38,DW,2/14/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. hybridum,Russia,treat,2008
+551,0.12,9,164,0.2600000,0.0426400,25,DW,2/14/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. hybridum,Russia,treat,2008
+552,0.94,13,288,0.0942000,0.0271385,48.7,DW,2/15/08,90,861,Control,5,5A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+553,0.74,42,134,0.5450000,0.0730300,32.1,DW,2/15/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. repens,Chile,treat,2008
+554,0.49,8,124,0.2830000,0.0350920,34.5,MH,2/14/08,90,56,Nitrogen,5,5B,T. repens,Idaho,T. pratense,Greece,treat,2008
+555,0.52,24,104,0.2903850,0.0302000,38.4,DW,2/15/08,90,74,Control,1,1A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+556,1.43,23,178,0.2510000,0.0446780,48.3,JL,2/15/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+557,1.09,38,469,0.0777000,0.0364272,29.9,MH,2/15/08,90,180,Control,5,5A,T. repens,Idaho,T. repens,Chile,treat,2008
+558,0.28,6,96,0.1368420,0.0131368,30.3,MH,2/15/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+559,0.48,14,217,0.1946900,0.0422478,41.1,MH,2/14/08,90,180,Control,5,5A,T. repens,Idaho,T. pratense,Greece,treat,2008
+560,0.24,20,66,0.5969700,0.0394000,32.3,MH,2/14/08,90,3,Control,6,6A,T. repens,Idaho,T. repens,Chile,treat,2008
+561,0.72,45,131,0.1500000,0.0196500,44.1,DW,2/15/08,90,861,Control,5,5A,T. repens,Chile,T. repens,Idaho,treat,2008
+562,0.79,60,174,0.2583330,0.0449500,47.1,DW,2/15/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. repens,Idaho,treat,2008
+563,0.40,24,93,0.2537630,0.0236000,48,JL,2/15/08,90,381,Nitrogen,3,3B,T. repens,Chile,T. repens,Idaho,treat,2008
+564,0.37,14,267,0.1160000,0.0309720,20.2,JL,2/15/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+565,0.62,18,142,0.3310000,0.0470020,46.4,TS,2/14/08,90,344,Control,6,6A,T. pratense,Greece,T. repens,Chile,treat,2008
+566,0.03,5,121,0.1115700,0.0135000,NA,MH,2/14/08,90,438,Control,4,4A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+567,0.50,24,151,0.5960000,0.0899960,40.7,TS,2/15/08,90,706,Control,4,4A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+568,0.78,25,67,0.1507460,0.0101000,48.7,MH,2/15/08,90,460,Control,3,3A,T. repens,Chile,T. repens,Idaho,treat,2008
+569,0.49,24,200,0.1540000,0.0308000,37.3,MH,2/15/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+570,0.82,10,134,0.4140000,0.0554760,43.6,TS,2/14/08,90,627,Control,6,6A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+571,0.56,21,32,2.0875000,0.0668000,47.7,TS,2/15/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+572,0.77,51,269,0.4400000,0.1183600,37.6,TS,2/14/08,90,156,Nitrogen,2,2B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+573,0.52,22,186,0.0882000,0.0164118,36.6,MH,2/14/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. repens,Idaho,treat,2008
+574,1.15,18,451,0.1754720,0.0791377,47.4,DW,2/15/08,90,108,Control,3,3A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+575,0.11,7,52,0.5500000,0.0286000,28.2,DW,2/15/08,90,145,Control,3,3A,T. pratense,Greece,T. pratense,Greece,treat,2008
+576,0.51,21,326,0.0363000,0.0118255,43.9,DW,2/15/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+577,0.81,51,212,0.2910000,0.0616920,36.2,DW,2/15/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. repens,Idaho,treat,2008
+578,0.97,35,129,0.2700000,0.0348300,48.1,JL,2/15/08,90,318,Control,2,2A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+579,0.76,49,100,0.4900000,0.0490000,38.7,JL,2/15/08,90,478,Nitrogen,2,2B,T. repens,Chile,T. repens,Chile,treat,2008
+580,0.01,3,18,0.0111000,0.0002000,NA,DW,2/15/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+581,0.48,19,82,0.3475610,0.0285000,40.9,DW,2/15/08,90,462,Control,5,5A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+582,0.70,30,122,0.2260000,0.0275720,45.9,DW,2/16/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+583,1.16,88,162,0.2910000,0.0471420,51.4,JL,2/15/08,90,415,Control,3,3A,T. repens,Idaho,T. repens,Idaho,treat,2008
+584,0.09,5,19,0.2736840,0.0052000,16,JL,2/15/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+585,0.76,23,81,0.3012350,0.0244000,37.3,JL,2/15/08,90,155,Control,4,4A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+586,0.05,6,2,2.1500000,0.0043000,31,JL,2/15/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. repens,Chile,treat,2008
+587,0.78,17,267,0.2140000,0.0571380,46.2,TS,2/15/08,90,627,Control,6,6A,T. repens,Chile,T. pratense,Greece,treat,2008
+588,0.15,9,241,0.1742570,0.0419960,14.2,DW,2/16/08,90,262,Nitrogen,2,2B,T. repens,Idaho,T. pratense,Greece,treat,2008
+589,0.34,17,104,0.9490380,0.0987000,47.2,DW,2/16/08,90,145,Control,3,3A,T. pratense,Greece,T. pratense,Greece,treat,2008
+590,0.70,27,108,0.1740000,0.0187920,44.2,JL,2/15/08,90,460,Control,3,3A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+591,1.00,56,75,0.3933330,0.0295000,40.4,JL,2/16/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. repens,Idaho,treat,2008
+592,0.79,32,140,0.3050000,0.0427000,43.7,JL,2/16/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+593,0.79,11,145,0.2260000,0.0327700,46.2,JL,2/15/08,90,462,Control,5,5A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+594,1.02,14,79,1.1455700,0.0905000,34.1,JL,2/15/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+595,1.17,59,230,0.7750000,0.1782500,41.3,TS,2/16/08,90,461,Control,2,2A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+596,1.12,39,90,0.8377780,0.0754000,36.3,DW,2/16/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. repens,Chile,treat,2008
+597,1.39,15,228,0.3270000,0.0745560,40.3,DW,2/16/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+598,0.83,16,164,0.3752380,0.0615390,45.9,DW,2/17/08,90,228,Control,1,1A,T. pratense,Greece,T. pratense,Greece,treat,2008
+599,0.99,29,220,0.1500000,0.0330000,48.3,JL,2/16/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+600,1.21,61,191,0.2500000,0.0477500,46.3,JL,2/16/08,90,155,Control,4,4A,T. pratense,Greece,T. repens,Idaho,treat,2008
+601,0.63,9,142,0.1859150,0.0264000,38.5,KK,2/18/08,90,173,Control,2,2A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+602,0.30,11,397,0.0770000,0.0305690,33.5,TS,2/17/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+603,0.27,8,113,0.7398060,0.0835981,22.6,DW,2/17/08,90,145,Control,3,3A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+604,0.68,45,68,0.4250000,0.0289000,44.8,MH,2/16/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. repens,Chile,treat,2008
+605,0.10,6,NA,0.0923000,NA,6.1,KK,2/18/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+606,0.51,35,137,0.3610000,0.0494570,39,JL,2/16/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+607,0.78,53,446,0.5930000,0.2644780,40.6,TS,2/17/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. repens,Chile,treat,2008
+608,0.44,20,599,0.0683000,0.0409218,36.6,DW,2/17/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. pratense,Greece,treat,2008
+609,0.49,19,182,0.1039600,0.0189208,46.6,MH,2/17/08,90,231,Nitrogen,6,6B,T. repens,France,T. pratense,Greece,treat,2008
+610,0.96,36,75,0.1920000,0.0144000,47.3,MH,2/16/08,90,110,Control,4,4A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+611,0.07,6,70,0.0571000,0.0040000,9.7,JL,2/16/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+612,0.30,17,460,0.0950000,0.0437000,39.9,MH,2/16/08,90,325,Control,4,4A,T. repens,Chile,T. hybridum,Russia,treat,2008
+613,0.54,8,59,0.2966100,0.0175000,44.1,JL,2/16/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+614,0.37,18,151,0.2650490,0.0400223,37.2,DW,2/17/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+615,0.77,17,69,0.7565220,0.0522000,50.4,MH,2/17/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+616,0.76,30,125,0.3580000,0.0447500,45.8,JL,2/16/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. repens,Chile,treat,2008
+617,0.98,40,140,0.2490000,0.0348600,46.1,TB,2/17/08,90,461,Control,2,2A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+618,0.54,19,354,0.2099010,0.0743050,30.9,TB,2/18/08,90,16,Nitrogen,3,3B,T. hybridum,Greece,T. pratense,Greece,treat,2008
+619,0.52,32,96,0.0250000,0.0024000,32.4,TB,2/18/08,90,596,Nitrogen,1,1B,T. repens,Idaho,T. repens,Idaho,treat,2008
+620,0.70,34,83,0.2228920,0.0185000,36.4,TS,2/18/08,90,231,Nitrogen,6,6B,T. repens,France,T. repens,Idaho,treat,2008
+621,0.42,19,327,0.9310000,0.3044370,41.1,TS,2/17/08,90,773,Nitrogen,4,4B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+622,1.36,12,125,0.1576000,0.0197000,47.8,TB,2/17/08,90,228,Control,1,1A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+623,0.21,15,577,0.0080000,0.0046160,26.1,DW,2/18/08,90,415,Control,3,3A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+624,0.57,10,353,0.1138810,0.0402000,39.2,DW,2/18/08,90,758,Control,1,1A,T. repens,Idaho,T. pratense,Greece,treat,2008
+625,0.61,24,62,0.2387100,0.0148000,49.3,DW,2/18/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. repens,Idaho,treat,2008
+626,0.35,15,117,0.2196580,0.0257000,27.2,DW,2/18/08,90,493,Control,5,5A,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+627,0.15,4,715,0.0191000,0.0136783,9.8,TB,2/17/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+628,0.58,10,241,0.4660000,0.1123060,35.3,TS,2/17/08,90,415,Control,3,3A,T. repens,Idaho,T. pratense,Greece,treat,2008
+629,0.96,52,126,0.1150790,0.0145000,44.9,KK,2/18/08,90,627,Control,6,6A,T. repens,Chile,T. repens,Idaho,treat,2008
+630,0.70,8,234,0.0278000,0.0065000,51,KK,2/18/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. pratense,Pennsylvania,treat,2008
+631,0.65,27,378,0.1680000,0.0635040,40.8,DW,2/18/08,90,113,Control,6,6A,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+632,0.49,9,177,0.3340000,0.0591180,49.5,DW,2/18/08,90,415,Control,3,3A,T. repens,Idaho,T. pratense,Pennsylvania,treat,2008
+633,0.18,18,307,0.3070000,0.0942490,25.7,TS,2/17/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+634,0.51,18,89,0.0798000,0.0071000,43.9,TB,2/17/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. pratense,Greece,treat,2008
+635,0.14,5,451,0.0337000,0.0151822,19.2,TB,2/17/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. pratense,Greece,treat,2008
+636,0.39,17,343,0.1871290,0.0641851,39,DW,2/17/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+637,1.23,56,317,0.2059410,0.0652832,54.8,DW,2/17/08,90,325,Control,4,4A,T. repens,Chile,T. repens,Idaho,treat,2008
+638,0.41,14,456,0.2521740,0.1149913,47,DW,2/17/08,90,901,Control,2,2A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+639,0.48,20,1109,0.0828000,0.0917793,33.8,DW,2/17/08,90,180,Control,5,5A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+640,0.50,23,42,1.1119050,0.0467000,50.8,DW,2/17/08,90,499,Control,3,3A,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+641,0.76,22,72,0.2513890,0.0181000,47.4,JL,2/18/08,90,706,Control,4,4A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+642,0.60,18,231,0.5830000,0.1346730,31.5,JL,2/19/08,90,40,Nitrogen,3,3B,T. repens,Idaho,T. pratense,Greece,treat,2008
+643,0.66,13,77,0.1454550,0.0112000,41.1,JL,2/19/08,90,460,Control,3,3A,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+644,0.19,14,270,0.0910000,0.0245700,11.1,JL,2/19/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+645,0.90,41,42,0.5023810,0.0211000,22.7,JL,2/19/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+646,0.67,25,111,0.1200000,0.0133200,44.8,TS,2/18/08,90,462,Control,5,5A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+647,0.66,30,66,0.6106060,0.0403000,50.3,JL,2/18/08,90,643,Nitrogen,2,2B,T. pratense,Greece,T. repens,Idaho,treat,2008
+648,0.90,64,230,NA,NA,39.8,JL,2/19/08,90,108,Control,3,3A,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+649,0.43,21,102,0.1519610,0.0155000,40.4,JL,2/19/08,90,50,Control,1,1A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+650,0.22,17,185,0.3400000,0.0629000,12.7,JL,2/19/08,90,180,Control,5,5A,T. repens,Idaho,T. hybridum,Russia,treat,2008
+651,0.45,7,112,0.1955360,0.0219000,46.3,JL,2/19/08,90,116,Nitrogen,1,1B,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+652,0.71,28,71,0.3084510,0.0219000,46.6,DW,2/19/08,90,726,Control,6,6A,T. hybridum,Russia,T. hybridum,Russia,treat,2008
+653,0.74,71,234,0.5240000,0.1226160,39.6,TS,2/18/08,90,559,Control,4,4A,T. pratense,Pennsylvania,T. repens,Idaho,treat,2008
+654,0.06,4,275,0.0990000,0.0272250,23.7,DW,2/18/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+655,0.40,10,310,0.1900000,0.0589000,36.7,JL,2/19/08,90,180,Control,5,5A,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+656,0.75,13,95,0.1157890,0.0110000,45.4,JL,2/19/08,90,636,Control,1,1A,T. repens,Chile,T. hybridum,Colorado,treat,2008
+657,0.35,9,1371,0.1320000,0.1809720,29,DW,2/19/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+658,0.66,13,194,0.1901960,0.0368980,52.8,DW,2/19/08,90,493,Control,5,5A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+659,1.08,20,449,0.0882000,0.0395936,47.9,DW,2/19/08,90,113,Control,6,6A,T. hybridum,Colorado,T. pratense,Pennsylvania,treat,2008
+660,0.70,19,113,0.3450000,0.0389850,45.4,TS,2/18/08,90,538,Nitrogen,1,1B,T. hybridum,Russia,T. pratense,Greece,treat,2008
+661,0.72,40,739,0.0350000,0.0258650,33.2,DW,2/18/08,90,308,Control,6,6A,T. pratense,Pennsylvania,T. hybridum,Colorado,treat,2008
+662,0.21,11,222,0.0860000,0.0190920,35.1,NA,2/18/08,90,231,Nitrogen,6,6B,T. repens,France,T. hybridum,Russia,treat,2008
+663,0.41,21,175,0.0450000,0.0078750,34.9,MH,2/19/08,90,160,Control,5,5A,T. pratense,Pennsylvania,T. repens,Chile,treat,2008
+664,0.55,23,143,0.0667000,0.0095333,45.1,DW,2/18/08,90,527,Nitrogen,3,3B,T. pratense,Greece,T. hybridum,Colorado,treat,2008
+665,1.17,38,137,0.1613860,0.0221099,46.2,DW,2/19/08,90,344,Control,6,6A,T. pratense,Greece,T. repens,Idaho,treat,2008
+666,0.04,13,240,0.0240000,0.0057600,14.9,DW,2/19/08,90,498,Nitrogen,5,5B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+667,0.18,11,38,0.0500000,0.0019000,NA,RP,2/19/08,90,475,Nitrogen,4,4B,T. repens,Idaho,T. hybridum,Colorado,treat,2008
+668,0.99,44,330,0.0540000,0.0178200,44.5,DW,2/19/08,90,100,Control,5,5A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+669,0.74,39,54,0.4574070,0.0247000,49,NA,2/19/08,90,328,Nitrogen,2,2B,T. pratense,Greece,T. hybridum,Russia,treat,2008
+670,0.07,10,51,0.1196080,0.0061000,30.9,JL,2/19/08,90,100,Control,5,5A,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+671,0.09,7,358,0.0250000,0.0089500,24.1,KK,2/19/08,90,97,Nitrogen,1,1B,T. hybridum,Colorado,T. hybridum,Russia,treat,2008
+672,0.69,37,9,0.0667000,0.0006000,40.1,NA,2/19/08,90,651,Nitrogen,6,6B,T. hybridum,Russia,T. repens,Idaho,treat,2008
+673,0.76,24,88,0.2443180,0.0215000,53.3,NA,2/19/08,90,155,Control,4,4A,T. pratense,Greece,T. hybridum,Russia,treat,2008
+674,0.90,9,32,0.1187500,0.0038000,49.2,JL,2/19/08,90,859,Nitrogen,4,4B,T. repens,Chile,T. pratense,Pennsylvania,treat,2008
+675,0.82,36,153,0.1800000,0.0275400,43.8,NA,2/19/08,90,113,Control,6,6A,T. hybridum,Colorado,T. repens,Chile,treat,2008
+676,0.97,16,379,0.0598000,0.0226675,52.5,RP,2/19/08,90,344,Control,6,6A,T. pratense,Greece,T. pratense,Pennsylvania,treat,2008
+677,0.81,30,124,0.2060000,0.0255440,43.5,MH,2/19/08,90,577,Nitrogen,3,3B,T. hybridum,Colorado,T. repens,Idaho,treat,2008
+678,0.24,18,410,0.1470000,0.0602700,23.4,JL,2/19/08,90,699,Nitrogen,5,5B,T. repens,Chile,T. repens,Idaho,treat,2008
+679,0.14,7,256,0.0910000,0.0232960,30,KK,2/19/08,90,415,Control,3,3A,T. repens,Idaho,T. pratense,Greece,treat,2008
+680,0.35,15,771,0.1680000,0.1295280,41.2,KK,2/19/08,90,511,Nitrogen,3,3B,T. pratense,Pennsylvania,T. hybridum,Russia,treat,2008
+681,0.61,26,729,0.0530000,0.0386370,31.7,NA,2/19/08,90,796,Nitrogen,2,2B,T. hybridum,Russia,T. hybridum,Colorado,treat,2008
+682,0.18,9,167,0.1520000,0.0253840,27.8,NA,2/19/08,90,762,Nitrogen,5,5B,T. pratense,Greece,T. pratense,Greece,treat,2008
+683,0.32,3,86,0.2232560,0.0192000,42.6,NA,2/19/08,90,861,Control,5,5A,T. repens,Chile,T. repens,Idaho,treat,2008
+684,0.76,27,4,0.0500000,0.0002000,44.6,JL,2/19/08,90,462,Control,5,5A,T. hybridum,Colorado,T. hybridum,Colorado,treat,2008
+685,0.01,3,38,0.0786000,2.9870000,6,MH,7/29/19,41,762,Nitrogen,5,5N,T. pratense,NA,NA,NA,treat,2018
+686,0.00,2,13,0.0522000,0.6790000,NA,JL,8/9/19,44,729,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+687,0.03,3,15,0.5437000,8.1560000,30.6,MH,7/29/19,35,67B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+688,0.07,6,7,2.2606000,15.8240000,41.6,MH,7/29/19,37,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+689,0.00,NA,0,0.0000000,0.0000000,11.3,CA,8/8/19,NA,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+690,0.08,4,16,1.8409000,29.4540000,38.6,JL,8/9/19,44,493,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+691,0.11,6,60,0.3986000,23.9180000,38.1,MH,7/29/19,41,527,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+692,0.08,6,17,1.5108000,25.6840000,39,SJ,7/29/19,41,55D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+693,0.04,4,8,0.6824000,5.4590000,41.5,SJ,7/29/19,41,272A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+694,0.03,3,19,0.5828000,11.0730000,38.1,SJ,7/29/19,41,511,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+695,0.05,4,14,1.4562000,20.3870000,40.6,JL,8/9/19,44,149C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+696,0.11,4,18,0.4782000,8.6080000,41.4,JL,8/9/19,44,100,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+697,0.03,4,30,0.8149000,24.4480000,30.2,JL,8/9/19,44,460,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+698,0.06,6,19,1.1400000,21.6600000,42.3,TG,8/7/19,42,717,Nitrogen,6,6N,T. pratense,NA,NA,NA,treat,2018
+699,0.03,4,15,0.9809000,14.7130000,36.5,TG,8/7/19,42,273A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+700,0.04,4,19,0.3908000,7.4250000,25.9,TG,8/7/19,42,116,Nitrogen,1,1N,T. pratense,NA,NA,NA,treat,2018
+701,0.07,8,26,0.7294000,18.9644000,37,TG,8/7/19,42,153C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+702,0.05,4,13,1.1102000,14.4320000,39.8,TG,8/7/19,38,377A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+703,0.13,3,15,0.3234000,4.8510000,43.3,CA,8/15/19,41,144A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+704,0.01,2,0,0.0000000,0.0000000,NA,TG,8/7/19,38,45A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+705,0.02,4,7,1.3564000,9.4950000,24.6,JL,7/29/19,41,381A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+706,0.02,5,10,1.1487000,11.4865000,27.3,JL,7/29/19,41,323A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+707,0.06,4,62,0.3905000,24.2089000,25,JL,7/29/19,40,325,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+708,0.02,5,0,0.0000000,0.0000000,29,JL,7/29/19,41,577,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+709,0.02,4,27,0.0990000,2.6730000,NA,TG,8/7/19,42,415,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+710,0.03,4,3,2.4867000,7.4600000,32.5,TG,8/7/19,42,292A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+711,0.02,4,19,0.5244000,9.9630000,22.9,JL,7/29/19,41,164A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+712,0.02,3,37,0.1197000,4.4289000,30.1,TG,8/7/19,42,559,Control,4,4C,T. pratense,NA,NA,NA,treat,2018
+713,0.00,4,13,0.0863000,1.1213000,NA,TG,8/7/19,42,381,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+714,0.04,5,12,1.1256000,13.5070000,41.3,JL,7/29/19,41,147A,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+715,0.01,2,1,2.2320000,2.2320000,29.3,JL,7/29/19,40,40,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+716,0.04,4,2,1.4670000,2.9340000,34.2,TG,8/7/19,42,499,Control,3,3C,T. pratense,NA,NA,NA,treat,2018
+717,0.08,5,46,1.1367000,52.2867000,38.2,JL,7/29/19,40,717,Nitrogen,6,6N,T. pratense,NA,NA,NA,treat,2018
+718,0.01,3,0,0.0000000,0.0000000,36.6,JL,7/29/19,35,248A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+719,0.01,3,10,0.0640000,0.6400000,NA,SJ,7/29/19,35,97,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+720,0.00,2,15,0.0161000,0.2410000,NA,SJ,7/29/19,41,50,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+721,0.04,3,5,1.3714000,6.8570000,40.5,TG,8/8/19,43,381A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+722,0.01,4,4,1.1343000,4.5373000,NA,SJ,7/29/19,37,313D,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+723,0.06,4,32,0.6168000,19.7380000,38.8,MH,7/29/19,40,298A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+724,0.05,5,9,0.9561000,8.6050000,42.1,MH,7/29/19,41,110,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+725,0.11,6,9,0.6577000,5.9190000,38.4,MH,7/29/19,37,901,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+726,0.02,NA,19,0.1651000,3.1370000,37.7,CA,8/8/19,NA,901,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+727,0.01,4,5,0.4148000,2.0740000,29.8,MH,7/29/19,41,40,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+728,0.10,7,4,0.7888000,3.1550000,40.2,SJ,7/29/19,41,596,Nitrogen,1,1N,T. repens,NA,NA,NA,treat,2018
+729,0.03,4,20,0.3143000,6.2850000,20,MH,7/29/19,35,325,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+730,0.03,3,24,0.1077000,2.5837000,37.4,TG,8/8/19,43,313D,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+731,0.10,6,14,2.0286000,28.4000000,36.4,SJ,7/29/19,41,177C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+732,0.00,3,43,0.0581000,2.4997000,NA,TG,8/8/19,43,338D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+733,0.04,4,23,0.5547000,12.7570000,24.8,SJ,7/29/19,37,758,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+734,0.04,NA,31,0.1670000,5.1770000,39.7,CA,8/8/19,NA,758,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+735,0.02,3,20,0.3172000,6.3440000,31.9,TG,8/8/19,42,773,Nitrogen,4,4N,T. pratense,NA,NA,NA,treat,2018
+736,0.02,3,8,0.6219000,4.9749000,16.6,SJ,7/29/19,41,859,Nitrogen,4,4N,T. repens,NA,NA,NA,treat,2018
+737,0.11,3,97,0.7490000,72.6562000,38,TG,8/8/19,43,324D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+738,0.01,4,10,0.3760000,3.7600000,NA,SJ,7/29/19,41,214C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+739,0.03,3,4,2.5935000,10.3740000,34.4,TG,8/8/19,43,287D,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+740,0.02,4,10,0.1535000,1.5350000,31.6,SJ,7/29/19,35,837,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+741,0.06,4,21,0.2313000,4.8570000,22.4,SJ,7/29/19,35,90B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+742,0.02,3,25,0.2569000,6.4229000,28,SJ,7/29/19,41,438,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+743,0.01,2,10,0.3155000,3.1550000,NA,TG,8/8/19,43,396B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+744,0.10,4,33,1.6287000,53.7460000,41.2,SC,8/9/19,44,154B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+745,0.04,4,5,1.3430000,6.7150000,30.1,SJ,7/29/19,41,328,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+746,0.00,1,2,0.1215000,0.2430000,NA,SJ,7/29/19,41,214C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+747,0.04,4,36,0.4411000,15.8784000,31.2,JL,7/29/19,40,636,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+748,0.02,3,11,0.3178000,3.4960000,27.6,JL,7/29/19,35,125A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+749,0.11,4,79,0.6890000,54.4310000,45.3,SC,8/9/19,44,627,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+750,0.02,3,54,0.0943000,5.0940000,10.2,SC,8/9/19,44,160,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+751,0.06,4,49,1.3031000,63.8519000,35.4,SC,8/9/19,44,209,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+752,0.01,3,26,0.2062000,5.3600000,26.2,SC,8/9/19,44,344,Control,6,6C,T. pratense,NA,NA,NA,treat,2018
+753,0.02,4,1,0.3960000,0.3960000,26,SC,8/9/19,44,381A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+754,0.12,4,40,1.3434000,53.7373000,45.1,SC,8/9/19,40,577,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+755,0.03,4,8,1.9643000,15.7140000,38,SC,8/9/19,44,80A,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+756,0.00,1,0,0.0000000,0.0000000,NA,JL,7/29/19,37,375D,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+757,0.02,2,6,1.7643000,10.5860000,33.7,SC,8/9/19,44,356A,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+758,0.08,6,6,4.9718000,29.8310000,9.2,JL,7/29/19,41,318,Control,2,2C,T. pratense,NA,NA,NA,treat,2018
+759,0.02,2,20,0.2810000,5.6200000,30.6,CA,8/15/19,41,156,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+760,0.00,1,4,0.5595000,2.2380000,NA,SC,8/9/19,44,461,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+761,0.06,3,21,0.8210000,17.2410000,36.2,SC,8/9/19,44,175A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+762,0.04,4,1,0.3790000,0.3790000,40.5,JL,7/29/19,40,493,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+763,0.01,3,6,0.1238000,0.7430000,13.5,JL,7/29/19,41,498,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+764,0.00,2,5,0.0784000,0.3920000,17.4,CA,8/18/19,44,51C,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+765,0.03,4,11,1.3005000,14.3060000,24.7,SJ,7/30/19,36,627,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+766,0.01,4,39,0.0586000,2.2837000,NA,SJ,7/30/19,42,762,Nitrogen,5,5N,T. pratense,NA,NA,NA,treat,2018
+767,0.10,4,11,2.2955000,25.2510000,32.1,SJ,7/30/19,38,596,Nitrogen,1,1N,T. repens,NA,NA,NA,treat,2018
+768,0.13,NA,19,0.0738000,1.4020000,47.3,MH,8/7/19,42,596,Nitrogen,1,1N,T. repens,NA,NA,NA,treat,2018
+769,0.04,4,5,2.0622000,10.3110000,45.9,SJ,7/30/19,42,273A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+770,0.03,4,8,1.8985000,15.1880000,31.2,SJ,7/30/19,42,367A,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+771,0.01,3,7,1.0353000,7.2470000,42.2,SJ,7/30/19,36,200A,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+772,0.02,4,11,0.8507000,9.3580000,25.7,SJ,7/30/19,42,461,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+773,0.04,3,20,1.3545000,27.0890000,33.3,SC,8/9/19,44,80A,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+774,0.01,3,2,0.7985000,1.5970000,25.2,SJ,7/30/19,41,105A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+775,0.03,4,2,4.7340000,9.4680000,36.4,SJ,7/30/19,36,110,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+776,0.01,3,23,0.0841000,1.9341000,17.4,JL,7/30/19,38,636,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+777,0.02,3,16,0.6389000,10.2230000,40.5,JL,8/11/19,46,164A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+778,0.13,5,103,1.3818000,142.3254000,38.3,JL,8/11/19,46,16,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+779,0.11,6,13,1.9941000,25.9230000,41.1,JL,7/30/19,42,499,Control,3,3C,T. pratense,NA,NA,NA,treat,2018
+780,0.01,3,9,0.2083000,1.8750000,9.3,JL,7/30/19,36,97,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+781,0.10,3,15,1.7264000,25.8960000,47.7,JL,8/11/19,46,336A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+782,0.02,5,28,0.1538000,4.3060000,18.2,JL,7/30/19,42,796,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+783,0.14,15,13,3.4735000,45.1560000,41.3,JL,7/30/19,42,154B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+784,0.01,3,10,0.6725000,6.7250000,32,JL,8/11/19,42,286F,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+785,0.12,4,29,2.0266000,58.7710000,35,JL,8/11/19,46,290D,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+786,0.03,5,19,0.7364000,13.9910000,27.8,JL,7/30/19,36,396B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+787,0.04,4,7,2.3757000,16.6300000,30.9,JL,7/30/19,36,149C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+788,0.04,3,2,2.8950000,5.7900000,31.7,SJ,8/5/19,36,74D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+789,0.16,7,36,1.1302000,40.6855000,39.8,JL,7/30/19,42,462,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+790,0.02,4,23,0.0698000,1.6050000,22,SJ,8/5/19,39,651,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+791,0.05,5,2,0.2640000,0.5280000,32.8,SJ,8/5/19,40,113,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+792,0.06,6,10,2.7906000,27.9060000,38.4,JL,7/30/19,41,149C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+793,0.07,6,5,4.8650000,24.3250000,38.9,JL,7/30/19,42,286F,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+794,0.08,5,18,0.6000000,10.8000000,35,JL,7/30/19,36,248A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+795,0.16,19,20,1.9751000,39.5010000,45.4,JL,7/30/19,42,462,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+796,0.08,6,5,2.0920000,10.4600000,45,MH,7/30/19,38,303B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+797,0.03,4,30,0.0468000,1.4050000,14.1,MH,7/30/19,42,699,Nitrogen,5,5N,T. repens,NA,NA,NA,treat,2018
+798,0.09,5,18,0.5412000,9.7420000,45.2,MH,7/30/19,42,538,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+799,0.07,4,3,0.3110000,0.9330000,37.7,SJ,8/5/19,40,145,Control,3,3C,T. pratense,NA,NA,NA,treat,2018
+800,0.07,3,3,3.4143000,10.2430000,40.7,SJ,8/5/19,36,214C,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+801,0.05,4,7,0.7191000,5.0340000,34.7,MH,7/30/19,41,45A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+802,0.12,4,12,0.8385000,10.0615000,45.8,SJ,8/5/19,40,56,Nitrogen,5,5N,T. repens,NA,NA,NA,treat,2018
+803,0.08,4,27,0.4516000,12.1920000,39.3,SJ,8/5/19,40,391B,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+804,0.01,3,5,0.1558000,0.7790000,33.4,SJ,8/5/19,40,729,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+805,0.03,4,7,0.6664000,4.6650000,41.4,JL,7/30/19,36,310A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+806,0.03,4,10,0.1536000,1.5360000,7.9,MH,7/30/19,41,643,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+807,0.03,2,3,1.0880000,3.2640000,38.1,SJ,8/5/19,40,387C,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+808,0.05,3,4,0.3283000,1.3130000,32.8,SJ,8/5/19,40,154B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+809,0.05,4,10,0.3763000,3.7630000,34.4,SJ,8/5/19,40,837,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+810,0.00,1,4,0.0343000,0.1370000,NA,SJ,8/5/19,40,511,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+811,0.00,2,0,0.0000000,0.0000000,5.9,MH,7/30/19,42,627,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+812,0.07,NA,13,1.1182000,14.5370000,37,MH,8/19/19,45,627,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+813,0.02,2,20,0.0795000,1.5900000,26.5,SJ,8/5/19,40,108,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+814,0.05,3,20,0.3085000,6.1700000,38.9,SJ,8/5/19,40,381,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+815,0.06,4,3,1.0427000,3.1280000,38.7,SJ,8/5/19,40,726,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+816,0.05,4,10,0.1849000,1.8490000,44.3,SJ,8/6/19,37,372B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+817,0.05,4,40,0.4926000,19.7053000,43.3,MH,8/15/19,43,717,Nitrogen,6,6N,T. pratense,NA,NA,NA,treat,2018
+818,0.13,5,23,0.8473000,19.4880000,42.1,MH,8/3/19,45,144A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+819,0.02,4,5,0.2160000,1.0800000,15.9,MH,8/3/19,40,651,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+820,0.04,3,8,0.4250000,3.4000000,50.5,SJ,8/6/19,41,236C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+821,0.02,3,7,0.1867000,1.3070000,38.8,SJ,8/6/19,41,527,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+822,0.05,6,20,1.1772000,23.5440000,33.1,SJ,7/30/19,42,559,Control,4,4C,T. pratense,NA,NA,NA,treat,2018
+823,0.02,3,14,0.1006000,1.4080000,15.1,SJ,7/30/19,42,415,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+824,0.15,7,17,1.3748000,23.3720000,40.6,SJ,7/30/19,42,218A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+825,0.03,4,15,0.7118000,10.6770000,26.7,SJ,7/30/19,42,51C,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+826,0.03,4,8,1.1141000,8.9130000,44.1,SJ,7/30/19,42,296A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+827,0.06,6,6,1.3848000,8.3090000,40.1,SJ,7/30/19,42,377B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+828,0.03,5,6,0.8535000,5.1210000,33.8,SJ,7/30/19,41,108,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+829,0.07,5,4,0.5750000,2.3000000,34.8,SJ,7/30/19,36,375C,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+830,0.07,5,7,1.9660000,13.7620000,36.8,SJ,7/30/19,42,153C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+831,0.14,7,3,0.3810000,1.1430000,42.6,SJ,7/30/19,42,377A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+832,0.02,4,8,0.8476000,6.7810000,27.4,JL,7/30/19,41,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+833,0.02,NA,NA,NA,NA,NA,NA,8/7/19,42,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+834,0.08,4,23,0.0975000,2.2430000,45.7,SJ,8/6/19,41,377B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+835,0.03,3,18,0.1362000,2.4510000,23.1,SJ,8/6/19,41,173,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+836,0.06,5,28,1.2007000,33.6200000,39.4,JL,7/30/19,42,287D,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+837,0.03,4,28,0.4217000,11.8070000,11.8,JL,7/30/19,42,859,Nitrogen,4,4N,T. repens,NA,NA,NA,treat,2018
+838,0.00,2,25,0.0378000,0.9440000,19,MH,8/15/19,37,859,Nitrogen,4,4N,T. repens,NA,NA,NA,treat,2018
+839,0.05,4,7,2.2260000,15.5820000,38.8,JL,7/30/19,38,301B,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+840,0.03,3,13,0.4535000,5.8950000,37.4,CA,8/6/19,41,375C,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+841,0.03,5,12,1.4636000,17.5636000,32.7,JL,7/30/19,41,267B,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+842,0.02,3,21,0.0582000,1.2220000,22.5,CA,8/6/19,40,796,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+843,0.04,4,18,0.1049000,1.8890000,23.1,CA,8/6/19,37,310A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+844,0.04,4,24,0.4529000,10.8700000,37.7,CA,8/6/19,41,147A,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+845,0.04,4,16,0.5480000,8.7680000,38.1,JL,7/30/19,36,55D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+846,0.03,3,24,0.0895000,2.1470000,30.6,CA,8/6/19,37,50,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+847,0.04,4,5,1.7100000,8.5500000,50.1,CA,8/6/19,41,336A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+848,0.05,5,14,1.3113000,18.3580000,31.1,JL,7/30/19,42,67B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+849,0.07,5,3,9.8367000,29.5100000,43.8,JL,7/30/19,36,225A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+850,0.01,2,3,0.1390000,0.4170000,35.8,CA,8/6/19,41,273A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+851,0.14,5,24,2.1382000,51.3160000,47.2,JL,7/30/19,41,145,Control,3,3C,T. pratense,NA,NA,NA,treat,2018
+852,0.01,3,7,0.2883000,2.0180000,33.8,JL,7/30/19,41,303B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+853,0.02,2,3,0.6213000,1.8640000,38.3,JL,7/30/19,42,73A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+854,0.12,9,34,0.5659000,19.2410000,37,JL,7/30/19,38,272A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+855,0.03,NA,6,0.1425000,0.8550000,35.5,MH,8/7/19,42,272A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+856,0.02,3,6,1.3420000,8.0520000,39.7,SJ,7/30/19,38,105A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+857,0.02,2,8,0.5004000,4.0030000,39.2,CA,8/6/19,41,156,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+858,0.02,4,2,2.5975000,5.1950000,34.5,SJ,7/30/19,36,34A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+859,0.01,3,0,0.0000000,0.0000000,NA,SJ,7/30/19,36,323A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+860,0.11,7,14,0.9871000,13.8200000,46.7,SJ,7/30/19,41,272A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+861,0.09,4,11,1.6242000,17.8660000,43.4,CA,8/6/19,41,90B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+862,0.16,8,12,1.9620000,23.5440000,40.7,SJ,7/30/19,42,67B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+863,0.13,5,4,0.1475000,0.5900000,42.4,MH,8/6/19,41,499,Control,3,3C,T. pratense,NA,NA,NA,treat,2018
+864,0.13,4,17,1.1495000,19.5410000,44.8,MH,8/6/19,41,303B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+865,0.03,4,NA,NA,NA,NA,NA,NA,NA,343A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+866,0.01,3,21,0.0624000,1.3110000,16.9,TG,8/1/19,40,415,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+867,NA,NA,NA,NA,NA,NA,NA,NA,NA,415,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+868,0.05,4,55,0.1583000,8.7047000,28.6,MH,8/6/19,41,527,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+869,0.08,4,6,2.3003000,13.8020000,48.4,MJH,8/6/19,41,245A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+870,0.19,9,45,0.6867000,30.9000000,42.2,TG,8/1/19,44,290D,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+871,0.05,3,29,0.5320000,15.4270000,33.7,MJH,8/6/19,41,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+872,0.06,4,27,0.6085000,16.4290000,40.8,MJH,8/6/19,37,324C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+873,0.03,4,1,0.0005000,0.0005000,36.5,TG,8/5/19,48,310A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+874,0.09,5,37,0.6909000,25.5633000,43.1,TG,8/5/19,48,290D,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+875,0.00,1,7,0.0994000,0.6960000,NA,MJH,8/6/19,37,478,Nitrogen,2,2N,T. repens,NA,NA,NA,treat,2018
+876,0.02,3,75,0.1499000,11.2400000,14.4,TG,8/5/19,42,796,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+877,0.06,5,23,0.2064000,4.7479000,41.2,TG,8/5/19,48,218A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+878,0.13,6,12,0.1468000,1.7620000,39.2,TG,8/5/19,48,193C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+879,NA,NA,NA,NA,NA,NA,NA,8/6/19,NA,193C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+880,0.01,4,19,0.6516000,12.3810000,25.2,TG,8/5/19,42,116,Nitrogen,1,1N,T. pratense,NA,NA,NA,treat,2018
+881,0.06,5,16,0.3016000,4.8263000,44.4,TG,8/5/19,44,462,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+882,0.11,4,4,6.0063000,24.0250000,46.8,MJH,8/6/19,41,296A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+883,0.13,4,45,1.1773000,52.9770000,50.7,MJH,8/6/19,41,267B,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+884,0.04,4,35,0.1405000,4.9163000,27,MJH,8/6/19,41,173,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+885,0.03,3,40,0.1736000,6.9440000,21.6,MJH,8/6/19,41,97,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+886,0.01,2,45,0.0535000,2.4090000,NA,MJH,8/6/19,41,51D,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+887,0.01,3,11,0.3242000,3.5660000,28.8,SJ,8/6/19,41,51B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+888,0.01,3,8,0.1095000,0.8760000,NA,SJ,8/6/19,41,147A,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+889,0.05,2,12,0.8400000,10.0800000,41,MH,8/15/19,41,706,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+890,0.01,3,2,1.4280000,2.8560000,NA,SJ,8/6/19,41,773,Nitrogen,4,4N,T. pratense,NA,NA,NA,treat,2018
+891,0.04,5,17,0.9678000,16.4520000,33.9,TG,8/5/19,47,381,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+892,0.10,5,30,1.1415000,34.2444000,42.7,TG,8/5/19,42,391B,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+893,0.11,4,6,0.8578000,5.1470000,41.7,SJ,8/6/19,41,726,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+894,0.15,5,22,2.1319000,46.9017000,43.9,TG,8/5/19,48,56,Nitrogen,5,5N,T. repens,NA,NA,NA,treat,2018
+895,0.05,4,14,0.1340000,1.8760000,29.4,SJ,8/6/19,37,438,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+896,0.04,4,48,0.4400000,21.1200000,36.8,TG,8/5/19,42,113,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+897,0.03,5,33,0.6325000,20.8725000,29.2,TG,8/6/19,48,113,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+898,0.03,NA,22,0.3036000,6.6790000,36,MH,8/7/19,38,113,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+899,0.01,2,5,0.3018000,1.5090000,29.7,TG,8/6/19,43,308,Control,6,6C,T. pratense,NA,NA,NA,treat,2018
+900,0.04,4,2,0.5105000,1.0210000,35.9,SJ,8/6/19,41,245A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+901,0.01,4,18,0.3881000,6.9863000,21,TG,8/6/19,45,125A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+902,0.05,4,17,1.7586000,29.8957000,37.3,TG,8/6/19,45,328,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+903,0.01,3,15,0.2364000,3.5460000,25.7,CA,8/15/19,45,180,Control,5,5C,T. repens,NA,NA,NA,treat,2018
+904,0.00,1,0,0.0000000,0.0000000,NA,TG,8/6/19,49,87B,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+905,0.00,2,13,0.0195000,0.2535000,NA,SJ,8/6/19,41,511,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+906,0.00,2,11,0.0495000,0.5450000,NA,TG,8/6/19,45,74D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+907,0.07,6,11,1.1766000,12.9430000,41.6,TG,8/6/19,49,861,Control,5,5C,T. repens,NA,NA,NA,treat,2018
+908,0.02,4,10,0.8133000,8.1330000,32.1,JL,8/5/19,44,643,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+909,0.03,5,3,3.4380000,10.3140000,25.4,JL,8/5/19,42,292A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+910,0.01,3,7,0.5553000,3.8870000,28,JL,8/5/19,47,901,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+911,0.12,7,59,1.2526000,73.9034000,41.8,JL,8/5/19,48,295A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+912,0.04,4,44,0.1986000,8.7369000,4.6,JL,8/5/19,48,74D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+913,0.14,NA,10,0.4483000,4.4830000,38.8,MH,8/19/19,45,74D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+914,0.03,5,34,0.4047000,13.7609000,27.3,JL,8/5/19,48,310B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+915,0.11,7,10,2.8363000,28.3630000,39.4,JL,8/6/19,49,245A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+916,0.09,5,11,2.1071000,23.1780000,28.9,JL,8/6/19,43,298A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+917,0.16,9,40,1.8238000,72.9520000,28.2,JL,8/6/19,49,356A,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+918,0.04,5,116,0.2096000,24.3175000,19.1,JL,8/6/19,49,180,Control,5,5C,T. repens,NA,NA,NA,treat,2018
+919,0.04,4,32,0.8324000,26.6379000,16.5,JL,8/6/19,49,837,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+920,0.02,NA,36,0.2793000,10.0536000,30.9,CA,8/8/19,NA,837,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+921,0.02,2,20,0.0313000,0.6256000,17.8,SJ,8/6/19,37,338D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+922,0.02,2,3,1.6173000,4.8520000,26.1,JL,8/6/19,43,248A,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+923,0.02,4,77,0.0785000,6.0445000,16.1,JL,8/6/19,48,344,Control,6,6C,T. pratense,NA,NA,NA,treat,2018
+924,0.05,2,1,2.4960000,2.4960000,42.5,SJ,8/6/19,37,328,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+925,0.04,2,5,0.0560000,0.2800000,39.6,SJ,8/6/19,37,193C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+926,0.03,4,32,0.4618000,14.7765000,22.5,TG,8/6/19,49,3A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+927,0.09,4,31,0.5322000,16.4972000,32.3,TG,8/6/19,49,236C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+928,0.17,5,26,1.8030000,46.8780000,44.3,JL,8/2/19,45,225A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+929,0.02,3,31,0.6477000,20.0800000,22.8,JL,8/2/19,39,108,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+930,0.03,3,13,0.6410000,8.3330000,36.3,JL,8/2/19,41,262,Nitrogen,2,2N,T. repens,NA,NA,NA,treat,2018
+931,0.06,3,38,0.2384000,9.0592000,28.9,SJ,8/6/19,37,449,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+932,0.03,4,20,0.9999000,19.9980000,30.1,JL,8/2/19,45,231,Nitrogen,6,6N,T. repens,NA,NA,NA,treat,2018
+933,0.02,2,12,0.3495000,4.1940000,34.1,CA,8/15/19,41,438,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+934,0.03,3,62,0.3080000,19.0960000,18.3,JL,8/3/19,42,164A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+935,0.03,4,10,1.1033000,11.0330000,33.6,JL,8/5/19,44,643,Nitrogen,2,2N,T. pratense,NA,NA,NA,treat,2018
+936,0.04,4,18,0.7936000,14.2850000,37.9,JL,8/5/19,48,74,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+937,0.11,7,18,1.0795000,19.4310000,37.9,JL,8/5/19,48,372B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+938,0.01,3,0,0.0000000,0.0000000,22.6,JL,8/5/19,47,51B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+939,0.10,6,42,1.1976000,50.2992000,38.6,JL,8/2/19,45,61,Nitrogen,5,5N,T. pratense,NA,NA,NA,treat,2018
+940,0.02,1,11,0.2961000,3.2570000,35.8,CA,8/15/19,37,175A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+941,0.04,2,32,0.4285000,13.7120000,39,CA,8/15/19,41,225A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+942,0.05,4,16,1.6350000,26.1600000,29.8,JL,8/2/19,44,460,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+943,0.03,NA,45,0.3404000,15.3165000,28.3,MH,8/19/19,41,460,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+944,0.02,2,8,0.6819000,5.4550000,40.6,CA,8/15/19,37,45A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+945,0.03,3,3,0.6297000,1.8890000,29.6,SJ,8/6/19,41,34A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+946,0.04,5,21,0.9616000,20.1943000,34.1,TG,7/31/19,43,636,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+947,0.10,6,72,1.1590000,83.4504000,32.6,TG,7/31/19,43,449,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+948,0.15,6,89,0.7395000,65.8185000,44.7,TG,7/31/19,42,218A,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+949,0.04,5,96,0.0545000,5.2288000,16.3,JL,8/1/19,42,125A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+950,0.03,4,15,0.6490000,9.7350000,26.3,JL,7/31/19,37,372B,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+951,0.11,6,53,1.4053000,74.4827000,44.4,TG,8/1/19,42,773,Nitrogen,4,4N,T. pratense,NA,NA,NA,treat,2018
+952,0.01,3,3,0.0600000,0.1800000,NA,SJ,8/6/19,41,262,Nitrogen,2,2N,T. repens,NA,NA,NA,treat,2018
+953,0.06,5,16,1.1930000,19.0880000,39,TG,8/1/19,40,228,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+954,0.01,NA,15,0.0873000,1.3100000,NA,MH,8/19/19,45,228,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+955,0.11,4,4,2.8958000,11.5830000,37.6,SJ,8/6/19,37,61,Nitrogen,5,5N,T. pratense,NA,NA,NA,treat,2018
+956,0.13,5,12,1.9818000,23.7820000,38.3,SJ,8/6/19,41,310B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+957,0.18,5,36,0.4303000,15.4908000,44.6,SJ,8/6/19,41,175A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+958,0.08,6,17,0.7537000,12.8130000,40.3,TG,8/1/19,44,74,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+959,0.03,4,32,0.3901000,12.4843000,33.8,TG,8/1/19,44,758,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+960,0.20,5,9,0.5011000,4.5100000,44,SJ,8/6/19,41,236C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+961,0.01,2,12,0.4480000,5.3760000,38.6,TG,8/1/19,40,298A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+962,0.04,6,21,0.7582000,15.9213000,38.7,TG,8/1/19,44,160,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+963,0.11,7,23,1.0865000,24.9890000,38.6,TG,8/1/19,44,100,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+964,0.13,3,27,0.6708000,18.1120000,40.1,CA,8/15/19,37,295A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+965,0.01,2,22,0.1576000,3.4672000,28,TG,8/1/19,38,758,Control,1,1C,T. repens,NA,NA,NA,treat,2018
+966,0.11,6,19,2.3885000,45.3820000,40.1,JL,8/1/19,44,375C,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+967,0.00,2,4,0.1063000,0.4250000,NA,SJ,8/6/19,41,699,Nitrogen,5,5N,T. repens,NA,NA,NA,treat,2018
+968,0.02,3,14,0.4433000,6.2060000,27.2,JL,8/1/19,38,51D,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+969,0.03,3,26,0.2130000,5.5370000,39.3,SJ,8/6/19,41,460,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+970,0.07,2,6,0.2227000,1.3360000,38.6,MH,8/15/19,37,56,Nitrogen,5,5N,T. repens,NA,NA,NA,treat,2018
+971,0.10,8,20,1.2162000,24.3230000,43.5,JL,8/1/19,44,110,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+972,0.03,4,12,1.5618000,18.7410000,9.4,JL,8/1/19,40,73A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+973,0.04,5,24,0.7927000,19.0240000,39.1,JL,8/1/19,44,101A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+974,0.03,3,12,0.6828000,8.1940000,40.5,JL,8/1/19,43,262,Nitrogen,2,2N,T. repens,NA,NA,NA,treat,2018
+975,0.04,2,11,0.8380000,9.2180000,32,MH,8/15/19,41,377B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+976,0.04,5,6,2.2713000,13.6280000,27.5,JL,8/1/19,44,493,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+977,0.03,4,10,0.6127000,6.1270000,30.8,JL,8/1/19,44,105A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+978,0.17,8,35,1.7989000,62.9615000,43,JL,8/1/19,44,318,Control,2,2C,T. pratense,NA,NA,NA,treat,2018
+979,0.04,4,12,0.5264000,6.3170000,19.5,JL,8/1/19,38,356A,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+980,0.05,5,44,0.3397000,14.9468000,36.9,JL,8/1/19,44,286F,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+981,0.16,7,6,1.6592000,9.9550000,47.1,JL,8/1/19,43,538,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+982,0.02,4,14,0.1952000,2.7322000,10.5,JL,8/1/19,40,228,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+983,0.03,5,16,0.4852000,7.7630000,39.9,JL,8/1/19,44,375D,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+984,0.02,4,48,0.1260000,6.0480000,13.2,JL,8/1/19,44,343A,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+985,0.11,4,14,2.0922000,29.2910000,30.3,JL,8/1/19,44,318,Control,2,2C,T. pratense,NA,NA,NA,treat,2018
+986,0.03,4,7,0.5693000,3.9850000,30,JL,8/2/19,45,292A,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+987,0.05,4,12,1.7938000,21.5256000,28.5,JL,8/2/19,39,324C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+988,0.03,4,12,0.7417000,8.9000000,22,JL,8/2/19,44,313D,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+989,0.01,2,23,0.3597000,8.2720000,34.8,JL,8/2/19,44,231,Nitrogen,6,6N,T. repens,NA,NA,NA,treat,2018
+990,0.02,3,50,0.1489000,7.4433000,7.2,JL,8/2/19,45,729,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+991,0.00,2,10,0.1810000,1.8100000,13.3,JL,8/2/19,39,73A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+992,0.19,4,15,0.1976000,2.9640000,37.7,MH,8/15/19,45,100,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+993,0.09,6,6,3.6710000,22.0260000,41.3,JL,8/2/19,45,538,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+994,0.02,2,25,0.2061000,5.1520000,22.7,MH,8/15/19,45,209,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+995,0.02,3,13,0.0615000,0.7990000,NA,SJ,8/6/19,37,193C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+996,0.04,5,57,0.4047000,23.0660000,36.6,JL,8/2/19,45,231,Nitrogen,6,6N,T. repens,NA,NA,NA,treat,2018
+997,0.01,4,21,0.0168000,0.3520000,30.2,SJ,7/31/19,37,209,Nitrogen,6,6N,T. hybridum,NA,NA,NA,treat,2018
+998,0.10,2,45,0.7963000,35.8350000,23.4,SJ,8/19/19,41,861,Control,5,5C,T. repens,NA,NA,NA,treat,2018
+999,0.12,3,6,2.6990000,16.1940000,35.7,SJ,8/19/19,45,336A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1000,0.01,2,0,0.0000000,0.0000000,NA,SJ,7/31/19,43,199B,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1001,0.03,3,21,0.1206000,2.5330000,14.7,SJ,7/31/19,43,51B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1002,0.01,3,23,0.0315000,0.7237000,NA,SJ,8/6/19,41,228,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+1003,0.09,6,17,1.0738000,18.2540000,36.7,SJ,7/31/19,42,101A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1004,0.17,6,16,1.4366000,22.9850000,43.6,SJ,7/31/19,43,144A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1005,0.02,3,8,0.0545000,0.4360000,33.7,SJ,7/31/19,43,478,Nitrogen,2,2N,T. repens,NA,NA,NA,treat,2018
+1006,NA,NA,NA,NA,NA,NA,NA,7/31/19,37,101A,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1007,0.01,3,0,0.0000000,0.0000000,NA,SJ,8/6/19,41,199B,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1008,0.05,3,4,2.2538000,9.0150000,21.8,SJ,8/19/19,41,156,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+1009,0.07,6,16,0.7973000,12.7560000,48.2,MJH,7/31/19,42,16,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1010,0.00,3,12,0.0269000,0.3230000,NA,SJ,8/6/19,37,338D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1011,0.03,4,48,0.1804000,8.6576000,37.7,MJH,7/31/19,43,901,Control,2,2C,T. repens,NA,NA,NA,treat,2018
+1012,0.01,3,5,0.2280000,1.1400000,27.2,MJH,7/31/19,37,367A,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+1013,0.06,2,2,0.8960000,1.7920000,38.7,SJ,8/19/19,45,74,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1014,0.01,3,7,0.1789000,1.2520000,12.8,MJH,7/31/19,43,160,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+1015,0.01,2,19,0.0571000,1.0850000,NA,SJ,8/6/19,37,308,Control,6,6C,T. pratense,NA,NA,NA,treat,2018
+1016,0.05,3,8,2.6538000,21.2300000,36.8,CA,8/6/19,37,323A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1017,0.01,2,35,0.0353000,1.2343000,NA,SJ,8/19/19,45,180,Control,5,5C,T. repens,NA,NA,NA,treat,2018
+1018,0.10,5,9,1.3344000,12.0100000,36.2,SJ,8/1/19,43,34A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1019,0.06,3,23,0.5614000,12.9130000,45.2,SJ,8/19/19,47,153C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1020,0.09,4,5,2.2964000,11.4820000,30.5,SJ,8/1/19,40,40,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+1021,0.07,5,11,0.5714000,6.2850000,34.7,SJ,8/1/19,40,325,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+1022,0.04,4,12,0.7675000,9.2100000,33.3,SJ,8/1/19,38,51C,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1023,0.20,7,34,1.3812000,46.9600000,45.6,SJ,8/2/19,45,324D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1024,0.03,3,10,0.8807000,8.8070000,40.6,CA,8/6/19,37,177C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1025,0.03,3,26,0.5687000,14.7850000,33.6,CA,8/6/19,37,116,Nitrogen,1,1N,T. pratense,NA,NA,NA,treat,2018
+1026,0.08,5,6,3.9290000,23.5740000,47.1,SJ,8/2/19,44,200A,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+1027,0.06,6,15,2.1165000,31.7470000,35.6,SJ,8/2/19,45,396B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1028,0.16,NA,45,0.9567000,43.0500000,34.1,MH,8/19/19,45,396B,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1029,0.03,4,0,0.0000000,0.0000000,40.3,SJ,8/2/19,45,344,Control,6,6C,T. pratense,NA,NA,NA,treat,2018
+1030,0.07,4,12,0.7317000,8.7807000,36.4,SJ,8/2/19,41,177C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1031,0.15,NA,38,0.3754000,14.2665000,36.5,MH,8/19/19,45,177C,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1032,0.03,3,5,0.0280000,0.1400000,31.7,SJ,8/2/19,45,475,Nitrogen,4,4N,T. repens,NA,NA,NA,treat,2018
+1033,0.32,7,12,0.8844000,10.6130000,38.1,SJ,8/2/19,45,301B,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1034,0.06,3,43,0.2658000,11.4289000,40.3,SJ,8/2/19,39,559,Control,4,4C,T. pratense,NA,NA,NA,treat,2018
+1035,0.07,5,10,1.4050000,14.0500000,31.4,SJ,8/2/19,45,596,Nitrogen,1,1N,T. repens,NA,NA,NA,treat,2018
+1036,0.03,3,11,0.2600000,2.8600000,40.6,SJ,8/2/19,44,55D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1037,0.12,6,21,1.3470000,28.2880000,39.8,SJ,8/2/19,45,16,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1038,0.08,5,25,1.1979000,29.9470000,43.1,SJ,8/2/19,45,87B,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1039,0.05,5,10,2.0570000,20.5700000,34.2,SJ,8/2/19,45,324C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1040,0.02,NA,12,0.3357000,4.0284000,27.2,MH,8/19/19,41,324C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1041,0.11,5,14,2.3166000,32.4320000,36.6,MH,8/3/19,45,87B,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1042,0.11,5,7,6.2300000,43.6100000,38.6,MH,8/3/19,45,200A,Control,5,5C,T. hybridum,NA,NA,NA,treat,2018
+1043,0.03,3,24,0.0711000,1.7060000,9.9,MH,8/3/19,45,577,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1044,0.08,4,3,0.3813000,1.1440000,37.9,SJ,8/6/19,37,461,Control,2,2C,T. hybridum,NA,NA,NA,treat,2018
+1045,NA,NA,NA,NA,NA,NA,NA,8/7/19,42,67B,Control,4,4C,T. hybridum,NA,NA,NA,treat,2018
+1046,0.02,4,3,1.6753000,5.0260000,29,MH,8/3/19,42,3,Control,6,6C,T. repens,NA,NA,NA,treat,2018
+1047,0.04,4,7,0.9817000,6.8720000,48.4,MH,8/3/19,42,493,Control,5,5C,T. pratense,NA,NA,NA,treat,2018
+1048,0.06,4,26,0.2205000,5.7330000,41.8,MH,8/7/19,42,55D,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1049,0.01,2,20,0.1003000,2.0050000,NA,MH,8/3/19,42,511,Nitrogen,3,3N,T. pratense,NA,NA,NA,treat,2018
+1050,NA,NA,NA,NA,NA,NA,MH,8/3/19,46,97,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+1051,0.03,4,40,0.0623000,2.4907000,12.8,MH,8/3/19,42,577,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
+1052,0.00,NA,NA,NA,NA,NA,MH,8/4/19,NA,415,Control,3,3C,T. repens,NA,NA,NA,treat,2018
+1053,NA,NA,NA,NA,NA,NA,MH,8/3/19,46,116,Nitrogen,1,1N,T. pratense,NA,NA,NA,treat,2018
+1054,0.03,4,20,0.0924000,1.8480000,14.2,MH,8/3/19,42,97,Nitrogen,1,1N,T. hybridum,NA,NA,NA,treat,2018
+1055,0.11,4,12,2.7298000,32.7570000,39.8,MH,8/3/19,40,110,Control,4,4C,T. repens,NA,NA,NA,treat,2018
+1056,0.05,4,23,0.8223000,18.9140000,29.3,MH,8/5/19,42,40,Nitrogen,3,3N,T. repens,NA,NA,NA,treat,2018
+1057,0.01,3,40,0.0427000,1.7093000,18.6,MH,8/7/19,38,338D,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1058,0.02,4,30,0.2945000,8.8340000,23.9,MH,8/5/19,42,837,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1059,NA,NA,NA,NA,NA,NA,MH,8/5/19,48,175A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+1060,0.02,4,65,0.0383000,2.4923000,16.5,MH,8/5/19,44,125A,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+1061,NA,NA,NA,NA,NA,NA,NA,NA,NA,377B,Nitrogen,5,5N,T. hybridum,NA,NA,NA,treat,2018
+1062,0.02,4,7,0.6599000,4.6190000,27.3,MH,8/5/19,42,286F,Control,6,6C,T. hybridum,NA,NA,NA,treat,2018
+1063,0.01,NA,70,0.0700000,4.9023000,NA,MH,8/19/19,NA,228,Control,1,1C,T. pratense,NA,NA,NA,treat,2018
+1064,0.09,5,5,2.7000000,13.5000000,38.5,MH,8/5/19,48,336A,Control,3,3C,T. hybridum,NA,NA,NA,treat,2018
+1065,NA,NA,NA,NA,NA,NA,MH,8/5/19,44,318,Control,2,2C,T. pratense,NA,NA,NA,treat,2018
+1066,0.15,4,8,0.8265000,6.6120000,46.1,MH,8/5/19,44,324C,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1067,0.02,3,3,0.8287000,2.4860000,26.5,MH,8/5/19,44,313D,Nitrogen,2,2N,T. hybridum,NA,NA,NA,treat,2018
+1068,NA,NA,NA,NA,NA,NA,NA,8/7/19,42,729,Control,1,1C,T. hybridum,NA,NA,NA,treat,2018
+1069,0.03,3,40,0.1791000,7.1653000,11,MH,8/5/19,44,73A,Nitrogen,3,3N,T. hybridum,NA,NA,NA,treat,2018
