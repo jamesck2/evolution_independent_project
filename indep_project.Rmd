@@ -22,16 +22,15 @@ metadata <- read.csv("./metadata.csv")
 
 ## summarize data
 
-This might help us plot our data
 
 ```{r}
 metadata.long <- gather(metadata, key = "trait", value = "value", nodulenum, meannodulemass, chloro, shootmass)
 
-plants.year.sum <- metadata.long %>% group_by(trait, plantspori, dataset_year) %>% summarize(count = n(),
+plants.year.sum <- metadata.long %>% group_by(trait, plantspori, dataset_year, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
-strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year) %>% summarize(count = n(),
+strains.year.sum <- metadata.long %>% group_by(trait, strain, dataset_year, nitrogen) %>% summarize(count = n(),
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 
@@ -43,6 +42,103 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
             mean = mean(value, na.rm = TRUE), 
             SE = sd(value, na.rm = TRUE)/sqrt(count))
 ```
+
+
+## Mixed effects models
+
+```{r}
+lmm_shoot_2008 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+summary(lmm_shoot_2008)
+Anova(lmm_shoot_2008, type = 3) # nitrogen has sig effect, make plot
+plot(lmm_shoot_2008)
+
+lmm_shoot_2018 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+summary(lmm_shoot_2018)
+Anova(lmm_shoot_2018, type = 3) # nothing is sig
+plot(lmm_shoot_2018)
+
+lmm_chloro_2008 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+summary(lmm_chloro_2008)
+Anova(lmm_chloro_2008, type = 3) # nitrogen has sig effect, make plot
+plot(lmm_chloro_2008)
+
+lmm_chloro_2018 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+summary(lmm_chloro_2018)
+Anova(lmm_chloro_2018, type = 3) # plant species and nitrogen has sig effect, make plot
+plot(lmm_chloro_2018)
+
+lmm_nodulenum_2008 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+summary(lmm_nodulenum_2008)
+Anova(lmm_nodulenum_2008, type = 3) # nothing is sig
+plot(lmm_nodulenum_2008)
+
+lmm_nodulenum_2018 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+summary(lmm_nodulenum_2018)
+Anova(lmm_nodulenum_2018, type = 3) # nothing is sig
+plot(lmm_nodulenum_2018)
+
+lmm_meannodulemass_2008 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+summary(lmm_meannodulemass_2008)
+Anova(lmm_meannodulemass_2008, type = 3)  # nothing is sig
+plot(lmm_meannodulemass_2008)
+
+lmm_meannodulemass_2018 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+summary(lmm_meannodulemass_2018)
+Anova(lmm_meannodulemass_2018, type = 3)  # nothing is sig
+plot(lmm_meannodulemass_2018)
+```
+
+## Plot results from models
+
+```{r}
+## By plant species
+# Shoot biomass 2018, nitrogen significant, slight GxE
+(plot.shootmass.2018 <- ggplot(data = plants.year.sum %>% filter(trait=="shootmass", dataset_year=="2018"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Shoot biomass") +
+   theme_bw()
+  )
+
+# Shoot biomass 2008, not significant
+(plot.shootmass.2008 <- ggplot(data = plants.year.sum %>% filter(trait=="shootmass", dataset_year=="2008"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Shoot biomass") +
+   theme_bw()
+  )
+
+# Chloro 2018, nitrgen and plant species significant, slight GxE
+(plot.chloro.2018 <- ggplot(data = plants.year.sum %>% filter(trait=="chloro", dataset_year=="2018"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Chlorophyll content") +
+   theme_bw()
+  )
+
+# Chloro 2008, nitrogen significant, weak GxE?
+(plot.chloro.2008 <- ggplot(data = plants.year.sum %>% filter(trait=="chloro", dataset_year=="2008"), aes(x=nitrogen, y=mean, group=plantspori, color=plantspori)) +
+   geom_point(size=3, position = position_dodge(0.3)) +
+   geom_line(position = position_dodge(0.3)) +
+   xlab("Environment") +
+   ylab("Chlorophyll content") +
+   theme_bw()
+  )
+
+```
+
+## We cannot plot reaction norms grouped by strain because strains originally isolated from low nitrogen plots (control) are not identical to strains isolated form fertilized plots (nitrogen). We could do this before because we were using "fert" which includes both strains, but we can't use fert anymore and we had to use nitrogen. I think this is okay though since we don't include strain as a fixed effect, we might just have to explain why though.
+
+## Calculate heritability
+
+```{r}
+# We need to make a function to calculate heritability from out models or do it from scratch like before
+```
+
+
 
 
 
@@ -72,7 +168,6 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
    theme_bw() +
    theme(legend.position = "none")
   )
-
 
 
 ```
@@ -148,10 +243,6 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
 ```
 
 
-
-
-## Random effects models
-
 ## Plant shoot biomass models
 
 ```{r}
@@ -165,11 +256,11 @@ shapiro.test(metadata$shootmass) # p<0.05, transform data
 
 ```{r}
 # 2008
-lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ nitrogen + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
+lmm_shoot_2008 <- lmer(sqrt(shootmass) ~ dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
 Anova(lmm_shoot_2008, type = 3)
 
 # full model minus strain random effect
-lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ nitrogen + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
+lmm_shoot_2008_dplot <- lmer(sqrt(shootmass) ~ dataset_year + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2008"))
 
 
 # model comparison
@@ -197,11 +288,11 @@ colnames(comb_shoot_2008) <- c("Chisq", "Df", "p-value", "broad-sense-heritabili
 
 ```{r}
 # 2018
-lmm_shoot_2018 <- lmer(sqrt(shootmass) ~  nitrogen + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2018"))
+lmm_shoot_2018 <- lmer(sqrt(shootmass) ~  dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2018"))
 Anova(lmm_shoot_2018, type = 3)
 
 # full model minus strain random effect
-lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ nitrogen + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2018"))
+lmm_shoot_2018_dplot <- lmer(sqrt(shootmass) ~ dataset_year + (1|harvester) + (1|harvestdate), data = metadata %>%  filter(dataset_year == "2018"))
 
 
 # model comparison
@@ -536,7 +627,7 @@ colnames(comb_nod_2018) <- c("Chisq", "Df", "p-value", "broad-sense-heritability
 
 # Control
 # full model with all random effects
-lmm_nod_0N <- lmer(sqrt(nodulenum) ~ plantspori + dataset_year + plantspori:dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(nitrogen=="Control"))
+lmm_nod_0N <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(nitrogen=="Control"))
 Anova(lmm_nod_0N, type = 3)
 summary(lmm_nod_0N)
 
