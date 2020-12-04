@@ -47,46 +47,116 @@ strains.nitrogen.sum <- metadata.long %>% group_by(trait, strain, nitrogen) %>% 
 ## Mixed effects models
 
 ```{r}
-lmm_shoot_2008 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+lmm_shoot_2008 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
 summary(lmm_shoot_2008)
 Anova(lmm_shoot_2008, type = 3) # nitrogen has sig effect, make plot
 plot(lmm_shoot_2008)
 
-lmm_shoot_2018 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+lmm_shoot_2018 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
 summary(lmm_shoot_2018)
 Anova(lmm_shoot_2018, type = 3) # nothing is sig
 plot(lmm_shoot_2018)
 
-lmm_chloro_2008 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+lmm_chloro_2008 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
 summary(lmm_chloro_2008)
 Anova(lmm_chloro_2008, type = 3) # nitrogen has sig effect, make plot
 plot(lmm_chloro_2008)
 
-lmm_chloro_2018 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+lmm_chloro_2018 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
 summary(lmm_chloro_2018)
 Anova(lmm_chloro_2018, type = 3) # plant species and nitrogen has sig effect, make plot
 plot(lmm_chloro_2018)
 
-lmm_nodulenum_2008 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+lmm_nodulenum_2008 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
 summary(lmm_nodulenum_2008)
 Anova(lmm_nodulenum_2008, type = 3) # nothing is sig
 plot(lmm_nodulenum_2008)
 
-lmm_nodulenum_2018 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+lmm_nodulenum_2018 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
 summary(lmm_nodulenum_2018)
 Anova(lmm_nodulenum_2018, type = 3) # nothing is sig
 plot(lmm_nodulenum_2018)
 
-lmm_meannodulemass_2008 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2008"))
+lmm_meannodulemass_2008 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
 summary(lmm_meannodulemass_2008)
 Anova(lmm_meannodulemass_2008, type = 3)  # nothing is sig
 plot(lmm_meannodulemass_2008)
 
-lmm_meannodulemass_2018 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate), data = metadata %>% filter(dataset_year=="2018"))
+lmm_meannodulemass_2018 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|strain) + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
 summary(lmm_meannodulemass_2018)
 Anova(lmm_meannodulemass_2018, type = 3)  # nothing is sig
 plot(lmm_meannodulemass_2018)
 ```
+
+#Heritability Function Prep
+
+```{r}
+chloro_2008 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
+
+nodulenum_2008 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
+
+shootmass_2008 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
+
+meannodulemass_2008 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2008"))
+
+chloro_2018 <- lmer(log(chloro) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
+
+nodulenum_2018 <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
+
+shootmass_2018 <- lmer(shootmass ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
+
+meannodulemass_2018 <- lmer(sqrt(meannodulemass) ~ plantspori + nitrogen + plantspori:nitrogen + (1|harvestdate) + (1|harvester), data = metadata %>% filter(dataset_year=="2018"))
+
+
+```
+
+#Heritability Function Building
+```{r}
+
+
+Heritability_Function <- function(model, ResponseVariable_Year){
+   
+lmm_x_2008  <- model
+lmm_x_2008_dplot <- ResponseVariable_Year
+
+# model comparison
+comp_chloro_2008 <- anova(lmm_x_2008, lmm_x_2008_dplot)
+var_chloro_2008 <- VarCorr(lmm_x_2008)
+
+# test results
+chi_chloro_2008 <- comp_chloro_2008$Chisq
+Df_chloro_2008 <- comp_chloro_2008$Df
+sig_chloro_2008<- (comp_chloro_2008$`Pr(>Chisq)`)/2
+
+# heritability
+Var_chloro_2008 <- as.data.frame(var_chloro_2008)
+Var_chloro_2008 <- Var_chloro_2008 %>%
+  mutate(VP = sum(vcov),
+         prop = vcov/VP)
+
+VG_chloro_2008 <- Var_chloro_2008[1,7]
+
+
+# combine stats and heritability
+comb_chloro_2008 <- cbind(chi_chloro_2008[2], Df_chloro_2008[2], sig_chloro_2008[2], VG_chloro_2008)
+colnames(comb_chloro_2008) <- c("Chisq", "Df", "p-value", "broad-sense-heritability")   
+   
+model <- comb_chloro_2008
+
+return(model)
+}
+
+
+```
+
+#Completed Heritability Function in this format: (Model, ResponseVariable_Year)
+
+```{r}
+
+Heritability_Function(lmm_chloro_2008, chloro_2008)
+
+```
+
 
 ## Plot results from models
 
@@ -627,7 +697,7 @@ colnames(comb_nod_2018) <- c("Chisq", "Df", "p-value", "broad-sense-heritability
 
 # Control
 # full model with all random effects
-lmm_nod_0N <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(nitrogen=="Control"))
+lmm_nod_0N <- lmer(sqrt(nodulenum) ~ plantspori + nitrogen + plantspori:dataset_year + (1|harvester) + (1|strain) + (1|harvestdate), data = metadata %>%  filter(nitrogen=="2008"))
 Anova(lmm_nod_0N, type = 3)
 summary(lmm_nod_0N)
 
